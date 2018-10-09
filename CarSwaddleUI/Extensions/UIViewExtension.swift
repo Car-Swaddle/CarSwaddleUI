@@ -53,7 +53,7 @@ public extension UIView {
     /// need to unhide it twice for it to show... 😩🔫
     // http://www.openradar.me/22819594
     // http://stackoverflow.com/questions/33240635/hidden-property-cannot-be-changed-within-an-animation-block
-    var isHiddenInStackView: Bool {
+    public var isHiddenInStackView: Bool {
         get {
             return isHidden
         }

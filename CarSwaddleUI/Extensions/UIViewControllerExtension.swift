@@ -8,9 +8,9 @@
 
 import UIKit
 
-extension UIViewController {
+public extension UIViewController {
     
-    func inNavigationController() -> UINavigationController {
+    public func inNavigationController() -> UINavigationController {
         let nav = UINavigationController(rootViewController: self)
         nav.view.layer.shadowColor = UIColor.clear.cgColor
         nav.view.layer.shadowOpacity = 0.0
