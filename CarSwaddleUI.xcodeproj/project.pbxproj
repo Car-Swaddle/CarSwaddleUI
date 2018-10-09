@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9912CD8F216C6F3A0006FDDF /* HorizontalSlideTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9912CD8E216C6F3A0006FDDF /* HorizontalSlideTransition.swift */; };
 		995B9F212154B2CB0030A7CA /* NibStoryboardInstantiating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995B9F1F2154B2CA0030A7CA /* NibStoryboardInstantiating.swift */; };
 		995B9F222154B2CB0030A7CA /* ReuseIdentifying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995B9F202154B2CB0030A7CA /* ReuseIdentifying.swift */; };
 		9970121B2154B14200D547C5 /* CarSwaddleUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 997012112154B14200D547C5 /* CarSwaddleUI.framework */; };
@@ -25,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9912CD8E216C6F3A0006FDDF /* HorizontalSlideTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalSlideTransition.swift; sourceTree = "<group>"; };
 		995B9F1F2154B2CA0030A7CA /* NibStoryboardInstantiating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibStoryboardInstantiating.swift; sourceTree = "<group>"; };
 		995B9F202154B2CB0030A7CA /* ReuseIdentifying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseIdentifying.swift; sourceTree = "<group>"; };
 		997012112154B14200D547C5 /* CarSwaddleUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CarSwaddleUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +79,7 @@
 			children = (
 				995B9F1F2154B2CA0030A7CA /* NibStoryboardInstantiating.swift */,
 				995B9F202154B2CB0030A7CA /* ReuseIdentifying.swift */,
+				9912CD8E216C6F3A0006FDDF /* HorizontalSlideTransition.swift */,
 				997012142154B14200D547C5 /* CarSwaddleUI.h */,
 				997012152154B14200D547C5 /* Info.plist */,
 			);
@@ -202,6 +205,7 @@
 			files = (
 				995B9F212154B2CB0030A7CA /* NibStoryboardInstantiating.swift in Sources */,
 				995B9F222154B2CB0030A7CA /* ReuseIdentifying.swift in Sources */,
+				9912CD8F216C6F3A0006FDDF /* HorizontalSlideTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
