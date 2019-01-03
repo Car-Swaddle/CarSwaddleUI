@@ -6,8 +6,8 @@ import UIKit
 private let defaultTitleTextAttributes: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor.blue4, .font: UIFont.appFont(size: 17, type: .semibold)]
 private let defaultMessageTextAttributes: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor.gray5Alpha, .font: UIFont.appFont(size: 14)]
 
-private let buttonTitleFont = UIFont.appFont(size: 14, type: .semibold)
-private let buttonContentInsets = UIEdgeInsets(top: 8, left: 16, bottom: 8, right: 16)
+private let buttonTitleFont = UIFont.appFont(size: 15, type: .semibold)
+private let buttonContentInsets = UIEdgeInsets(top: 10, left: 16, bottom: 10, right: 16)
 
 
 /// An action that can be taken when the user taps a button on a CustomAlert.
@@ -338,7 +338,7 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
         button.clipsToBounds = true
         
         button.layer.cornerRadius = 8
-        button.layer.shadowOffset = CGSize(width: 0, height: 2)
+        button.layer.shadowOffset = CGSize(width: 1, height: 2)
         button.layer.shadowColor = UIColor(red:0, green:0, blue:0, alpha:0.05).cgColor
         button.layer.shadowOpacity = 1
         button.layer.shadowRadius = 8
