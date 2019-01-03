@@ -61,28 +61,6 @@ public extension NibInstantiating where Self: UIView {
     
     public static func viewFromGenericNib<T: UIView>(owner: Any? = nil) -> T {
         var view: T!
-        
-//        let path = Bundle.main.path(forResource: "CarSwaddleUI", ofType: "bundle")
-        
-        
-        for bundle in Bundle.allBundles {
-            let path = bundle.path(forResource: nibName, ofType: "xib")
-//            let paths = bundle.paths(forResourcesOfType: "xib", inDirectory: nil)
-//            let paths = bundle.paths(forResourcesOfType: "", inDirectory: "/")
-            print(bundle.bundleIdentifier)
-            if let d = path {
-//                print("deal")
-            } else {
-//                print("no deal")
-            }
-            
-//            if let paths = paths {
-//                print(paths)
-//            } else {
-//                print("no deal")
-//            }
-        }
-        
         let objects = Bundle(for: self).loadNibNamed(nibName, owner: owner, options: nil)
         for object in objects ?? [] {
             guard let foundView = object as? T else { continue }
