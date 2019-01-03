@@ -1,11 +1,3 @@
-//
-//  NibInstantiating.swift
-//  Hayabusa
-//
-//  Created by Kyle Kendall on 6/7/16.
-//  Copyright © 2016 Domo Inc. All rights reserved.
-//
-
 import UIKit
 
 

@@ -1,11 +1,3 @@
-//
-//  ReuseIdentifying.swift
-//  DomoUI
-//
-//  Created by Kyle Kendall on 10/25/17.
-//  Copyright © 2017 Domo. All rights reserved.
-//
-
 import UIKit
 
 
