@@ -4,7 +4,7 @@ import UIKit
 private let topContentInsetConstantNoImage: CGFloat = 32
 private let topContentInsetConstantWithImage: CGFloat = 16
 
-private let alertCornerRadius: CGFloat = 8
+private let alertCornerRadius: CGFloat = 16
 
 /// Use this to display information to the user in place of a `UIAlertController`.
 /// Create an instance with a `CustomAlert`
@@ -163,10 +163,10 @@ final public class CustomAlertController: UIViewController, StoryboardInstantiat
     
     private func setupContentView() {
         alertView.layer.cornerRadius = alertCornerRadius
-        alertView.layer.shadowOffset = CGSize(width: 0, height: 2)
-        alertView.layer.shadowColor = UIColor(red:0, green:0, blue:0, alpha:0.2).cgColor
+        alertView.layer.shadowOffset = CGSize(width: 1, height: 3)
+        alertView.layer.shadowColor = UIColor(red:0, green:0, blue:0, alpha:0.3).cgColor
         alertView.layer.shadowOpacity = 1
-        alertView.layer.shadowRadius = 8
+        alertView.layer.shadowRadius = 13
         
         for contentView in contentViews {
             contentContainerView.addSubview(contentView)

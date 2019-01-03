@@ -32,8 +32,6 @@
 		99E66CC421DDE60900C6E3E1 /* UITraitCollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E66CC321DDE60900C6E3E1 /* UITraitCollectionExtension.swift */; };
 		99E66D1021DDF33400C6E3E1 /* CustomAlertController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99E66CA421DDDC7500C6E3E1 /* CustomAlertController.storyboard */; };
 		99E66D1221DDF97900C6E3E1 /* CustomAlertContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99E66CA721DDDC7600C6E3E1 /* CustomAlertContentView.xib */; };
-		99E66D1421DDF99100C6E3E1 /* RandoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99E66D1321DDF99100C6E3E1 /* RandoView.xib */; };
-		99E66D1621DDF99A00C6E3E1 /* RandoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E66D1521DDF99A00C6E3E1 /* RandoView.swift */; };
 		99F027752184533D005FEFC7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F027742184533D005FEFC7 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -76,8 +74,6 @@
 		99E66CBB21DDE4B100C6E3E1 /* TranslucentAnimatedTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslucentAnimatedTransition.swift; sourceTree = "<group>"; };
 		99E66CBC21DDE4B100C6E3E1 /* ZoomAnimatedTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomAnimatedTransition.swift; sourceTree = "<group>"; };
 		99E66CC321DDE60900C6E3E1 /* UITraitCollectionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITraitCollectionExtension.swift; sourceTree = "<group>"; };
-		99E66D1321DDF99100C6E3E1 /* RandoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RandoView.xib; sourceTree = "<group>"; };
-		99E66D1521DDF99A00C6E3E1 /* RandoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandoView.swift; sourceTree = "<group>"; };
 		99F027742184533D005FEFC7 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,8 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				99E66CA521DDDC7600C6E3E1 /* CustomAlertContentView.swift */,
-				99E66D1521DDF99A00C6E3E1 /* RandoView.swift */,
-				99E66D1321DDF99100C6E3E1 /* RandoView.xib */,
 				99E66CA721DDDC7600C6E3E1 /* CustomAlertContentView.xib */,
 				99E66CA421DDDC7500C6E3E1 /* CustomAlertController.storyboard */,
 				99E66CA821DDDC7600C6E3E1 /* CustomAlertController.swift */,
@@ -277,7 +271,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				99E66D1221DDF97900C6E3E1 /* CustomAlertContentView.xib in Resources */,
-				99E66D1421DDF99100C6E3E1 /* RandoView.xib in Resources */,
 				99E66D1021DDF33400C6E3E1 /* CustomAlertController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,7 +306,6 @@
 				99E66CAA21DDDC7600C6E3E1 /* CustomAlertContentView.swift in Sources */,
 				99A2CDAC218D9D6B003ED903 /* UIBarButtonItem.swift in Sources */,
 				9912CD8F216C6F3A0006FDDF /* HorizontalSlideTransition.swift in Sources */,
-				99E66D1621DDF99A00C6E3E1 /* RandoView.swift in Sources */,
 				99E66CB321DDDFD100C6E3E1 /* ArrayExtension.swift in Sources */,
 				99E66CAF21DDDDB700C6E3E1 /* UIFontExtension.swift in Sources */,
 				99E66CC021DDE4B100C6E3E1 /* TranslucentAnimatedTransition.swift in Sources */,

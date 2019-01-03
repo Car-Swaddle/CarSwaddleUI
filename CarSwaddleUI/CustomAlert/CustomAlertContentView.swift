@@ -160,6 +160,18 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
         configurationHandler?(textField)
     }
     
+    /// Add one or many text fields to the alert. Use the closure to configure your text field as needed.
+    ///
+    /// - Parameter configurationHandler: Closure called when the textField is finished setting up
+    public func addCustomView(configurationHandler: ((_ customView: UIView) -> Void)? = nil) {
+        let customView = UIView()
+        customView.translatesAutoresizingMaskIntoConstraints = false
+        labelStackView.addArrangedSubview(customView)
+        customView.leadingAnchor.constraint(equalTo: labelStackView.leadingAnchor).isActive = true
+        customView.trailingAnchor.constraint(equalTo: labelStackView.trailingAnchor).isActive = true
+        configurationHandler?(customView)
+    }
+    
     /// Add one or more switches to the content. These will be added to the action section of the content view
     ///
     /// - Parameter configurationHandler: Closure called when the switch and label are done settings up
@@ -287,6 +299,9 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
     
     /// All text fields added to the content view
     public private(set) var textFields: [UITextField] = []
+    
+    /// All custom views added to the content view
+    public private(set) var customViews: [UIView] = []
     
     private var underlineViews: [UITextField: UIView] = [:]
     
