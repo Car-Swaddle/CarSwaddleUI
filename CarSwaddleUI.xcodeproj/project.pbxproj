@@ -17,10 +17,8 @@
 		997012202154B14200D547C5 /* CarSwaddleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9970121F2154B14200D547C5 /* CarSwaddleUITests.swift */; };
 		997012222154B14200D547C5 /* CarSwaddleUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 997012142154B14200D547C5 /* CarSwaddleUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		99A2CDAC218D9D6B003ED903 /* UIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A2CDAB218D9D6B003ED903 /* UIBarButtonItem.swift */; };
-		99E66CA921DDDC7600C6E3E1 /* CustomAlertController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99E66CA421DDDC7500C6E3E1 /* CustomAlertController.storyboard */; };
 		99E66CAA21DDDC7600C6E3E1 /* CustomAlertContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E66CA521DDDC7600C6E3E1 /* CustomAlertContentView.swift */; };
 		99E66CAB21DDDC7600C6E3E1 /* CustomAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E66CA621DDDC7600C6E3E1 /* CustomAlertControllerExtension.swift */; };
-		99E66CAC21DDDC7600C6E3E1 /* CustomAlertContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99E66CA721DDDC7600C6E3E1 /* CustomAlertContentView.xib */; };
 		99E66CAD21DDDC7600C6E3E1 /* CustomAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E66CA821DDDC7600C6E3E1 /* CustomAlertController.swift */; };
 		99E66CAF21DDDDB700C6E3E1 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E66CAE21DDDDB700C6E3E1 /* UIFontExtension.swift */; };
 		99E66CB121DDDEE600C6E3E1 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E66CB021DDDEE600C6E3E1 /* UIColorExtension.swift */; };
@@ -32,6 +30,10 @@
 		99E66CC021DDE4B100C6E3E1 /* TranslucentAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E66CBB21DDE4B100C6E3E1 /* TranslucentAnimatedTransition.swift */; };
 		99E66CC121DDE4B100C6E3E1 /* ZoomAnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E66CBC21DDE4B100C6E3E1 /* ZoomAnimatedTransition.swift */; };
 		99E66CC421DDE60900C6E3E1 /* UITraitCollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E66CC321DDE60900C6E3E1 /* UITraitCollectionExtension.swift */; };
+		99E66D1021DDF33400C6E3E1 /* CustomAlertController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99E66CA421DDDC7500C6E3E1 /* CustomAlertController.storyboard */; };
+		99E66D1221DDF97900C6E3E1 /* CustomAlertContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99E66CA721DDDC7600C6E3E1 /* CustomAlertContentView.xib */; };
+		99E66D1421DDF99100C6E3E1 /* RandoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99E66D1321DDF99100C6E3E1 /* RandoView.xib */; };
+		99E66D1621DDF99A00C6E3E1 /* RandoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E66D1521DDF99A00C6E3E1 /* RandoView.swift */; };
 		99F027752184533D005FEFC7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F027742184533D005FEFC7 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +76,8 @@
 		99E66CBB21DDE4B100C6E3E1 /* TranslucentAnimatedTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslucentAnimatedTransition.swift; sourceTree = "<group>"; };
 		99E66CBC21DDE4B100C6E3E1 /* ZoomAnimatedTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomAnimatedTransition.swift; sourceTree = "<group>"; };
 		99E66CC321DDE60900C6E3E1 /* UITraitCollectionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITraitCollectionExtension.swift; sourceTree = "<group>"; };
+		99E66D1321DDF99100C6E3E1 /* RandoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RandoView.xib; sourceTree = "<group>"; };
+		99E66D1521DDF99A00C6E3E1 /* RandoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandoView.swift; sourceTree = "<group>"; };
 		99F027742184533D005FEFC7 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,6 +164,8 @@
 			isa = PBXGroup;
 			children = (
 				99E66CA521DDDC7600C6E3E1 /* CustomAlertContentView.swift */,
+				99E66D1521DDF99A00C6E3E1 /* RandoView.swift */,
+				99E66D1321DDF99100C6E3E1 /* RandoView.xib */,
 				99E66CA721DDDC7600C6E3E1 /* CustomAlertContentView.xib */,
 				99E66CA421DDDC7500C6E3E1 /* CustomAlertController.storyboard */,
 				99E66CA821DDDC7600C6E3E1 /* CustomAlertController.swift */,
@@ -270,8 +276,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99E66CAC21DDDC7600C6E3E1 /* CustomAlertContentView.xib in Resources */,
-				99E66CA921DDDC7600C6E3E1 /* CustomAlertController.storyboard in Resources */,
+				99E66D1221DDF97900C6E3E1 /* CustomAlertContentView.xib in Resources */,
+				99E66D1421DDF99100C6E3E1 /* RandoView.xib in Resources */,
+				99E66D1021DDF33400C6E3E1 /* CustomAlertController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +313,7 @@
 				99E66CAA21DDDC7600C6E3E1 /* CustomAlertContentView.swift in Sources */,
 				99A2CDAC218D9D6B003ED903 /* UIBarButtonItem.swift in Sources */,
 				9912CD8F216C6F3A0006FDDF /* HorizontalSlideTransition.swift in Sources */,
+				99E66D1621DDF99A00C6E3E1 /* RandoView.swift in Sources */,
 				99E66CB321DDDFD100C6E3E1 /* ArrayExtension.swift in Sources */,
 				99E66CAF21DDDDB700C6E3E1 /* UIFontExtension.swift in Sources */,
 				99E66CC021DDE4B100C6E3E1 /* TranslucentAnimatedTransition.swift in Sources */,
@@ -472,7 +480,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
+				MACH_O_TYPE = mh_dylib;
 				PRODUCT_BUNDLE_IDENTIFIER = CS.CarSwaddleUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -500,7 +508,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
+				MACH_O_TYPE = mh_dylib;
 				PRODUCT_BUNDLE_IDENTIFIER = CS.CarSwaddleUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
