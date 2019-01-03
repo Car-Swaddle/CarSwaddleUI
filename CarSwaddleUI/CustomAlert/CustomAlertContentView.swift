@@ -374,8 +374,8 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
     }
     
     private func configureButtonForDefault(_ button: UIButton) {
-        button.setTitleColor(.gray5, for: .normal)
-        button.setTitleColor(.gray4, for: .highlighted)
+        button.setTitleColor(.blue5, for: .normal)
+        button.setTitleColor(.blue6, for: .highlighted)
         
         button.layer.borderWidth = 1
         button.layer.borderColor = UIColor.gray2Alpha.cgColor
@@ -392,8 +392,10 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
         
         button.layer.borderWidth = 0
         
-        button.setBackgroundImage(UIImage.from(color: .orange3), for: .normal)
-        button.setBackgroundImage(UIImage.from(color: UIColor.orange3.color(adjustedBy: -0.1)), for: .highlighted)
+        let backgroundColor: UIColor = .aqua4
+        
+        button.setBackgroundImage(UIImage.from(color: backgroundColor), for: .normal)
+        button.setBackgroundImage(UIImage.from(color: backgroundColor.color(adjustedBy: -0.1)), for: .highlighted)
     }
     
     private func updateButtonStackViewAxis() {
