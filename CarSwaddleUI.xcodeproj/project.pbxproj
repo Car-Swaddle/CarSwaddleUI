@@ -32,6 +32,8 @@
 		99E66CC421DDE60900C6E3E1 /* UITraitCollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E66CC321DDE60900C6E3E1 /* UITraitCollectionExtension.swift */; };
 		99E66D1021DDF33400C6E3E1 /* CustomAlertController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99E66CA421DDDC7500C6E3E1 /* CustomAlertController.storyboard */; };
 		99E66D1221DDF97900C6E3E1 /* CustomAlertContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99E66CA721DDDC7600C6E3E1 /* CustomAlertContentView.xib */; };
+		99E66DA121E28F0100C6E3E1 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E66D9F21E28F0100C6E3E1 /* TextCell.swift */; };
+		99E66DA221E28F0100C6E3E1 /* TextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99E66DA021E28F0100C6E3E1 /* TextCell.xib */; };
 		99F027752184533D005FEFC7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F027742184533D005FEFC7 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +76,8 @@
 		99E66CBB21DDE4B100C6E3E1 /* TranslucentAnimatedTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslucentAnimatedTransition.swift; sourceTree = "<group>"; };
 		99E66CBC21DDE4B100C6E3E1 /* ZoomAnimatedTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomAnimatedTransition.swift; sourceTree = "<group>"; };
 		99E66CC321DDE60900C6E3E1 /* UITraitCollectionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITraitCollectionExtension.swift; sourceTree = "<group>"; };
+		99E66D9F21E28F0100C6E3E1 /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
+		99E66DA021E28F0100C6E3E1 /* TextCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextCell.xib; sourceTree = "<group>"; };
 		99F027742184533D005FEFC7 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,10 +138,8 @@
 		997012132154B14200D547C5 /* CarSwaddleUI */ = {
 			isa = PBXGroup;
 			children = (
-				995B9F1F2154B2CA0030A7CA /* NibStoryboardInstantiating.swift */,
-				995B9F202154B2CB0030A7CA /* ReuseIdentifying.swift */,
-				9912CD8E216C6F3A0006FDDF /* HorizontalSlideTransition.swift */,
-				99F027742184533D005FEFC7 /* LocationManager.swift */,
+				99E66D9E21E28EEB00C6E3E1 /* Location */,
+				99E66D9D21E28ED000C6E3E1 /* Generic UI */,
 				99E66CB821DDE4A000C6E3E1 /* Transition */,
 				99E66CA321DDDC4C00C6E3E1 /* CustomAlert */,
 				9912CD96216C75E80006FDDF /* Extensions */,
@@ -171,12 +173,32 @@
 		99E66CB821DDE4A000C6E3E1 /* Transition */ = {
 			isa = PBXGroup;
 			children = (
+				9912CD8E216C6F3A0006FDDF /* HorizontalSlideTransition.swift */,
 				99E66CBA21DDE4B100C6E3E1 /* AnimatedTransition.swift */,
 				99E66CB921DDE4B100C6E3E1 /* DelegatingAnimatedTransition.swift */,
 				99E66CBB21DDE4B100C6E3E1 /* TranslucentAnimatedTransition.swift */,
 				99E66CBC21DDE4B100C6E3E1 /* ZoomAnimatedTransition.swift */,
 			);
 			path = Transition;
+			sourceTree = "<group>";
+		};
+		99E66D9D21E28ED000C6E3E1 /* Generic UI */ = {
+			isa = PBXGroup;
+			children = (
+				995B9F1F2154B2CA0030A7CA /* NibStoryboardInstantiating.swift */,
+				995B9F202154B2CB0030A7CA /* ReuseIdentifying.swift */,
+				99E66D9F21E28F0100C6E3E1 /* TextCell.swift */,
+				99E66DA021E28F0100C6E3E1 /* TextCell.xib */,
+			);
+			path = "Generic UI";
+			sourceTree = "<group>";
+		};
+		99E66D9E21E28EEB00C6E3E1 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				99F027742184533D005FEFC7 /* LocationManager.swift */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99E66DA221E28F0100C6E3E1 /* TextCell.xib in Resources */,
 				99E66D1221DDF97900C6E3E1 /* CustomAlertContentView.xib in Resources */,
 				99E66D1021DDF33400C6E3E1 /* CustomAlertController.storyboard in Resources */,
 			);
@@ -299,6 +322,7 @@
 				99E66CAD21DDDC7600C6E3E1 /* CustomAlertController.swift in Sources */,
 				99F027752184533D005FEFC7 /* LocationManager.swift in Sources */,
 				9912CD9A216C76260006FDDF /* UIViewControllerExtension.swift in Sources */,
+				99E66DA121E28F0100C6E3E1 /* TextCell.swift in Sources */,
 				99E66CB121DDDEE600C6E3E1 /* UIColorExtension.swift in Sources */,
 				99E66CC121DDE4B100C6E3E1 /* ZoomAnimatedTransition.swift in Sources */,
 				9912CD98216C75F70006FDDF /* UIAlertControllerExtensions.swift in Sources */,
