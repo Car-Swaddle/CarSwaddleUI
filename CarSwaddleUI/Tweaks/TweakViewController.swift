@@ -7,15 +7,14 @@
 //
 
 import UIKit
-import CarSwaddleUI
 
-protocol TweakViewControllerDelegate: AnyObject {
+public protocol TweakViewControllerDelegate: AnyObject {
     func didDismiss(requiresAppReset: Bool, tweakViewController: TweakViewController)
 }
 
-final class TweakViewController: UIViewController, StoryboardInstantiating {
+final public class TweakViewController: UIViewController, StoryboardInstantiating {
     
-    class func create(with tweaks: [Tweak], delegate: TweakViewControllerDelegate? = nil) -> TweakViewController {
+    public class func create(with tweaks: [Tweak], delegate: TweakViewControllerDelegate? = nil) -> TweakViewController {
         let viewController = TweakViewController.viewControllerFromStoryboard()
         viewController.tweaks = tweaks
         viewController.delegate = delegate
@@ -29,7 +28,7 @@ final class TweakViewController: UIViewController, StoryboardInstantiating {
     private var tweaks: [Tweak] = []
     private var resetAppOnDismiss: Bool = false
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         
         setupTableView()
@@ -51,11 +50,11 @@ final class TweakViewController: UIViewController, StoryboardInstantiating {
 
 extension TweakViewController: UITableViewDataSource {
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tweaks.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: TweakStringValueCell = tableView.dequeueCell()
         
         let tweak = tweaks[indexPath.row]
@@ -67,7 +66,7 @@ extension TweakViewController: UITableViewDataSource {
 
 extension TweakViewController: UITableViewDelegate {
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let viewController = TweakSelectViewController.create(with: tweaks[indexPath.row])
         viewController.delegate = self
         show(viewController, sender: true)

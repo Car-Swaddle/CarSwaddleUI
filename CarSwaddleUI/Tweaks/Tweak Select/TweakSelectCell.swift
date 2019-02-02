@@ -6,7 +6,7 @@
 //  Copyright © 2019 CarSwaddle. All rights reserved.
 //
 
-import CarSwaddleUI
+import Foundation
 
 final class TweakSelectCell: UITableViewCell, NibRegisterable {
     

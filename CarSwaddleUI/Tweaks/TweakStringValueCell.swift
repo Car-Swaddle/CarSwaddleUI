@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import CarSwaddleUI
 
 final class TweakStringValueCell: UITableViewCell, NibRegisterable {
 

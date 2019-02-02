@@ -10,7 +10,7 @@ import Foundation
 
 public class Tweak: CustomDebugStringConvertible {
     
-    init(label: String, options: Options, userDefaultsKey: String, valueDidChange: @escaping (_ tweak: Tweak) -> Void = { _ in}, defaultValue: Any? = nil, requiresAppReset: Bool = false) {
+    public init(label: String, options: Options, userDefaultsKey: String, valueDidChange: @escaping (_ tweak: Tweak) -> Void = { _ in}, defaultValue: Any? = nil, requiresAppReset: Bool = false) {
         self.label = label
         self.options = options
         self.userDefaultsKey = userDefaultsKey

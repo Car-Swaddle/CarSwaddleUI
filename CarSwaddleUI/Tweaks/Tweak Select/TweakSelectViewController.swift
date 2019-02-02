@@ -6,7 +6,7 @@
 //  Copyright © 2019 CarSwaddle. All rights reserved.
 //
 
-import CarSwaddleUI
+import Foundation
 
 protocol TweakSelectDelegate: AnyObject {
     func didChangeValue(tweak: Tweak, newValue: Any?, tweakSelectViewController: TweakSelectViewController)
@@ -15,9 +15,9 @@ protocol TweakSelectDelegate: AnyObject {
 
 final class TweakSelectViewController: UIViewController, StoryboardInstantiating {
     
-    public weak var delegate: TweakSelectDelegate?
+    weak var delegate: TweakSelectDelegate?
     
-    public static func create(with tweak: Tweak) -> TweakSelectViewController {
+    static func create(with tweak: Tweak) -> TweakSelectViewController {
         switch tweak.options {
         case .bool: fatalError("bool not supported")
         case .openString: fatalError("open String not supported")
@@ -100,7 +100,7 @@ final class TweakSelectViewController: UIViewController, StoryboardInstantiating
     
     @IBOutlet private weak var tableView: UITableView!
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
         updateUIForSelectedIndex()
@@ -142,7 +142,6 @@ extension TweakSelectViewController: UITableViewDelegate {
         }
         delegate?.didChangeValue(tweak: tweak, newValue: tweak.value, tweakSelectViewController: self)
         navigationController?.popViewController(animated: true)
-//        dismiss(animated: true, completion: nil)
     }
     
     private func updateValue(for selectedIndex: Int) {
