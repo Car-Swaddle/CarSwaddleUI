@@ -29,6 +29,7 @@
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" keyboardAppearance="light" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="one-time-code"/>
                                         <connections>
                                             <action selector="editingDidChange:" destination="gjo-RK-Mgr" eventType="editingChanged" id="fee-hM-46Q"/>
+                                            <outlet property="delegate" destination="gjo-RK-Mgr" id="dZo-fi-ODF"/>
                                             <outlet property="deleteDelegate" destination="gjo-RK-Mgr" id="Nnm-ea-Gv2"/>
                                         </connections>
                                     </textField>
@@ -40,6 +41,7 @@
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" keyboardAppearance="light" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="one-time-code"/>
                                         <connections>
                                             <action selector="editingDidChange:" destination="gjo-RK-Mgr" eventType="editingChanged" id="lEk-mU-Yde"/>
+                                            <outlet property="delegate" destination="gjo-RK-Mgr" id="ebY-gz-gr5"/>
                                             <outlet property="deleteDelegate" destination="gjo-RK-Mgr" id="yjq-yp-vuY"/>
                                         </connections>
                                     </textField>
@@ -51,6 +53,7 @@
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" keyboardAppearance="light" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="one-time-code"/>
                                         <connections>
                                             <action selector="editingDidChange:" destination="gjo-RK-Mgr" eventType="editingChanged" id="Ufd-gD-Up0"/>
+                                            <outlet property="delegate" destination="gjo-RK-Mgr" id="efo-bh-Id4"/>
                                             <outlet property="deleteDelegate" destination="gjo-RK-Mgr" id="v6h-Qq-zaM"/>
                                         </connections>
                                     </textField>
@@ -62,6 +65,7 @@
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" keyboardAppearance="light" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="one-time-code"/>
                                         <connections>
                                             <action selector="editingDidChange:" destination="gjo-RK-Mgr" eventType="editingChanged" id="ar5-6b-JYh"/>
+                                            <outlet property="delegate" destination="gjo-RK-Mgr" id="4Xp-tC-x3k"/>
                                             <outlet property="deleteDelegate" destination="gjo-RK-Mgr" id="WFs-dy-3rS"/>
                                         </connections>
                                     </textField>
