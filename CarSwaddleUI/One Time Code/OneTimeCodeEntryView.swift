@@ -91,7 +91,6 @@ open class OneTimeCodeEntryView: UIView {
         textField.smartInsertDeleteType = .no
         textField.spellCheckingType = .no
         textField.keyboardType = .numberPad
-        textField.clearsOnBeginEditing = true
         
         textField.textAlignment = .center
         textField.font = textFieldFont
@@ -108,18 +107,13 @@ open class OneTimeCodeEntryView: UIView {
         return textField
     }
     
-//    private var isChanging = false
-    
     @objc private func editingDidChange(_ textField: DeletingTextField) {
-//        if isChanging { return }
         let textCount = textField.text?.count ?? 0
         let textIsGreaterThan2 = textCount > 2
         let textCountIs2 = textCount == 2
         
         if textIsGreaterThan2 {
-//            isChanging = true
             updateTextFieldsWith(string: textField.text ?? "")
-//            isChanging = true
             textFields.last?.becomeFirstResponder()
         }
         
@@ -149,19 +143,20 @@ open class OneTimeCodeEntryView: UIView {
 
 extension OneTimeCodeEntryView: UITextFieldDelegate {
     
-//    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-//        print("textField: \(String(describing: textField.text)), range: \(range), replacementString: \(string)")
-//        return true
-//    }
+    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if range.location != 0 && range.length > 1 {
+            textField.text = string
+            return false
+        } else {
+            return true
+        }
+    }
     
     private func updateTextFieldsWith(string: String) {
-        
         textFields.forEach { $0.text = nil }
-        
         for (index, c) in string.enumerated() {
-            if index < textFields.count {
-                textFields[index].text = String(c)
-            }
+            guard index < textFields.count else { continue }
+            textFields[index].text = String(c)
         }
     }
     
