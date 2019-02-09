@@ -47,6 +47,8 @@
 		99F027752184533D005FEFC7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F027742184533D005FEFC7 /* LocationManager.swift */; };
 		99F69686220BD2600021A719 /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F69685220BD2600021A719 /* Lottie.framework */; };
 		99F69689220BD38E0021A719 /* LottieAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F69688220BD38E0021A719 /* LottieAnimation.swift */; };
+		99F696A6220F3AF50021A719 /* OneTimeCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F696A5220F3AF50021A719 /* OneTimeCodeViewController.swift */; };
+		99F696A8220F3DE10021A719 /* OneTimeCodeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99F696A7220F3DE10021A719 /* OneTimeCodeViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +105,8 @@
 		99F027742184533D005FEFC7 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		99F69685220BD2600021A719 /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = Carthage/Build/iOS/Lottie.framework; sourceTree = "<group>"; };
 		99F69688220BD38E0021A719 /* LottieAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimation.swift; sourceTree = "<group>"; };
+		99F696A5220F3AF50021A719 /* OneTimeCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTimeCodeViewController.swift; sourceTree = "<group>"; };
+		99F696A7220F3DE10021A719 /* OneTimeCodeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OneTimeCodeViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +200,7 @@
 		997012132154B14200D547C5 /* CarSwaddleUI */ = {
 			isa = PBXGroup;
 			children = (
+				99F696A3220F39D90021A719 /* One Time Code */,
 				99F69687220BD35F0021A719 /* Lottie */,
 				992BFDB82205677E006B64CC /* Tweaks */,
 				99E66D9E21E28EEB00C6E3E1 /* Location */,
@@ -276,6 +281,15 @@
 				99F69688220BD38E0021A719 /* LottieAnimation.swift */,
 			);
 			path = Lottie;
+			sourceTree = "<group>";
+		};
+		99F696A3220F39D90021A719 /* One Time Code */ = {
+			isa = PBXGroup;
+			children = (
+				99F696A5220F3AF50021A719 /* OneTimeCodeViewController.swift */,
+				99F696A7220F3DE10021A719 /* OneTimeCodeViewController.storyboard */,
+			);
+			path = "One Time Code";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,6 +389,7 @@
 				99E66D1221DDF97900C6E3E1 /* CustomAlertContentView.xib in Resources */,
 				992BFDCB220567AF006B64CC /* TweakStringValueCell.xib in Resources */,
 				992BFDC8220567AF006B64CC /* TweakSelectViewController.storyboard in Resources */,
+				99F696A8220F3DE10021A719 /* OneTimeCodeViewController.storyboard in Resources */,
 				99E66D1021DDF33400C6E3E1 /* CustomAlertController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,6 +419,7 @@
 				99E66CAD21DDDC7600C6E3E1 /* CustomAlertController.swift in Sources */,
 				99F027752184533D005FEFC7 /* LocationManager.swift in Sources */,
 				9912CD9A216C76260006FDDF /* UIViewControllerExtension.swift in Sources */,
+				99F696A6220F3AF50021A719 /* OneTimeCodeViewController.swift in Sources */,
 				99E66DA121E28F0100C6E3E1 /* TextCell.swift in Sources */,
 				992BFDC9220567AF006B64CC /* TweakSelectCell.swift in Sources */,
 				99E66CB121DDDEE600C6E3E1 /* UIColorExtension.swift in Sources */,
