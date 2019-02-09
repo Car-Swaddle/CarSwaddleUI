@@ -46,10 +46,12 @@ public final class OneTimeCodeViewController: UIViewController, StoryboardInstan
             fourthLetterTextField.becomeFirstResponder()
         }
         delegate?.codeDidChange(code: code, viewController: self)
-        guard let index = allTextFields.firstIndex(of: textField)?.advanced(by: 1),
+        guard let index = allTextFields.firstIndex(of: textField),
             index < allTextFields.count,
-            textIsGreatherThan1 == false else { return }
-        allTextFields[index].becomeFirstResponder()
+            textIsGreatherThan1 == false,
+            allTextFields[index].text?.isEmpty != true else { return }
+        let nextIndex = index.advanced(by: 1)
+        allTextFields[nextIndex].becomeFirstResponder()
     }
     
     private var code: String {
@@ -64,11 +66,11 @@ public final class OneTimeCodeViewController: UIViewController, StoryboardInstan
 
 extension OneTimeCodeViewController: UITextFieldDelegate {
     
-    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        guard string.count > 1 else { return true }
-        updateCodeWith(string: string)
-        return true
-    }
+//    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+//        guard string.count > 1 else { return true }
+//        updateCodeWith(string: string)
+//        return true
+//    }
     
     private func updateCodeWith(string: String) {
         for (index, c) in string.enumerated() {
