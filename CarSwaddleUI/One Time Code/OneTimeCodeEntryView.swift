@@ -107,18 +107,18 @@ open class OneTimeCodeEntryView: UIView {
         return textField
     }
     
-    private var isChanging = false
+//    private var isChanging = false
     
     @objc private func editingDidChange(_ textField: DeletingTextField) {
-        if isChanging { return }
+//        if isChanging { return }
         let textCount = textField.text?.count ?? 0
         let textIsGreaterThan2 = textCount > 2
         let textCountIs2 = textCount == 2
         
         if textIsGreaterThan2 {
-            isChanging = true
+//            isChanging = true
             updateTextFieldsWith(string: textField.text ?? "")
-            isChanging = true
+//            isChanging = true
             textFields.last?.becomeFirstResponder()
         }
         
