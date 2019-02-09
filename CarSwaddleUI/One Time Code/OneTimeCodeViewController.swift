@@ -73,6 +73,13 @@ extension OneTimeCodeViewController: UITextFieldDelegate {
 //        return true
 //    }
     
+    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if textField == allTextFields.last && let text = textField.text, text.count >= 1 {
+            return false
+        }
+        return true
+    }
+    
     private func updateCodeWith(string: String) {
         for (index, c) in string.enumerated() {
             if index < allTextFields.count {
