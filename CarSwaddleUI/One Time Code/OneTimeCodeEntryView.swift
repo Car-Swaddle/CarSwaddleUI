@@ -96,6 +96,9 @@ open class OneTimeCodeEntryView: UIView {
         textField.backgroundColor = textFieldBackgroundColor
         textField.tintColor = textFieldTintColor
         
+        textField.minimumFontSize = 17
+        textField.adjustsFontSizeToFitWidth = true
+        
         textField.deleteDelegate = self
         
         textField.addTarget(self, action: #selector(OneTimeCodeEntryView.editingDidChange(_:)), for: .editingChanged)
