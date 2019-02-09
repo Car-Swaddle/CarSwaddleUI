@@ -28,14 +28,21 @@ public final class OneTimeCodeViewController: UIViewController, StoryboardInstan
     public override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        setupTextFields()
+    }
+    
+    private func setupTextFields() {
+        for textField in allTextFields {
+            textField.layer.cornerRadius = 3
+        }
     }
     
     
     @IBAction private func editingDidChange(_ textField: DeletingTextField) {
         delegate?.codeDidChange(code: code, viewController: self)
-        guard let previousIndex = allTextFields.firstIndex(of: textField)?.advanced(by: 1) else { return }
-        allTextFields[previousIndex].becomeFirstResponder()
+        guard let index = allTextFields.firstIndex(of: textField)?.advanced(by: 1),
+            index < allTextFields.count else { return }
+        allTextFields[index].becomeFirstResponder()
     }
     
     
@@ -68,7 +75,8 @@ extension OneTimeCodeViewController: DeletingTextFieldDelegate {
     
     public func didDeleteBackward(_ textField: DeletingTextField) {
         print("delete backward")
-        guard let previousIndex = allTextFields.firstIndex(of: textField)?.advanced(by: -1) else { return }
+        guard let previousIndex = allTextFields.firstIndex(of: textField)?.advanced(by: -1),
+            index > 0 else { return }
         allTextFields[previousIndex].becomeFirstResponder()
     }
     
