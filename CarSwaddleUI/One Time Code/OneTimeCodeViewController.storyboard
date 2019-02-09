@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Delete Delegate-->
+        <!--Delegate-->
         <scene sceneID="bX7-kq-iWm">
             <objects>
                 <viewController id="gjo-RK-Mgr" customClass="OneTimeCodeViewController" customModule="CarSwaddleUI" customModuleProvider="target" sceneMemberID="viewController">
@@ -75,10 +75,30 @@
                                     <constraint firstAttribute="width" constant="230" id="U63-ts-xQj"/>
                                 </constraints>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q36-y6-hFU" customClass="OneTimeCodeEntryView" customModule="CarSwaddleUI" customModuleProvider="target">
+                                <rect key="frame" x="69" y="245" width="237" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="XOO-La-mNe"/>
+                                    <constraint firstAttribute="width" constant="237" id="Ywd-yV-Hcc"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="spacing">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="digits">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="gjo-RK-Mgr" id="yMn-wA-I3K"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.4233646168662567" blue="0.33116650926803293" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="yQy-X3-IE3" firstAttribute="top" secondItem="rah-t2-sSm" secondAttribute="top" constant="102" id="0x1-0f-BeG"/>
+                            <constraint firstItem="q36-y6-hFU" firstAttribute="centerX" secondItem="rah-t2-sSm" secondAttribute="centerX" id="37R-sK-mAD"/>
+                            <constraint firstItem="q36-y6-hFU" firstAttribute="top" secondItem="yQy-X3-IE3" secondAttribute="bottom" constant="39" id="4ef-1x-ZvZ"/>
                             <constraint firstItem="yQy-X3-IE3" firstAttribute="centerX" secondItem="rah-t2-sSm" secondAttribute="centerX" id="b4N-1K-j6v"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rah-t2-sSm"/>

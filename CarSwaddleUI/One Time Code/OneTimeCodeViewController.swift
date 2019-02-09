@@ -75,19 +75,6 @@ public final class OneTimeCodeViewController: UIViewController, StoryboardInstan
 
 extension OneTimeCodeViewController: UITextFieldDelegate {
     
-//    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-//        guard string.count > 1 else { return true }
-//        updateCodeWith(string: string)
-//        return true
-//    }
-    
-//    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-//        if textField == allTextFields.last, let text = textField.text, text.count >= 1 && string.count != 0 {
-//            return false
-//        }
-//        return true
-//    }
-    
     private func updateTextFieldsWith(string: String) {
         for (index, c) in string.enumerated() {
             if index < allTextFields.count {
@@ -106,6 +93,14 @@ extension OneTimeCodeViewController: DeletingTextFieldDelegate {
             originalIndex > 0 else { return }
         let previousIndex = originalIndex.advanced(by: -1)
         allTextFields[previousIndex].becomeFirstResponder()
+    }
+    
+}
+
+extension OneTimeCodeViewController: OneTimeEntryViewDelegate {
+    
+    public func codeDidChange(code: String, view: OneTimeCodeEntryView) {
+        print("bottom code change")
     }
     
 }
