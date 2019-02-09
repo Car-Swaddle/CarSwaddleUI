@@ -148,10 +148,10 @@ open class OneTimeCodeEntryView: UIView {
 
 extension OneTimeCodeEntryView: UITextFieldDelegate {
     
-    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        print("textField: \(String(describing: textField.text)), range: \(range), replacementString: \(string)")
-        return true
-    }
+//    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+//        print("textField: \(String(describing: textField.text)), range: \(range), replacementString: \(string)")
+//        return true
+//    }
     
     private func updateTextFieldsWith(string: String) {
         
