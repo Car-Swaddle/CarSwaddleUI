@@ -84,9 +84,10 @@ extension OneTimeCodeViewController: UITextFieldDelegate {
 extension OneTimeCodeViewController: DeletingTextFieldDelegate {
     
     public func didDeleteBackward(_ textField: DeletingTextField) {
-        guard let index = allTextFields.firstIndex(of: textField)?.advanced(by: -1),
-            index >= 0 else { return }
-        allTextFields[index].becomeFirstResponder()
+        guard let originalIndex = allTextFields.firstIndex(of: textField),
+            originalIndex > 0 else { return }
+        let previousIndex = originalIndex.advanced(by: -1)
+        allTextFields[previousIndex].becomeFirstResponder()
     }
     
 }
