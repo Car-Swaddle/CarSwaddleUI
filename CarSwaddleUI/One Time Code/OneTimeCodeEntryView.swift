@@ -91,6 +91,7 @@ open class OneTimeCodeEntryView: UIView {
         textField.smartInsertDeleteType = .no
         textField.spellCheckingType = .no
         textField.keyboardType = .numberPad
+        textField.clearsOnBeginEditing = true
         
         textField.textAlignment = .center
         textField.font = textFieldFont
