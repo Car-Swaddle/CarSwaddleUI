@@ -76,6 +76,12 @@
                         <viewLayoutGuide key="safeArea" id="rah-t2-sSm"/>
                     </view>
                     <navigationItem key="navigationItem" id="QV8-LH-bPo"/>
+                    <connections>
+                        <outlet property="firstLetterTextField" destination="heg-1m-iZL" id="UhG-4n-no4"/>
+                        <outlet property="fourthLetterTextField" destination="gcA-PB-zwc" id="DCx-QK-SFD"/>
+                        <outlet property="secondLetterTextField" destination="FAj-Ru-I9J" id="I8h-9W-jXN"/>
+                        <outlet property="thirdLetterTextField" destination="xJc-uy-wLl" id="xR7-rU-yFI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qQe-1p-TMe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

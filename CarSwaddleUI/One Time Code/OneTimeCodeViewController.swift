@@ -8,11 +8,22 @@
 
 import UIKit
 
-public protocol OneTeimViewControllerDelegate: AnyObject {
-    func codeDidChange( viewController: OneTeimViewController)
+public protocol OneTimeCodeViewControllerDelegate: AnyObject {
+    func codeDidChange(code: String, viewController: OneTimeCodeViewController)
 }
 
 public final class OneTimeCodeViewController: UIViewController, StoryboardInstantiating {
+    
+    public weak var delegate: OneTimeCodeViewControllerDelegate?
+    
+    @IBOutlet private weak var firstLetterTextField: DeletingTextField!
+    @IBOutlet private weak var secondLetterTextField: DeletingTextField!
+    @IBOutlet private weak var thirdLetterTextField: DeletingTextField!
+    @IBOutlet private weak var fourthLetterTextField: DeletingTextField!
+    
+    private var allTextFields: [DeletingTextField] {
+        return [firstLetterTextField, secondLetterTextField, thirdLetterTextField, fourthLetterTextField]
+    }
     
     public override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,9 +33,17 @@ public final class OneTimeCodeViewController: UIViewController, StoryboardInstan
     
     
     @IBAction private func editingDidChange(_ textField: DeletingTextField) {
-        
+        delegate?.codeDidChange(code: code, viewController: self)
     }
     
+    
+    private var code: String {
+        var code = ""
+        allTextFields.forEach { textField in
+            code += textField.text ?? ""
+        }
+        return code
+    }
     
 }
 
