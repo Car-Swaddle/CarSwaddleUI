@@ -39,16 +39,25 @@ public final class OneTimeCodeViewController: UIViewController, StoryboardInstan
     
     
     @IBAction private func editingDidChange(_ textField: DeletingTextField) {
-        let textIsGreatherThan1 = (textField.text?.count ?? 0) > 1
+        let textCount = textField.text?.count ?? 0
+        let textCountIs4 = textCount == 4
+        let textCountIs2 = textCount == 2
         
-        if textIsGreatherThan1 {
-            updateCodeWith(string: textField.text ?? "")
+        
+        if textCountIs4 {
+            updateTextFieldsWith(string: textField.text ?? "")
             fourthLetterTextField.becomeFirstResponder()
         }
+        
+        if textCountIs2, let last = textField.text?.last {
+            textField.text = String(last)
+        }
+        
         delegate?.codeDidChange(code: code, viewController: self)
         guard let index = allTextFields.firstIndex(of: textField),
             index < allTextFields.count,
-            textIsGreatherThan1 == false,
+            textCountIs4 == false,
+            textCountIs2 == false,
             allTextFields[index].text?.isEmpty != true,
             index.advanced(by: 1) < allTextFields.count else { return }
         let nextIndex = index.advanced(by: 1)
@@ -80,7 +89,7 @@ extension OneTimeCodeViewController: UITextFieldDelegate {
         return true
     }
     
-    private func updateCodeWith(string: String) {
+    private func updateTextFieldsWith(string: String) {
         for (index, c) in string.enumerated() {
             if index < allTextFields.count {
                 let textField = allTextFields[index]
