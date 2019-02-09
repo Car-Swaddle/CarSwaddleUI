@@ -21,44 +21,44 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="yQy-X3-IE3">
                                 <rect key="frame" x="72.5" y="166" width="230" height="40"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="heg-1m-iZL" customClass="DeletingTextField" customModule="CarSwaddleUI" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="heg-1m-iZL" customClass="DeletingTextField" customModule="CarSwaddleUI" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="38" height="40"/>
                                         <color key="backgroundColor" red="0.90702083719158744" green="0.92221606704187387" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
                                             <action selector="editingDidChange:" destination="gjo-RK-Mgr" eventType="editingChanged" id="fee-hM-46Q"/>
                                             <outlet property="deleteDelegate" destination="gjo-RK-Mgr" id="Nnm-ea-Gv2"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FAj-Ru-I9J" customClass="DeletingTextField" customModule="CarSwaddleUI" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FAj-Ru-I9J" customClass="DeletingTextField" customModule="CarSwaddleUI" customModuleProvider="target">
                                         <rect key="frame" x="64" y="0.0" width="38" height="40"/>
                                         <color key="backgroundColor" red="0.90702083719158744" green="0.92221606704187387" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
                                             <action selector="editingDidChange:" destination="gjo-RK-Mgr" eventType="editingChanged" id="lEk-mU-Yde"/>
                                             <outlet property="deleteDelegate" destination="gjo-RK-Mgr" id="yjq-yp-vuY"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xJc-uy-wLl" customClass="DeletingTextField" customModule="CarSwaddleUI" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xJc-uy-wLl" customClass="DeletingTextField" customModule="CarSwaddleUI" customModuleProvider="target">
                                         <rect key="frame" x="128" y="0.0" width="38" height="40"/>
                                         <color key="backgroundColor" red="0.90702083719158744" green="0.92221606704187387" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
                                             <action selector="editingDidChange:" destination="gjo-RK-Mgr" eventType="editingChanged" id="Ufd-gD-Up0"/>
                                             <outlet property="deleteDelegate" destination="gjo-RK-Mgr" id="v6h-Qq-zaM"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gcA-PB-zwc" customClass="DeletingTextField" customModule="CarSwaddleUI" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gcA-PB-zwc" customClass="DeletingTextField" customModule="CarSwaddleUI" customModuleProvider="target">
                                         <rect key="frame" x="192" y="0.0" width="38" height="40"/>
                                         <color key="backgroundColor" red="0.90702083719158744" green="0.92221606704187387" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
                                             <action selector="editingDidChange:" destination="gjo-RK-Mgr" eventType="editingChanged" id="ar5-6b-JYh"/>
