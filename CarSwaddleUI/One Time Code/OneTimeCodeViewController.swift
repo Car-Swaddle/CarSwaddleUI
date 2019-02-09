@@ -49,7 +49,7 @@ public final class OneTimeCodeViewController: UIViewController, StoryboardInstan
         guard let index = allTextFields.firstIndex(of: textField),
             index < allTextFields.count,
             textIsGreatherThan1 == false,
-            allTextFields[index].text?.isEmpty == true,
+            allTextFields[index].text?.isEmpty != true,
             index.advanced(by: 1) < allTextFields.count else { return }
         let nextIndex = index.advanced(by: 1)
         allTextFields[nextIndex].becomeFirstResponder()
