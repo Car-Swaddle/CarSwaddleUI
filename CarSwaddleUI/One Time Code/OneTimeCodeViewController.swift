@@ -34,6 +34,8 @@ public final class OneTimeCodeViewController: UIViewController, StoryboardInstan
     
     @IBAction private func editingDidChange(_ textField: DeletingTextField) {
         delegate?.codeDidChange(code: code, viewController: self)
+        guard let previousIndex = allTextFields.firstIndex(of: textField)?.advanced(by: 1) else { return }
+        allTextFields[previousIndex].becomeFirstResponder()
     }
     
     
@@ -49,7 +51,16 @@ public final class OneTimeCodeViewController: UIViewController, StoryboardInstan
 
 extension OneTimeCodeViewController: UITextFieldDelegate {
     
-    
+    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        guard string.count > 1 else { return true }
+        for (index, c) in string.enumerated() {
+            if index < allTextFields.count {
+                let textField = allTextFields[index]
+                textField.text = String(c)
+            }
+        }
+        return true
+    }
     
 }
 
@@ -57,6 +68,8 @@ extension OneTimeCodeViewController: DeletingTextFieldDelegate {
     
     public func didDeleteBackward(_ textField: DeletingTextField) {
         print("delete backward")
+        guard let previousIndex = allTextFields.firstIndex(of: textField)?.advanced(by: -1) else { return }
+        allTextFields[previousIndex].becomeFirstResponder()
     }
     
 }
