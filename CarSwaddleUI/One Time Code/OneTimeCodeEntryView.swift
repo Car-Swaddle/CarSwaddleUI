@@ -98,7 +98,6 @@ open class OneTimeCodeEntryView: UIView {
         textField.backgroundColor = textFieldBackgroundColor
         textField.tintColor = textFieldTintColor
         
-//        textField.minimumFontSize = 17
         textField.adjustsFontSizeToFitWidth = true
         
         textField.deleteDelegate = self
@@ -146,12 +145,11 @@ extension OneTimeCodeEntryView: UITextFieldDelegate {
     
     private func updateTextFieldsWith(string: String) {
         
-        textFields.forEach { $0.text = "" }
+        textFields.forEach { $0.text = nil }
         
         for (index, c) in string.enumerated() {
             if index < textFields.count {
-                let textField = textFields[index]
-                textField.text = String(c)
+                textFields[index].text = String(c)
             }
         }
     }
