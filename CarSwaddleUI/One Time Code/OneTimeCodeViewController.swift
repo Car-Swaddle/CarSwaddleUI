@@ -43,6 +43,7 @@ public final class OneTimeCodeViewController: UIViewController, StoryboardInstan
         
         if textIsGreatherThan1 {
             updateCodeWith(string: textField.text ?? "")
+            fourthLetterTextField.becomeFirstResponder()
         }
         delegate?.codeDidChange(code: code, viewController: self)
         guard let index = allTextFields.firstIndex(of: textField)?.advanced(by: 1),
