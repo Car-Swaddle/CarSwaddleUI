@@ -16,6 +16,9 @@ public final class OneTimeCodeViewController: UIViewController, StoryboardInstan
     
     public weak var delegate: OneTimeCodeViewControllerDelegate?
     
+    
+    @IBOutlet public weak var oneTimeCodeEntryView: OneTimeCodeEntryView!
+    
     @IBOutlet private weak var firstLetterTextField: DeletingTextField!
     @IBOutlet private weak var secondLetterTextField: DeletingTextField!
     @IBOutlet private weak var thirdLetterTextField: DeletingTextField!

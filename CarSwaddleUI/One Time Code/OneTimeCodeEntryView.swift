@@ -28,6 +28,18 @@ open class OneTimeCodeEntryView: UIView {
         didSet { updateStackViewWithTextFields() }
     }
     
+    @IBInspectable public var textFieldBackgroundColor: UIColor = UIColor(hexString: "E7EBFF") {
+        didSet { updateStackViewWithTextFields() }
+    }
+    
+    @IBInspectable public var textFieldCornerRadius: CGFloat = 3 {
+        didSet { updateStackViewWithTextFields() }
+    }
+    
+    @IBInspectable public var textFieldFont: UIFont = UIFont.boldSystemFont(ofSize: 19) {
+        didSet { updateStackViewWithTextFields() }
+    }
+    
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
@@ -79,9 +91,9 @@ open class OneTimeCodeEntryView: UIView {
         textField.keyboardType = .numberPad
         
         textField.textAlignment = .center
-        textField.font = UIFont.boldSystemFont(ofSize: 19)
-        textField.layer.cornerRadius = 3
-        textField.backgroundColor = .white
+        textField.font = textFieldFont
+        textField.layer.cornerRadius = textFieldCornerRadius
+        textField.backgroundColor = textFieldBackgroundColor
         textField.tintColor = textFieldTintColor
         
         textField.deleteDelegate = self
