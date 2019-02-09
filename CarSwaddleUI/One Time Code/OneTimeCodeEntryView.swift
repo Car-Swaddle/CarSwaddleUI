@@ -111,7 +111,7 @@ open class OneTimeCodeEntryView: UIView {
         let textIsGreaterThan2 = textCount > 2
         let textCountIs2 = textCount == 2
         
-        if textCountIsMaxOrGreater {
+        if textIsGreaterThan2 {
             updateTextFieldsWith(string: textField.text ?? "")
             textFields.last?.becomeFirstResponder()
         }
@@ -123,7 +123,7 @@ open class OneTimeCodeEntryView: UIView {
         delegate?.codeDidChange(code: code, view: self)
         guard let index = textFields.firstIndex(of: textField),
             index < textFields.count,
-            textCountIsMaxOrGreater == false,
+            textIsGreaterThan2 == false,
             textFields[index].text?.isEmpty != true,
             index.advanced(by: 1) < textFields.count else { return }
         let nextIndex = index.advanced(by: 1)
