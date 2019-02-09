@@ -108,7 +108,7 @@ open class OneTimeCodeEntryView: UIView {
     
     @objc private func editingDidChange(_ textField: DeletingTextField) {
         let textCount = textField.text?.count ?? 0
-        let textCountIsMaxOrGreater = textCount >= digits
+        let textIsGreaterThan2 = textCount > 2
         let textCountIs2 = textCount == 2
         
         if textCountIsMaxOrGreater {
