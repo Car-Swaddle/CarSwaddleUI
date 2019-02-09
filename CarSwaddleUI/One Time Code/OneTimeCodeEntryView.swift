@@ -79,6 +79,9 @@ open class OneTimeCodeEntryView: UIView {
         textField.textAlignment = .center
         textField.font = UIFont.boldSystemFont(ofSize: 19)
         textField.layer.cornerRadius = 3
+        textField.backgroundColor = .white
+        
+        textField.deleteDelegate = self
         
         textField.addTarget(self, action: #selector(OneTimeCodeEntryView.editingDidChange(_:)), for: .editingChanged)
         
