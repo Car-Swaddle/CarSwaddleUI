@@ -16,8 +16,16 @@ open class OneTimeCodeEntryView: UIView {
     
     @IBOutlet public weak var delegate: OneTimeEntryViewDelegate?
     
-    @IBInspectable private var spacing: CGFloat = 20 {
+    @IBInspectable public var spacing: CGFloat = 20 {
         didSet { stackView.spacing = spacing }
+    }
+    
+    @IBInspectable public var digits: Int = 4 {
+        didSet { updateStackViewWithTextFields() }
+    }
+    
+    @IBInspectable public var textFieldTintColor: UIColor? {
+        didSet { updateStackViewWithTextFields() }
     }
     
     public required init?(coder aDecoder: NSCoder) {
@@ -45,12 +53,6 @@ open class OneTimeCodeEntryView: UIView {
     }()
     
     private var textFields: [DeletingTextField] = []
-    
-    @IBInspectable var digits: Int = 4 {
-        didSet {
-            updateStackViewWithTextFields()
-        }
-    }
     
     private func updateStackViewWithTextFields() {
         for textField in textFields {
@@ -80,6 +82,7 @@ open class OneTimeCodeEntryView: UIView {
         textField.font = UIFont.boldSystemFont(ofSize: 19)
         textField.layer.cornerRadius = 3
         textField.backgroundColor = .white
+        textField.tintColor = textFieldTintColor
         
         textField.deleteDelegate = self
         
