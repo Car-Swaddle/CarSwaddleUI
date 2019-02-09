@@ -71,6 +71,8 @@ open class OneTimeCodeEntryView: UIView {
             stackView.removeArrangedSubview(textField)
         }
         
+        textFields.removeAll()
+        
         for _ in 0..<digits {
             let textField = self.createTextField()
             stackView.addArrangedSubview(textField)
@@ -143,6 +145,9 @@ open class OneTimeCodeEntryView: UIView {
 extension OneTimeCodeEntryView: UITextFieldDelegate {
     
     private func updateTextFieldsWith(string: String) {
+        
+        textFields.forEach { $0.text = "" }
+        
         for (index, c) in string.enumerated() {
             if index < textFields.count {
                 let textField = textFields[index]
