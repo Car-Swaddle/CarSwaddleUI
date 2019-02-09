@@ -96,7 +96,7 @@ open class OneTimeCodeEntryView: UIView {
         textField.backgroundColor = textFieldBackgroundColor
         textField.tintColor = textFieldTintColor
         
-        textField.minimumFontSize = 17
+//        textField.minimumFontSize = 17
         textField.adjustsFontSizeToFitWidth = true
         
         textField.deleteDelegate = self
@@ -108,10 +108,10 @@ open class OneTimeCodeEntryView: UIView {
     
     @objc private func editingDidChange(_ textField: DeletingTextField) {
         let textCount = textField.text?.count ?? 0
-        let textCountIsMax = textCount == 4
+        let textCountIsMaxOrGreater = textCount >= digits
         let textCountIs2 = textCount == 2
         
-        if textCountIsMax {
+        if textCountIsMaxOrGreater {
             updateTextFieldsWith(string: textField.text ?? "")
             textFields.last?.becomeFirstResponder()
         }
@@ -123,7 +123,7 @@ open class OneTimeCodeEntryView: UIView {
         delegate?.codeDidChange(code: code, view: self)
         guard let index = textFields.firstIndex(of: textField),
             index < textFields.count,
-            textCountIsMax == false,
+            textCountIsMaxOrGreater == false,
             textFields[index].text?.isEmpty != true,
             index.advanced(by: 1) < textFields.count else { return }
         let nextIndex = index.advanced(by: 1)
