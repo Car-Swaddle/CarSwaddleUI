@@ -39,12 +39,17 @@ public final class OneTimeCodeViewController: UIViewController, StoryboardInstan
     
     
     @IBAction private func editingDidChange(_ textField: DeletingTextField) {
+        let textIsGreatherThan1 = (textField.text?.count ?? 0) > 1
+        
+        if textIsGreatherThan1 {
+            updateCodeWith(string: textField.text ?? "")
+        }
         delegate?.codeDidChange(code: code, viewController: self)
         guard let index = allTextFields.firstIndex(of: textField)?.advanced(by: 1),
-            index < allTextFields.count else { return }
+            index < allTextFields.count,
+            textIsGreatherThan1 == false else { return }
         allTextFields[index].becomeFirstResponder()
     }
-    
     
     private var code: String {
         var code = ""
@@ -60,13 +65,17 @@ extension OneTimeCodeViewController: UITextFieldDelegate {
     
     public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         guard string.count > 1 else { return true }
+        updateCodeWith(string: string)
+        return true
+    }
+    
+    private func updateCodeWith(string: String) {
         for (index, c) in string.enumerated() {
             if index < allTextFields.count {
                 let textField = allTextFields[index]
                 textField.text = String(c)
             }
         }
-        return true
     }
     
 }
