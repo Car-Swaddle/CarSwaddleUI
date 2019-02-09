@@ -21,8 +21,9 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="yQy-X3-IE3">
                                 <rect key="frame" x="72.5" y="166" width="230" height="40"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="heg-1m-iZL" customClass="DeletingTextField" customModule="CarSwaddleUI" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="heg-1m-iZL" customClass="DeletingTextField" customModule="CarSwaddleUI" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="38" height="40"/>
+                                        <color key="backgroundColor" red="0.90702083719158744" green="0.92221606704187387" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -31,8 +32,9 @@
                                             <outlet property="deleteDelegate" destination="gjo-RK-Mgr" id="Nnm-ea-Gv2"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FAj-Ru-I9J" customClass="DeletingTextField" customModule="CarSwaddleUI" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FAj-Ru-I9J" customClass="DeletingTextField" customModule="CarSwaddleUI" customModuleProvider="target">
                                         <rect key="frame" x="64" y="0.0" width="38" height="40"/>
+                                        <color key="backgroundColor" red="0.90702083719158744" green="0.92221606704187387" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -41,8 +43,9 @@
                                             <outlet property="deleteDelegate" destination="gjo-RK-Mgr" id="yjq-yp-vuY"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xJc-uy-wLl" customClass="DeletingTextField" customModule="CarSwaddleUI" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xJc-uy-wLl" customClass="DeletingTextField" customModule="CarSwaddleUI" customModuleProvider="target">
                                         <rect key="frame" x="128" y="0.0" width="38" height="40"/>
+                                        <color key="backgroundColor" red="0.90702083719158744" green="0.92221606704187387" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -51,8 +54,9 @@
                                             <outlet property="deleteDelegate" destination="gjo-RK-Mgr" id="v6h-Qq-zaM"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gcA-PB-zwc" customClass="DeletingTextField" customModule="CarSwaddleUI" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gcA-PB-zwc" customClass="DeletingTextField" customModule="CarSwaddleUI" customModuleProvider="target">
                                         <rect key="frame" x="192" y="0.0" width="38" height="40"/>
+                                        <color key="backgroundColor" red="0.90702083719158744" green="0.92221606704187387" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -68,7 +72,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.4233646168662567" blue="0.33116650926803293" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="yQy-X3-IE3" firstAttribute="top" secondItem="rah-t2-sSm" secondAttribute="top" constant="102" id="0x1-0f-BeG"/>
                             <constraint firstItem="yQy-X3-IE3" firstAttribute="centerX" secondItem="rah-t2-sSm" secondAttribute="centerX" id="b4N-1K-j6v"/>
