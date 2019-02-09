@@ -57,7 +57,6 @@ public final class OneTimeCodeViewController: UIViewController, StoryboardInstan
         guard let index = allTextFields.firstIndex(of: textField),
             index < allTextFields.count,
             textCountIs4 == false,
-            textCountIs2 == false,
             allTextFields[index].text?.isEmpty != true,
             index.advanced(by: 1) < allTextFields.count else { return }
         let nextIndex = index.advanced(by: 1)
@@ -82,12 +81,12 @@ extension OneTimeCodeViewController: UITextFieldDelegate {
 //        return true
 //    }
     
-    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        if textField == allTextFields.last, let text = textField.text, text.count >= 1 && string.count != 0 {
-            return false
-        }
-        return true
-    }
+//    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+//        if textField == allTextFields.last, let text = textField.text, text.count >= 1 && string.count != 0 {
+//            return false
+//        }
+//        return true
+//    }
     
     private func updateTextFieldsWith(string: String) {
         for (index, c) in string.enumerated() {
