@@ -31,9 +31,6 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="digits">
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="textFieldTintColor">
-                                        <color key="value" red="1" green="0.1039171571" blue="0.1527470252" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="delegate" destination="gjo-RK-Mgr" id="yMn-wA-I3K"/>
