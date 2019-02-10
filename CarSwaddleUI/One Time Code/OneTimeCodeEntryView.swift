@@ -101,6 +101,7 @@ open class OneTimeCodeEntryView: UIView {
         textField.adjustsFontSizeToFitWidth = true
         
         textField.deleteDelegate = self
+        textField.delegate = self
         
         textField.addTarget(self, action: #selector(OneTimeCodeEntryView.editingDidChange(_:)), for: .editingChanged)
         
