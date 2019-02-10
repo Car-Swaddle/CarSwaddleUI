@@ -10,6 +10,7 @@ import UIKit
 
 @objc public protocol OneTimeEntryViewDelegate: AnyObject {
     func codeDidChange(code: String, view: OneTimeCodeEntryView)
+    func configureTextField(textField: DeletingTextField, view: OneTimeCodeEntryView)
 }
 
 open class OneTimeCodeEntryView: UIView {
@@ -137,6 +138,8 @@ open class OneTimeCodeEntryView: UIView {
         
         textField.addTarget(self, action: #selector(OneTimeCodeEntryView.editingDidChange(_:)), for: .editingChanged)
         
+        delegate?.configureTextField(textField: textField, view: self)
+        
         return textField
     }
     
@@ -179,6 +182,7 @@ extension OneTimeCodeEntryView: UITextFieldDelegate {
         let isPasted = string == UIPasteboard.general.string
         if isPasted {
             updateTextFieldsWith(string: string)
+            delegate?.codeDidChange(code: code, view: self)
             return false
         } else {
             return true
