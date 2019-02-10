@@ -79,7 +79,7 @@
                                 <rect key="frame" x="69" y="245" width="237" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="XOO-La-mNe"/>
-                                    <constraint firstAttribute="width" constant="237" id="Ywd-yV-Hcc"/>
+                                    <constraint firstAttribute="width" constant="237" placeholder="YES" id="Ywd-yV-Hcc"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="spacing">
