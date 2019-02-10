@@ -13,7 +13,7 @@ public protocol OneTimeCodeViewControllerDelegate: AnyObject {
     func didSelectResendVerificationCode(viewController: OneTimeCodeViewController)
 }
 
-public final class OneTimeCodeViewController: UIViewController, StoryboardInstantiating {
+open class OneTimeCodeViewController: UIViewController, StoryboardInstantiating {
     
     public weak var delegate: OneTimeCodeViewControllerDelegate?
     
@@ -29,7 +29,7 @@ public final class OneTimeCodeViewController: UIViewController, StoryboardInstan
     
     @IBOutlet private weak var oneTimeCodeEntryView: OneTimeCodeEntryView!
     
-    public override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         
         oneTimeCodeEntryView.digits = numberOfDigits
