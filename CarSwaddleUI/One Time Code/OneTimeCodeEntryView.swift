@@ -157,12 +157,20 @@ extension OneTimeCodeEntryView: UITextFieldDelegate {
         textFields.forEach { $0.text = nil }
         var nextTextField: UITextField?
         for (index, c) in string.enumerated() {
-            guard index < textFields.count else { break }
+            guard index < textFields.count else {
+                nextTextField = nil
+                break
+            }
             let textField = textFields[index]
             textField.text = String(c)
             nextTextField = textField
         }
-        nextTextField?.becomeFirstResponder()
+        if let textField = nextTextField as? DeletingTextField,
+            let nextIndex = textFields.firstIndex(of: textField)?.advanced(by: 1),
+            nextIndex < textFields.count {
+            let t = textFields[nextIndex]
+            t.becomeFirstResponder()
+        }
     }
     
 }
