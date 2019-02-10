@@ -19,6 +19,7 @@ open class OneTimeCodeViewController: UIViewController, StoryboardInstantiating 
     
     public var numberOfDigits: Int = 5 {
         didSet {
+            guard viewIfLoaded != nil else { return }
             oneTimeCodeEntryView.digits = numberOfDigits
         }
     }
