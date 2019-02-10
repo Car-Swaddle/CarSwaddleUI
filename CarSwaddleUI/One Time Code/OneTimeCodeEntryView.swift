@@ -40,6 +40,10 @@ open class OneTimeCodeEntryView: UIView {
         didSet { updateStackViewWithTextFields() }
     }
     
+    public var textFieldWidth: CGFloat? {
+        didSet { updateTextFieldWidths() }
+    }
+    
     open override func becomeFirstResponder() -> Bool {
         let result = super.becomeFirstResponder()
         textFields.first?.becomeFirstResponder()
@@ -83,6 +87,28 @@ open class OneTimeCodeEntryView: UIView {
             let textField = self.createTextField()
             stackView.addArrangedSubview(textField)
             textFields.append(textField)
+        }
+    }
+    
+    private var textFieldWidthConstraints: [UITextField: NSLayoutConstraint] = [:]
+    
+    private func updateTextFieldWidths() {
+        if let textFieldWidth = textFieldWidth {
+            for textField in textFields {
+                if let constraint = textFieldWidthConstraints[textField] {
+                    constraint.constant = textFieldWidth
+                } else {
+                    let constraint = textField.widthAnchor.constraint(equalToConstant: textFieldWidth)
+                    constraint.isActive = true
+                    textFieldWidthConstraints[textField] = constraint
+                }
+            }
+        } else {
+            for key in textFieldWidthConstraints.keys {
+                let constraint = textFieldWidthConstraints[key]
+                constraint?.isActive = false
+                textFieldWidthConstraints[key] = nil
+            }
         }
     }
     
