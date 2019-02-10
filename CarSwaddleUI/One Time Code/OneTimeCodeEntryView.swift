@@ -147,7 +147,8 @@ extension OneTimeCodeEntryView: UITextFieldDelegate {
     public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         let isPasted = string == UIPasteboard.general.string
         if isPasted {
-            textField.text = string
+//            textField.text = string
+            updateTextFieldsWith(string: string)
             return false
         } else {
             return true
