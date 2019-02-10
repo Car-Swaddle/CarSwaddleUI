@@ -17,7 +17,7 @@ public final class OneTimeCodeViewController: UIViewController, StoryboardInstan
     
     public weak var delegate: OneTimeCodeViewControllerDelegate?
     
-    public var numberOfDigits: Int = 4 {
+    public var numberOfDigits: Int = 5 {
         didSet {
             oneTimeCodeEntryView.digits = numberOfDigits
         }
@@ -33,7 +33,7 @@ public final class OneTimeCodeViewController: UIViewController, StoryboardInstan
         super.viewDidLoad()
         
         oneTimeCodeEntryView.digits = numberOfDigits
-        oneTimeCodeEntryView.textFieldWidth = 70
+        oneTimeCodeEntryView.textFieldWidth = 50
     }
     
     @IBAction private func didSelectResendVerificationCode() {
@@ -45,7 +45,9 @@ public final class OneTimeCodeViewController: UIViewController, StoryboardInstan
 extension OneTimeCodeViewController: OneTimeEntryViewDelegate {
     
     public func configureTextField(textField: DeletingTextField, view: OneTimeCodeEntryView) {
-        print("configure text field")
+        textField.layer.shadowColor = UIColor.black.cgColor
+        textField.layer.shadowOpacity = 0.2
+        textField.layer.shadowRadius = 3.0
     }
     
     public func codeDidChange(code: String, view: OneTimeCodeEntryView) {
