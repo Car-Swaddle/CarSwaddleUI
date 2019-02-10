@@ -29,7 +29,7 @@ open class OneTimeCodeEntryView: UIView {
         didSet { updateStackViewWithTextFields() }
     }
     
-    @IBInspectable public var textFieldBackgroundColor: UIColor = UIColor(hexString: "E7EBFF") {
+    @IBInspectable public var textFieldBackgroundColor: UIColor = .white {
         didSet { updateStackViewWithTextFields() }
     }
     

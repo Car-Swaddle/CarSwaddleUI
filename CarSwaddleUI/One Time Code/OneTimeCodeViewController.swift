@@ -48,6 +48,7 @@ extension OneTimeCodeViewController: OneTimeEntryViewDelegate {
         textField.layer.shadowColor = UIColor.black.cgColor
         textField.layer.shadowOpacity = 0.2
         textField.layer.shadowRadius = 3.0
+        textField.layer.shadowOffset = CGPoint(x: 1, y: 2)
     }
     
     public func codeDidChange(code: String, view: OneTimeCodeEntryView) {
