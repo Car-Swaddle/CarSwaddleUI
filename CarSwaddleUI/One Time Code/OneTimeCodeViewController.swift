@@ -24,6 +24,12 @@ open class OneTimeCodeViewController: UIViewController, StoryboardInstantiating 
         }
     }
     
+    public var phoneNumber: String = "" {
+        didSet {
+            verifyPhoneNumberDescriptionLabel.text = verifyPhoneNumberDescription
+        }
+    }
+    
     @IBOutlet public weak var verifyPhoneNumberTitleLabel: UILabel!
     @IBOutlet public weak var verifyPhoneNumberDescriptionLabel: UILabel!
     @IBOutlet public weak var resendCodeButton: UIButton!
@@ -39,6 +45,11 @@ open class OneTimeCodeViewController: UIViewController, StoryboardInstantiating 
     
     @IBAction private func didSelectResendVerificationCode() {
         delegate?.didSelectResendVerificationCode(viewController: self)
+    }
+    
+    private var verifyPhoneNumberDescription: String {
+        let formatString = NSLocalizedString("We've sent a verification code to %@. Please enter the code in the space below.", comment: "Verification code description")
+        return String(format: formatString, phoneNumber)
     }
     
 }
