@@ -18,67 +18,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yQy-X3-IE3">
-                                <rect key="frame" x="72.5" y="166" width="230" height="40"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="heg-1m-iZL" customClass="DeletingTextField" customModule="CarSwaddleUI" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="42.5" height="40"/>
-                                        <color key="backgroundColor" red="0.90588235294117647" green="0.92156862745098034" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" keyboardAppearance="light" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="one-time-code"/>
-                                        <connections>
-                                            <action selector="editingDidChange:" destination="gjo-RK-Mgr" eventType="editingChanged" id="fee-hM-46Q"/>
-                                            <outlet property="delegate" destination="gjo-RK-Mgr" id="dZo-fi-ODF"/>
-                                            <outlet property="deleteDelegate" destination="gjo-RK-Mgr" id="Nnm-ea-Gv2"/>
-                                        </connections>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FAj-Ru-I9J" customClass="DeletingTextField" customModule="CarSwaddleUI" customModuleProvider="target">
-                                        <rect key="frame" x="62.5" y="0.0" width="42.5" height="40"/>
-                                        <color key="backgroundColor" red="0.90702083719158744" green="0.92221606704187387" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" keyboardAppearance="light" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="one-time-code"/>
-                                        <connections>
-                                            <action selector="editingDidChange:" destination="gjo-RK-Mgr" eventType="editingChanged" id="lEk-mU-Yde"/>
-                                            <outlet property="delegate" destination="gjo-RK-Mgr" id="ebY-gz-gr5"/>
-                                            <outlet property="deleteDelegate" destination="gjo-RK-Mgr" id="yjq-yp-vuY"/>
-                                        </connections>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xJc-uy-wLl" customClass="DeletingTextField" customModule="CarSwaddleUI" customModuleProvider="target">
-                                        <rect key="frame" x="125" y="0.0" width="42.5" height="40"/>
-                                        <color key="backgroundColor" red="0.90702083719158744" green="0.92221606704187387" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" keyboardAppearance="light" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="one-time-code"/>
-                                        <connections>
-                                            <action selector="editingDidChange:" destination="gjo-RK-Mgr" eventType="editingChanged" id="Ufd-gD-Up0"/>
-                                            <outlet property="delegate" destination="gjo-RK-Mgr" id="efo-bh-Id4"/>
-                                            <outlet property="deleteDelegate" destination="gjo-RK-Mgr" id="v6h-Qq-zaM"/>
-                                        </connections>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gcA-PB-zwc" customClass="DeletingTextField" customModule="CarSwaddleUI" customModuleProvider="target">
-                                        <rect key="frame" x="187.5" y="0.0" width="42.5" height="40"/>
-                                        <color key="backgroundColor" red="0.90702083719158744" green="0.92221606704187387" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" keyboardAppearance="light" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="one-time-code"/>
-                                        <connections>
-                                            <action selector="editingDidChange:" destination="gjo-RK-Mgr" eventType="editingChanged" id="ar5-6b-JYh"/>
-                                            <outlet property="delegate" destination="gjo-RK-Mgr" id="4Xp-tC-x3k"/>
-                                            <outlet property="deleteDelegate" destination="gjo-RK-Mgr" id="WFs-dy-3rS"/>
-                                        </connections>
-                                    </textField>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="McT-IA-H9n"/>
-                                    <constraint firstAttribute="width" constant="230" id="U63-ts-xQj"/>
-                                </constraints>
-                            </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q36-y6-hFU" customClass="OneTimeCodeEntryView" customModule="CarSwaddleUI" customModuleProvider="target">
-                                <rect key="frame" x="69" y="245" width="237" height="50"/>
+                                <rect key="frame" x="69" y="156.5" width="237" height="45"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="XOO-La-mNe"/>
+                                    <constraint firstAttribute="height" constant="45" id="XOO-La-mNe"/>
                                     <constraint firstAttribute="width" constant="237" placeholder="YES" id="Ywd-yV-Hcc"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -96,23 +39,49 @@
                                     <outlet property="delegate" destination="gjo-RK-Mgr" id="yMn-wA-I3K"/>
                                 </connections>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please verify your phone number" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2a-LR-BU5">
+                                <rect key="frame" x="68.5" y="80" width="238.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ia0-YO-OeF">
+                                <rect key="frame" x="103" y="233" width="169" height="30"/>
+                                <state key="normal" title="Resend verification code"/>
+                                <connections>
+                                    <action selector="didSelectResendVerificationCode" destination="gjo-RK-Mgr" eventType="touchUpInside" id="Kel-tL-rje"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We've sent a verification code to 123-456-7890. Please enter the code in the space below." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHw-IQ-mBD">
+                                <rect key="frame" x="29" y="115" width="317.5" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.4233646168662567" blue="0.33116650926803293" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="yQy-X3-IE3" firstAttribute="top" secondItem="rah-t2-sSm" secondAttribute="top" constant="102" id="0x1-0f-BeG"/>
                             <constraint firstItem="q36-y6-hFU" firstAttribute="centerX" secondItem="rah-t2-sSm" secondAttribute="centerX" id="37R-sK-mAD"/>
-                            <constraint firstItem="q36-y6-hFU" firstAttribute="top" secondItem="yQy-X3-IE3" secondAttribute="bottom" constant="39" id="4ef-1x-ZvZ"/>
-                            <constraint firstItem="yQy-X3-IE3" firstAttribute="centerX" secondItem="rah-t2-sSm" secondAttribute="centerX" id="b4N-1K-j6v"/>
+                            <constraint firstItem="bHw-IQ-mBD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rah-t2-sSm" secondAttribute="leading" constant="8" id="6vX-MT-OTQ"/>
+                            <constraint firstItem="Ia0-YO-OeF" firstAttribute="centerX" secondItem="rah-t2-sSm" secondAttribute="centerX" id="75e-oE-j5S"/>
+                            <constraint firstItem="bHw-IQ-mBD" firstAttribute="centerX" secondItem="6rK-xY-oYn" secondAttribute="centerX" id="9Vf-3K-7rk"/>
+                            <constraint firstItem="V2a-LR-BU5" firstAttribute="centerX" secondItem="rah-t2-sSm" secondAttribute="centerX" id="CRd-qz-q2j"/>
+                            <constraint firstItem="V2a-LR-BU5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rah-t2-sSm" secondAttribute="leading" constant="16" id="Kqz-8p-U2f"/>
+                            <constraint firstItem="V2a-LR-BU5" firstAttribute="top" secondItem="rah-t2-sSm" secondAttribute="top" constant="16" id="OuK-jV-MM1"/>
+                            <constraint firstItem="bHw-IQ-mBD" firstAttribute="top" secondItem="V2a-LR-BU5" secondAttribute="bottom" constant="15.5" id="V4F-Of-G0m"/>
+                            <constraint firstItem="rah-t2-sSm" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="V2a-LR-BU5" secondAttribute="trailing" constant="15" id="fHw-C5-qIW"/>
+                            <constraint firstItem="rah-t2-sSm" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bHw-IQ-mBD" secondAttribute="trailing" constant="8" id="huh-BT-we5"/>
+                            <constraint firstItem="Ia0-YO-OeF" firstAttribute="top" secondItem="q36-y6-hFU" secondAttribute="bottom" constant="31.5" id="m6o-sr-dOb"/>
+                            <constraint firstItem="q36-y6-hFU" firstAttribute="top" secondItem="bHw-IQ-mBD" secondAttribute="bottom" constant="8" id="vcq-zs-Zt8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rah-t2-sSm"/>
                     </view>
                     <navigationItem key="navigationItem" id="QV8-LH-bPo"/>
                     <connections>
-                        <outlet property="firstLetterTextField" destination="heg-1m-iZL" id="UhG-4n-no4"/>
-                        <outlet property="fourthLetterTextField" destination="gcA-PB-zwc" id="DCx-QK-SFD"/>
                         <outlet property="oneTimeCodeEntryView" destination="q36-y6-hFU" id="VfU-IB-aC6"/>
-                        <outlet property="secondLetterTextField" destination="FAj-Ru-I9J" id="I8h-9W-jXN"/>
-                        <outlet property="thirdLetterTextField" destination="xJc-uy-wLl" id="xR7-rU-yFI"/>
+                        <outlet property="resendCodeButton" destination="Ia0-YO-OeF" id="5ib-mz-Hs3"/>
+                        <outlet property="verifyPhoneNumberDescriptionLabel" destination="bHw-IQ-mBD" id="Vip-sT-yTP"/>
+                        <outlet property="verifyPhoneNumberTitleLabel" destination="V2a-LR-BU5" id="a7r-j8-V5w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qQe-1p-TMe" userLabel="First Responder" sceneMemberID="firstResponder"/>

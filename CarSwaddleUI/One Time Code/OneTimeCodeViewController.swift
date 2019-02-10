@@ -10,120 +10,46 @@ import UIKit
 
 public protocol OneTimeCodeViewControllerDelegate: AnyObject {
     func codeDidChange(code: String, viewController: OneTimeCodeViewController)
+    func didSelectResendVerificationCode(viewController: OneTimeCodeViewController)
 }
 
 public final class OneTimeCodeViewController: UIViewController, StoryboardInstantiating {
     
     public weak var delegate: OneTimeCodeViewControllerDelegate?
     
-    
-    @IBOutlet public weak var oneTimeCodeEntryView: OneTimeCodeEntryView!
-    
-    @IBOutlet private weak var firstLetterTextField: DeletingTextField!
-    @IBOutlet private weak var secondLetterTextField: DeletingTextField!
-    @IBOutlet private weak var thirdLetterTextField: DeletingTextField!
-    @IBOutlet private weak var fourthLetterTextField: DeletingTextField!
-    
-    private var allTextFields: [DeletingTextField] {
-        return [firstLetterTextField, secondLetterTextField, thirdLetterTextField, fourthLetterTextField]
+    public var numberOfDigits: Int = 4 {
+        didSet {
+            oneTimeCodeEntryView.digits = numberOfDigits
+        }
     }
+    
+    @IBOutlet public weak var verifyPhoneNumberTitleLabel: UILabel!
+    @IBOutlet public weak var verifyPhoneNumberDescriptionLabel: UILabel!
+    @IBOutlet public weak var resendCodeButton: UIButton!
+    
+    @IBOutlet private weak var oneTimeCodeEntryView: OneTimeCodeEntryView!
     
     public override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupTextFields()
+        oneTimeCodeEntryView.digits = numberOfDigits
+        oneTimeCodeEntryView.textFieldWidth = 70
     }
     
-    private func setupTextFields() {
-        for textField in allTextFields {
-            textField.layer.cornerRadius = 3
-        }
-    }
-    
-    
-    @IBAction private func editingDidChange(_ textField: DeletingTextField) {
-        let textCount = textField.text?.count ?? 0
-        let textCountIs4 = textCount == 4
-        let textCountIs2 = textCount == 2
-        
-        
-        if textCountIs4 {
-            updateTextFieldsWith(string: textField.text ?? "")
-            fourthLetterTextField.becomeFirstResponder()
-        }
-        
-        if textCountIs2, let last = textField.text?.last {
-            textField.text = String(last)
-        }
-        
-        delegate?.codeDidChange(code: code, viewController: self)
-        guard let index = allTextFields.firstIndex(of: textField),
-            index < allTextFields.count,
-            textCountIs4 == false,
-            allTextFields[index].text?.isEmpty != true,
-            index.advanced(by: 1) < allTextFields.count else { return }
-        let nextIndex = index.advanced(by: 1)
-        allTextFields[nextIndex].becomeFirstResponder()
-    }
-    
-    private var code: String {
-        var code = ""
-        allTextFields.forEach { textField in
-            code += textField.text ?? ""
-        }
-        return code
-    }
-    
-}
-
-extension OneTimeCodeViewController: UITextFieldDelegate {
-    
-    private func updateTextFieldsWith(string: String) {
-        for (index, c) in string.enumerated() {
-            if index < allTextFields.count {
-                let textField = allTextFields[index]
-                textField.text = String(c)
-            }
-        }
-    }
-    
-}
-
-extension OneTimeCodeViewController: DeletingTextFieldDelegate {
-    
-    public func didDeleteBackward(_ textField: DeletingTextField) {
-        guard let originalIndex = allTextFields.firstIndex(of: textField),
-            originalIndex > 0 else { return }
-        let previousIndex = originalIndex.advanced(by: -1)
-        allTextFields[previousIndex].becomeFirstResponder()
+    @IBAction private func didSelectResendVerificationCode() {
+        delegate?.didSelectResendVerificationCode(viewController: self)
     }
     
 }
 
 extension OneTimeCodeViewController: OneTimeEntryViewDelegate {
+    
     public func configureTextField(textField: DeletingTextField, view: OneTimeCodeEntryView) {
         print("configure text field")
     }
     
-    
     public func codeDidChange(code: String, view: OneTimeCodeEntryView) {
-        print("bottom code change")
-    }
-    
-}
-
-
-@objc public protocol DeletingTextFieldDelegate: AnyObject {
-    func didDeleteBackward(_ textField: DeletingTextField)
-}
-
-public final class DeletingTextField: UITextField {
-    
-    @IBOutlet public weak var deleteDelegate: DeletingTextFieldDelegate?
-    
-    public override func deleteBackward() {
-        super.deleteBackward()
-        deleteDelegate?.didDeleteBackward(self)
+        delegate?.codeDidChange(code: code, viewController: self)
     }
     
 }

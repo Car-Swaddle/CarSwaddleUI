@@ -50,6 +50,7 @@
 		99F696A6220F3AF50021A719 /* OneTimeCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F696A5220F3AF50021A719 /* OneTimeCodeViewController.swift */; };
 		99F696A8220F3DE10021A719 /* OneTimeCodeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99F696A7220F3DE10021A719 /* OneTimeCodeViewController.storyboard */; };
 		99F696AA220F630F0021A719 /* OneTimeCodeEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F696A9220F630F0021A719 /* OneTimeCodeEntryView.swift */; };
+		99F696AC220FEB2B0021A719 /* DeletingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F696AB220FEB2B0021A719 /* DeletingTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		99F696A5220F3AF50021A719 /* OneTimeCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTimeCodeViewController.swift; sourceTree = "<group>"; };
 		99F696A7220F3DE10021A719 /* OneTimeCodeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OneTimeCodeViewController.storyboard; sourceTree = "<group>"; };
 		99F696A9220F630F0021A719 /* OneTimeCodeEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTimeCodeEntryView.swift; sourceTree = "<group>"; };
+		99F696AB220FEB2B0021A719 /* DeletingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletingTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +293,7 @@
 				99F696A5220F3AF50021A719 /* OneTimeCodeViewController.swift */,
 				99F696A7220F3DE10021A719 /* OneTimeCodeViewController.storyboard */,
 				99F696A9220F630F0021A719 /* OneTimeCodeEntryView.swift */,
+				99F696AB220FEB2B0021A719 /* DeletingTextField.swift */,
 			);
 			path = "One Time Code";
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 				995B9F212154B2CB0030A7CA /* NibStoryboardInstantiating.swift in Sources */,
 				99F696AA220F630F0021A719 /* OneTimeCodeEntryView.swift in Sources */,
 				99E66CBF21DDE4B100C6E3E1 /* AnimatedTransition.swift in Sources */,
+				99F696AC220FEB2B0021A719 /* DeletingTextField.swift in Sources */,
 				99E66CB721DDE41000C6E3E1 /* CGSizeExtension.swift in Sources */,
 				995B9F222154B2CB0030A7CA /* ReuseIdentifying.swift in Sources */,
 				99E66CAD21DDDC7600C6E3E1 /* CustomAlertController.swift in Sources */,
