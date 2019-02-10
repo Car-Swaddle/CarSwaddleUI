@@ -40,6 +40,12 @@ open class OneTimeCodeEntryView: UIView {
         didSet { updateStackViewWithTextFields() }
     }
     
+    open override func becomeFirstResponder() -> Bool {
+        let result = super.becomeFirstResponder()
+        textFields.first?.becomeFirstResponder()
+        return result
+    }
+    
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
