@@ -101,6 +101,10 @@ extension OneTimeCodeViewController: DeletingTextFieldDelegate {
 }
 
 extension OneTimeCodeViewController: OneTimeEntryViewDelegate {
+    public func configureTextField(textField: DeletingTextField, view: OneTimeCodeEntryView) {
+        print("configure text field")
+    }
+    
     
     public func codeDidChange(code: String, view: OneTimeCodeEntryView) {
         print("bottom code change")
