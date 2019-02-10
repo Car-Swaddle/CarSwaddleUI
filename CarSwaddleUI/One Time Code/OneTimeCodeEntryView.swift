@@ -155,11 +155,14 @@ extension OneTimeCodeEntryView: UITextFieldDelegate {
     
     private func updateTextFieldsWith(string: String) {
         textFields.forEach { $0.text = nil }
+        var nextTextField: UITextField?
         for (index, c) in string.enumerated() {
-            guard index < textFields.count else { continue }
-            textFields[index].text = String(c)
+            guard index < textFields.count else { break }
+            let textField = textFields[index]
+            textField.text = String(c)
+            nextTextField = textField
         }
-        textFields.last?.becomeFirstResponder()
+        nextTextField?.becomeFirstResponder()
     }
     
 }
