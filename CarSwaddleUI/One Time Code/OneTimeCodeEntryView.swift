@@ -145,7 +145,8 @@ open class OneTimeCodeEntryView: UIView {
 extension OneTimeCodeEntryView: UITextFieldDelegate {
     
     public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        if range.location != 0 && range.length > 1 {
+        let isPasted = string == UIPasteboard.general.string
+        if isPasted {
             textField.text = string
             return false
         } else {
