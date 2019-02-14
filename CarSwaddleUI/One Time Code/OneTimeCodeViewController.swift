@@ -26,6 +26,7 @@ open class OneTimeCodeViewController: UIViewController, StoryboardInstantiating 
     
     public var phoneNumber: String = "" {
         didSet {
+            guard viewIfLoaded != nil else { return }
             verifyPhoneNumberDescriptionLabel.text = verifyPhoneNumberDescription
         }
     }
