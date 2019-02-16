@@ -66,10 +66,10 @@ public extension UIImage {
         context.drawLinearGradient(gradient, start: CGPoint.zero, end: CGPoint(x: 0, y: size.height), options: CGGradientDrawingOptions())
         guard let image = UIGraphicsGetImageFromCurrentImageContext()?.cgImage else { return nil }
         self.init(cgImage: image)
-        defer { UIGraphicsEndImageContext() }
+        UIGraphicsEndImageContext()
     }
     
-}a
+}
 
 
 public struct GradientPoint {
