@@ -203,8 +203,8 @@ final public class LocationManager: NSObject {
     
     private func startRouteRequest(routeRequest: RouteRequest, finish: @escaping () -> Void) {
         requestRouteRequest(routeRequest) { [weak self] in
-            if !self.routeRequests.isEmpty {
-                self.routeRequests.removeLast()
+            if self?.routeRequests.isEmpty == false {
+                self?.routeRequests.removeLast()
             }
             guard let self = self, let nextRouteRequest = self.routeRequests.last else {
                 finish()
