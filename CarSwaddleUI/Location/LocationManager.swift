@@ -195,24 +195,22 @@ final public class LocationManager: NSObject {
     }
     
     public func queueRouteRequest(routeRequest: RouteRequest) {
+        routeRequests.insert(routeRequest, at: 0)
         if routeRequests.count == 0 {
-            routeRequests.insert(routeRequest, at: 0)
             startRouteRequest(routeRequest: routeRequest) { }
-        } else {
-            routeRequests.insert(routeRequest, at: 0)
         }
     }
     
     private func startRouteRequest(routeRequest: RouteRequest, finish: @escaping () -> Void) {
         requestRouteRequest(routeRequest) { [weak self] in
+            if !self.routeRequests.isEmpty {
+                self.routeRequests.removeLast()
+            }
             guard let self = self, let nextRouteRequest = self.routeRequests.last else {
                 finish()
                 return
             }
             self.startRouteRequest(routeRequest: nextRouteRequest) { }
-        }
-        if !routeRequests.isEmpty {
-            routeRequests.removeLast()
         }
     }
     
