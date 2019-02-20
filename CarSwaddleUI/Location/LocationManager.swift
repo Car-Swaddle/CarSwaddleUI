@@ -9,6 +9,7 @@
 import CoreLocation
 import Contacts
 import UIKit
+import MapKit
 
 
 extension Notification.Name {
@@ -145,6 +146,37 @@ final public class LocationManager: NSObject {
             self?.reverseGeocodeLocationCache[location] = placemark
         }
     }
+    
+    public func requestRouteBetween(startLocation: CLLocation, endLocation: CLLocation, completion: @escaping (_ route: MKRoute?, _ error: Error?) -> Void) {
+        placemark(from: startLocation) { [weak self] destinationPlacemark, error in
+            guard let destinationPlacemark = destinationPlacemark else {
+                completion(nil, error)
+                return
+            }
+            self?.placemark(from: endLocation) { sourcePlacemark, error in
+                guard let sourcePlacemark = sourcePlacemark, self == nil else {
+                    completion(nil, error)
+                    return
+                }
+                self?.requestDirections(sourcePlacemark: sourcePlacemark, destinationPlacemark: destinationPlacemark) { directions, error in
+                    completion(directions?.routes.first, error)
+                }
+            }
+        }
+    }
+    
+    private func requestDirections(sourcePlacemark: CLPlacemark, destinationPlacemark: CLPlacemark, completion: @escaping (_ route: MKDirections.Response?, _ error: Error?) -> Void) {
+        let request = MKDirections.Request()
+        request.source = MKMapItem(placemark: MKPlacemark(placemark: sourcePlacemark))
+        request.destination = MKMapItem(placemark: MKPlacemark(placemark: destinationPlacemark))
+        request.transportType = .automobile
+        request.requestsAlternateRoutes = false
+        let directions = MKDirections(request: request)
+        directions.calculate { directions, error in
+            completion(directions, error)
+        }
+    }
+    
     
     public func cachedPlacemark(for location: CLLocation) -> CLPlacemark? {
         return reverseGeocodeLocationCache[location]
