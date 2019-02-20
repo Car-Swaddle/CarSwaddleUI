@@ -195,9 +195,11 @@ final public class LocationManager: NSObject {
     }
     
     public func queueRouteRequest(routeRequest: RouteRequest) {
-        routeRequests.insert(routeRequest, at: 0)
         if routeRequests.count == 0 {
+            routeRequests.insert(routeRequest, at: 0)
             startRouteRequest(routeRequest: routeRequest) { }
+        } else {
+            routeRequests.insert(routeRequest, at: 0)
         }
     }
     
