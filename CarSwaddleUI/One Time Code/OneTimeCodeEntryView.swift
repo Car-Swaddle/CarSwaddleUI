@@ -17,6 +17,14 @@ open class OneTimeCodeEntryView: UIView {
     
     @IBOutlet public weak var delegate: OneTimeEntryViewDelegate?
     
+    @IBInspectable public var spaceCharacter: String = "-" {
+        didSet { updateStackViewWithTextFields() }
+    }
+    
+    @IBInspectable public var indexesPrecedingSpacer: [Int] = [] {
+        didSet { updateStackViewWithTextFields() }
+    }
+    
     @IBInspectable public var spacing: CGFloat = 20 {
         didSet { stackView.spacing = spacing }
     }
@@ -44,6 +52,8 @@ open class OneTimeCodeEntryView: UIView {
     public var textFieldWidth: CGFloat? {
         didSet { updateTextFieldWidths() }
     }
+    
+    private var spacerLabels: [UILabel] = []
     
     open override func becomeFirstResponder() -> Bool {
         let result = super.becomeFirstResponder()
@@ -82,12 +92,25 @@ open class OneTimeCodeEntryView: UIView {
             stackView.removeArrangedSubview(textField)
         }
         
+        for spacerLabel in spacerLabels {
+            stackView.removeArrangedSubview(spacerLabel)
+        }
+        
+        spacerLabels.removeAll()
         textFields.removeAll()
         
-        for _ in 0..<digits {
+        for index in 0..<digits {
             let textField = self.createTextField()
             stackView.addArrangedSubview(textField)
             textFields.append(textField)
+            
+            if indexesPrecedingSpacer.contains(index) {
+                let spacerLabel = UILabel()
+                spacerLabel.text = spaceCharacter
+                
+                stackView.addArrangedSubview(spacerLabel)
+                spacerLabels.append(spacerLabel)
+            }
         }
     }
     
