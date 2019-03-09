@@ -330,6 +330,7 @@ open class UnderlineTextField: UITextField {
     
     private func setup() {
         self.underlineView = addHairlineView(toSide: .bottom, color: underlineColor, size: 2.0, insets: UIEdgeInsets(top: 2, left: 0, bottom: 0, right: 0))
+        underlineView.isHidden = true
         borderStyle = .none
         
         NotificationCenter.default.addObserver(self, selector: #selector(UnderlineTextField.didBeginEditing), name: UITextField.textDidBeginEditingNotification, object: self)
