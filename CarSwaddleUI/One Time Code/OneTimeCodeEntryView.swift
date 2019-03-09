@@ -17,8 +17,12 @@ open class OneTimeCodeEntryView: UIView {
     
     @IBOutlet public weak var delegate: OneTimeEntryViewDelegate?
     
-    @IBInspectable public var spaceCharacter: String = "-" {
-        didSet { updateStackViewWithTextFields() }
+    @IBInspectable public var spacerText: String = "-" {
+        didSet {
+            spacerLabels.forEach {
+                $0.text = spacerText
+            }
+        }
     }
     
     @IBInspectable public var indexesPrecedingSpacer: [Int] = [] {
@@ -42,19 +46,43 @@ open class OneTimeCodeEntryView: UIView {
     }
     
     @IBInspectable public var textFieldTintColor: UIColor? {
-        didSet { updateStackViewWithTextFields() }
+        didSet {
+            textFields.forEach {
+                $0.tintColor = textFieldTintColor
+            }
+        }
     }
     
     @IBInspectable public var textFieldBackgroundColor: UIColor = .white {
-        didSet { updateStackViewWithTextFields() }
+        didSet {
+            textFields.forEach {
+                $0.backgroundColor = textFieldBackgroundColor
+            }
+        }
     }
     
     @IBInspectable public var textFieldCornerRadius: CGFloat = 3 {
-        didSet { updateStackViewWithTextFields() }
+        didSet {
+            textFields.forEach {
+                $0.layer.cornerRadius = textFieldCornerRadius
+            }
+        }
     }
     
     @IBInspectable public var textFieldFont: UIFont = UIFont.boldSystemFont(ofSize: 19) {
-        didSet { updateStackViewWithTextFields() }
+        didSet {
+            textFields.forEach {
+                $0.font = textFieldFont
+            }
+        }
+    }
+    
+    @IBInspectable public var underlineColor: UIColor = .black {
+        didSet {
+            textFields.forEach {
+                $0.underlineColor = underlineColor
+            }
+        }
     }
     
     public var textFieldWidth: CGFloat? {
@@ -124,7 +152,7 @@ open class OneTimeCodeEntryView: UIView {
             
             if indexesPrecedingSpacer.contains(index) {
                 let spacerLabel = UILabel()
-                spacerLabel.text = spaceCharacter
+                spacerLabel.text = spacerText
                 spacerLabel.font = spacerFont
                 spacerLabel.textAlignment = .center
                 
@@ -176,6 +204,7 @@ open class OneTimeCodeEntryView: UIView {
         textField.layer.cornerRadius = textFieldCornerRadius
         textField.backgroundColor = textFieldBackgroundColor
         textField.tintColor = textFieldTintColor
+        textField.underlineColor = underlineColor
         
         textField.adjustsFontSizeToFitWidth = true
         
@@ -187,6 +216,14 @@ open class OneTimeCodeEntryView: UIView {
         delegate?.configureTextField(textField: textField, view: self)
         
         return textField
+    }
+    
+    public func textFieldDidEndEditing(_ textField: UITextField) {
+        
+    }
+    
+    public func textFieldDidBeginEditing(_ textField: UITextField) {
+        
     }
     
     @objc private func editingDidChange(_ textField: DeletingTextField) {
@@ -264,6 +301,46 @@ extension OneTimeCodeEntryView: DeletingTextFieldDelegate {
             originalIndex > 0 else { return }
         let previousIndex = originalIndex.advanced(by: -1)
         textFields[previousIndex].becomeFirstResponder()
+    }
+    
+}
+
+
+
+open class UnderlineTextField: UITextField {
+    
+    @IBInspectable public var underlineColor: UIColor = .black {
+        didSet {
+            underlineView.backgroundColor = underlineColor
+        }
+    }
+    
+    public required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setup()
+    }
+    
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+        setup()
+    }
+    
+    private var underlineView: UIView!
+    
+    private func setup() {
+        self.underlineView = addHairlineView(toSide: .bottom, color: underlineColor, size: 2.0, insets: UIEdgeInsets(top: 2, left: 0, bottom: 0, right: 0))
+        borderStyle = .none
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(UnderlineTextField.didBeginEditing), name: UITextField.textDidBeginEditingNotification, object: self)
+        NotificationCenter.default.addObserver(self, selector: #selector(UnderlineTextField.didEndEditing), name: UITextField.textDidEndEditingNotification, object: self)
+    }
+    
+    @objc private func didBeginEditing() {
+        underlineView.isHidden = false
+    }
+    
+    @objc private func didEndEditing() {
+        underlineView.isHidden = false
     }
     
 }
