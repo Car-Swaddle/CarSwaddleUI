@@ -338,10 +338,19 @@ open class UnderlineTextField: UITextField {
     
     @objc private func didBeginEditing() {
         underlineView.isHidden = false
+        underlineView.alpha = 0.0
+        UIView.animate(withDuration: 0.25) {
+            self.underlineView.alpha = 1.0
+        }
     }
     
     @objc private func didEndEditing() {
-        underlineView.isHidden = false
+        UIView.animate(withDuration: 0.25, animations: {
+            self.underlineView.alpha = 0.0
+        }) { isFinished in
+            self.underlineView.alpha = 1.0
+            self.underlineView.isHidden = true
+        }
     }
     
 }
