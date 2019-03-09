@@ -132,6 +132,7 @@ open class OneTimeCodeEntryView: UIView {
                 spacerLabels.append(spacerLabel)
             }
         }
+        updateTextFieldWidths()
     }
     
     private var textFieldWidthConstraints: [UITextField: NSLayoutConstraint] = [:]
