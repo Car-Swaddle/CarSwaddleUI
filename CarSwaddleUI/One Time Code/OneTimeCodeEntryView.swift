@@ -273,7 +273,7 @@ extension OneTimeCodeEntryView: UITextFieldDelegate {
         }
     }
     
-    private func setText(_ string: String) {
+    public func setText(_ string: String) {
         textFields.forEach { $0.text = nil }
         var nextTextField: UITextField?
         for (index, c) in string.enumerated() {
