@@ -117,6 +117,7 @@ open class OneTimeCodeEntryView: UIView {
                 spacerLabel.text = spaceCharacter
                 spacerLabel.font = spacerFont
                 spacerLabel.textAlignment = .center
+                spacerLabel.widthAnchor.constraint(equalToConstant: 20).isActive = true
                 
                 stackView.addArrangedSubview(spacerLabel)
                 spacerLabels.append(spacerLabel)
