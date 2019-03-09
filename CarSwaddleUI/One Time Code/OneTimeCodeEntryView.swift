@@ -61,7 +61,7 @@ open class OneTimeCodeEntryView: UIView {
         didSet { updateTextFieldWidths() }
     }
     
-    public var isSecureTextEntry: Bool {
+    public var isSecureTextEntry: Bool = false {
         didSet {
             for textField in textFields {
                 textField.isSecureTextEntry = isSecureTextEntry
