@@ -61,6 +61,14 @@ open class OneTimeCodeEntryView: UIView {
         didSet { updateTextFieldWidths() }
     }
     
+    public var isSecureTextEntry: Bool {
+        didSet {
+            for textField in textFields {
+                textField.isSecureTextEntry = isSecureTextEntry
+            }
+        }
+    }
+    
     private var spacerLabels: [UILabel] = []
     
     open override func becomeFirstResponder() -> Bool {
