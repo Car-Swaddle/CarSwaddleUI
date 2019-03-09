@@ -25,6 +25,14 @@ open class OneTimeCodeEntryView: UIView {
         didSet { updateStackViewWithTextFields() }
     }
     
+    @IBInspectable public var spacerFont: UIFont = UIFont.boldSystemFont(ofSize: 14) {
+        didSet {
+            for spacerLabel in spacerLabels {
+                spacerLabel.font = spacerFont
+            }
+        }
+    }
+    
     @IBInspectable public var spacing: CGFloat = 20 {
         didSet { stackView.spacing = spacing }
     }
@@ -107,6 +115,8 @@ open class OneTimeCodeEntryView: UIView {
             if indexesPrecedingSpacer.contains(index) {
                 let spacerLabel = UILabel()
                 spacerLabel.text = spaceCharacter
+                spacerLabel.font = spacerFont
+                spacerLabel.textAlignment = .center
                 
                 stackView.addArrangedSubview(spacerLabel)
                 spacerLabels.append(spacerLabel)
