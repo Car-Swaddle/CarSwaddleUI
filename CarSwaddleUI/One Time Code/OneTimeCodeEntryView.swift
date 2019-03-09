@@ -106,10 +106,12 @@ open class OneTimeCodeEntryView: UIView {
     private func updateStackViewWithTextFields() {
         for textField in textFields {
             stackView.removeArrangedSubview(textField)
+            textField.removeFromSuperview()
         }
         
         for spacerLabel in spacerLabels {
             stackView.removeArrangedSubview(spacerLabel)
+            spacerLabel.removeFromSuperview()
         }
         
         spacerLabels.removeAll()
