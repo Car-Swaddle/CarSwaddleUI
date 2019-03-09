@@ -250,7 +250,7 @@ open class OneTimeCodeEntryView: UIView {
         textFields[nextIndex].becomeFirstResponder()
     }
     
-    private var code: String {
+    public var code: String {
         var code = ""
         textFields.forEach { textField in
             code += textField.text ?? ""
