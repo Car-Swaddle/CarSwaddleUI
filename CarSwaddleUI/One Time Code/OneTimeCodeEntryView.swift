@@ -117,7 +117,6 @@ open class OneTimeCodeEntryView: UIView {
                 spacerLabel.text = spaceCharacter
                 spacerLabel.font = spacerFont
                 spacerLabel.textAlignment = .center
-                spacerLabel.widthAnchor.constraint(equalToConstant: 20).isActive = true
                 
                 stackView.addArrangedSubview(spacerLabel)
                 spacerLabels.append(spacerLabel)
@@ -129,6 +128,7 @@ open class OneTimeCodeEntryView: UIView {
     
     private func updateTextFieldWidths() {
         if let textFieldWidth = textFieldWidth {
+            stackView.distribution = .fill
             for textField in textFields {
                 if let constraint = textFieldWidthConstraints[textField] {
                     constraint.constant = textFieldWidth
@@ -139,6 +139,7 @@ open class OneTimeCodeEntryView: UIView {
                 }
             }
         } else {
+            stackView.distribution = .fillEqually
             for key in textFieldWidthConstraints.keys {
                 let constraint = textFieldWidthConstraints[key]
                 constraint?.isActive = false
