@@ -8,7 +8,6 @@
 
 import Lottie
 
-
 private let lottieAnimationFileType = "json"
 
 public struct LottieAnimation {
@@ -22,7 +21,7 @@ public struct LottieAnimation {
     /// Call this to get the animation view for the current enum
     ///
     /// - Returns: LOTAnimationView
-    public func createAnimationView(bundle: Bundle = Bundle.main) -> LOTAnimationView {
+    public func createAnimationView(bundle: Bundle = Bundle.main) -> Lottie.LOTAnimationView {
         return LOTAnimationView(filePath: self.path(bundle: bundle))
     }
     

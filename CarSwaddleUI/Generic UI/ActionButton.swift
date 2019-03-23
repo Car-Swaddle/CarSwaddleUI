@@ -28,7 +28,6 @@ open class ActionButton: LoadingButton {
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
-        UIBarButtonItem.appearance()
     }
     
     public override init(frame: CGRect) {
