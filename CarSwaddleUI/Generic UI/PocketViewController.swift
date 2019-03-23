@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class PocketController: UINavigationController {
+public class PocketController: UINavigationController {
     
     public var bottomViewControllerHeight: CGFloat = 100 {
         didSet {
@@ -23,18 +23,18 @@ final class PocketController: UINavigationController {
         }
     }
     
-    init(rootViewController: UIViewController, bottomViewController: UIViewController) {
+    public init(rootViewController: UIViewController, bottomViewController: UIViewController) {
         super.init(rootViewController: rootViewController)
         self.bottomViewController = bottomViewController
         self.addBottomViewControllerIfNeeded()
     }
     
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+    public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
@@ -50,13 +50,13 @@ final class PocketController: UINavigationController {
         }
     }
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         
         addBottomContainerViewControllerIfNeeded()
     }
     
-    override func viewSafeAreaInsetsDidChange() {
+    public override func viewSafeAreaInsetsDidChange() {
         super.viewSafeAreaInsetsDidChange()
         if view.safeAreaInsets.bottom != suggestedSafeAreaInsetBottom {
             updateAdditionalSafeAreaInsets()
