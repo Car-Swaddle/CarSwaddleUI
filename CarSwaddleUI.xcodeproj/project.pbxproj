@@ -31,6 +31,7 @@
 		99BC8D292245F47A00B732E7 /* ContentInsetAdjuster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BC8D272245F47A00B732E7 /* ContentInsetAdjuster.swift */; };
 		99BC8D2B2245F49C00B732E7 /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BC8D2A2245F49C00B732E7 /* LoadingButton.swift */; };
 		99BC8D2D2245F4E300B732E7 /* LabeledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BC8D2C2245F4E300B732E7 /* LabeledTextField.swift */; };
+		99DC25F822469AAE009E0A15 /* PocketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC25F722469AAE009E0A15 /* PocketViewController.swift */; };
 		99E66CAA21DDDC7600C6E3E1 /* CustomAlertContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E66CA521DDDC7600C6E3E1 /* CustomAlertContentView.swift */; };
 		99E66CAB21DDDC7600C6E3E1 /* CustomAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E66CA621DDDC7600C6E3E1 /* CustomAlertControllerExtension.swift */; };
 		99E66CAD21DDDC7600C6E3E1 /* CustomAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E66CA821DDDC7600C6E3E1 /* CustomAlertController.swift */; };
@@ -95,6 +96,7 @@
 		99BC8D272245F47A00B732E7 /* ContentInsetAdjuster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentInsetAdjuster.swift; sourceTree = "<group>"; };
 		99BC8D2A2245F49C00B732E7 /* LoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
 		99BC8D2C2245F4E300B732E7 /* LabeledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledTextField.swift; sourceTree = "<group>"; };
+		99DC25F722469AAE009E0A15 /* PocketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketViewController.swift; sourceTree = "<group>"; };
 		99E66CA421DDDC7500C6E3E1 /* CustomAlertController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CustomAlertController.storyboard; sourceTree = "<group>"; };
 		99E66CA521DDDC7600C6E3E1 /* CustomAlertContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertContentView.swift; sourceTree = "<group>"; };
 		99E66CA621DDDC7600C6E3E1 /* CustomAlertControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertControllerExtension.swift; sourceTree = "<group>"; };
@@ -271,6 +273,7 @@
 				99E66D9F21E28F0100C6E3E1 /* TextCell.swift */,
 				99E66DA021E28F0100C6E3E1 /* TextCell.xib */,
 				99675CA121E8546E003C9D70 /* NavigationDelegateViewController.swift */,
+				99DC25F722469AAE009E0A15 /* PocketViewController.swift */,
 			);
 			path = "Generic UI";
 			sourceTree = "<group>";
@@ -460,6 +463,7 @@
 				992BFDC5220567AF006B64CC /* TweakStringValueCell.swift in Sources */,
 				99F69689220BD38E0021A719 /* LottieAnimation.swift in Sources */,
 				99E66CC021DDE4B100C6E3E1 /* TranslucentAnimatedTransition.swift in Sources */,
+				99DC25F822469AAE009E0A15 /* PocketViewController.swift in Sources */,
 				99E66CAB21DDDC7600C6E3E1 /* CustomAlertControllerExtension.swift in Sources */,
 				992BFDC7220567AF006B64CC /* TweakSelectViewController.swift in Sources */,
 			);
