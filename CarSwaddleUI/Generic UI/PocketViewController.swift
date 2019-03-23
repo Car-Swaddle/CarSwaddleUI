@@ -12,7 +12,7 @@ public class PocketController: UINavigationController {
     
     public var bottomViewControllerHeight: CGFloat = 100 {
         didSet {
-            heightConstraint?.constant = bottomViewControllerHeight
+            updateBottomViewControllerHeight()
             updateAdditionalSafeAreaInsets()
         }
     }
@@ -61,6 +61,7 @@ public class PocketController: UINavigationController {
         if view.safeAreaInsets.bottom != suggestedSafeAreaInsetBottom {
             updateAdditionalSafeAreaInsets()
         }
+        updateBottomViewControllerHeight()
     }
     
     private func updateAdditionalSafeAreaInsets() {
@@ -73,6 +74,10 @@ public class PocketController: UINavigationController {
     
     private var suggestedSafeAreaInsetBottom: CGFloat {
         return max(bottomViewControllerHeight - safeAreaInsetsMinusAdditional.bottom, view.safeAreaInsets.bottom)
+    }
+    
+    private func updateBottomViewControllerHeight() {
+        heightConstraint?.constant = bottomViewControllerHeight + view.safeAreaInsets.bottom
     }
     
     private var heightConstraint: NSLayoutConstraint?
@@ -124,6 +129,8 @@ public class PocketController: UINavigationController {
         bottomViewController.view.translatesAutoresizingMaskIntoConstraints = false
         bottomViewController.view.pinFrameToSuperViewBounds()
         bottomViewController.didMove(toParent: self)
+        
+        bottomViewControllerHeight = bottomViewController.view.intrinsicContentSize.height
     }
     
 }
