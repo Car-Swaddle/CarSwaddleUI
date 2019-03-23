@@ -21,8 +21,8 @@ public struct LottieAnimation {
     /// Call this to get the animation view for the current enum
     ///
     /// - Returns: LOTAnimationView
-    public func createAnimationView(bundle: Bundle = Bundle.main) -> Lottie.LOTAnimationView {
-        return LOTAnimationView(filePath: self.path(bundle: bundle))
+    public func createAnimationView(bundle: Bundle = Bundle.main) -> Lottie.AnimationView {
+        return AnimationView(filePath: self.path(bundle: bundle))
     }
     
     /// The path to the lottie animation in the main bundle.
