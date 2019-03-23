@@ -13,6 +13,10 @@ public extension UIFont {
     public struct FontType: Equatable {
         public var rawValue: String
         
+        public init(rawValue: String) {
+            self.rawValue = rawValue
+        }
+        
         public static let system: FontType = FontType(rawValue: ".SFUIText")
         
         public static func ==(lhs: FontType, rhs: FontType) -> Bool {
