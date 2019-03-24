@@ -12,8 +12,8 @@ public class PocketController: UINavigationController {
     
     public var bottomViewControllerHeight: CGFloat = 100 {
         didSet {
-            updateAdditionalSafeAreaInsets()
             updateBottomViewControllerHeight()
+            updateAdditionalSafeAreaInsets()
         }
     }
     
