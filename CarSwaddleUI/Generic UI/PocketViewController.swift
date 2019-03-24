@@ -44,9 +44,8 @@ public class PocketController: UINavigationController {
                 oldValue.willMove(toParent: nil)
                 oldValue.view.removeFromSuperview()
                 oldValue.removeFromParent()
-            } else {
-                addBottomViewControllerIfNeeded()
             }
+            addBottomViewControllerIfNeeded()
         }
     }
     
@@ -58,10 +57,11 @@ public class PocketController: UINavigationController {
     
     public override func viewSafeAreaInsetsDidChange() {
         super.viewSafeAreaInsetsDidChange()
+        
+        updateBottomViewControllerHeight()
         if view.safeAreaInsets.bottom != suggestedSafeAreaInsetBottom {
             updateAdditionalSafeAreaInsets()
         }
-        updateBottomViewControllerHeight()
     }
     
     public override var shouldAutomaticallyForwardAppearanceMethods: Bool {
@@ -134,7 +134,7 @@ public class PocketController: UINavigationController {
         bottomViewController.view.pinFrameToSuperViewBounds()
         bottomViewController.didMove(toParent: self)
         
-        bottomViewControllerHeight = bottomViewController.view.intrinsicContentSize.height
+//        bottomViewControllerHeight = bottomViewController.view.intrinsicContentSize.height
     }
     
 }
