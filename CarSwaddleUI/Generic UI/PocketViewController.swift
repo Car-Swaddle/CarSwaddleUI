@@ -81,7 +81,7 @@ public class PocketController: UINavigationController {
     }
     
     private func updateBottomViewControllerHeight() {
-        heightConstraint?.constant = bottomViewControllerHeight + view.safeAreaInsets.bottom
+        heightConstraint?.constant = bottomViewControllerHeight + additionalSafeAreaInsets.bottom
     }
     
     private var heightConstraint: NSLayoutConstraint?
