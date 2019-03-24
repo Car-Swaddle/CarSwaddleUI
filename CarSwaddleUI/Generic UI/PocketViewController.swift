@@ -11,7 +11,7 @@ import UIKit
 
 let effectStyle: UIBlurEffect.Style = .light
 
-final class PocketViewController: UINavigationController {
+final class PocketController: UINavigationController {
     
     public var bottomViewControllerHeight: CGFloat = 100 {
         didSet {
