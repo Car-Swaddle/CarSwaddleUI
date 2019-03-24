@@ -8,33 +8,35 @@
 
 import UIKit
 
-public class PocketController: UINavigationController {
+
+let effectStyle: UIBlurEffect.Style = .light
+
+final class PocketViewController: UINavigationController {
     
     public var bottomViewControllerHeight: CGFloat = 100 {
         didSet {
-            updateBottomViewControllerHeight()
+            heightConstraint?.constant = bottomViewControllerHeight + additionalSafeAreaInsets.bottom
             updateAdditionalSafeAreaInsets()
         }
     }
     
     public var effectStyle: UIBlurEffect.Style = .light {
         didSet {
-            blurView.effect = blurEffect
+            blurView.effect = blur
         }
     }
     
-    public init(rootViewController: UIViewController, bottomViewController: UIViewController) {
+    init(rootViewController: UIViewController, bottomViewController: UIViewController) {
         super.init(rootViewController: rootViewController)
         self.bottomViewController = bottomViewController
         self.addBottomViewControllerIfNeeded()
     }
     
-    public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        
     }
     
-    public required init?(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
@@ -49,23 +51,18 @@ public class PocketController: UINavigationController {
         }
     }
     
-    public override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         
         addBottomContainerViewControllerIfNeeded()
     }
     
-    public override func viewSafeAreaInsetsDidChange() {
+    override func viewSafeAreaInsetsDidChange() {
         super.viewSafeAreaInsetsDidChange()
         
-        updateBottomViewControllerHeight()
         if view.safeAreaInsets.bottom != suggestedSafeAreaInsetBottom {
             updateAdditionalSafeAreaInsets()
         }
-    }
-    
-    public override var shouldAutomaticallyForwardAppearanceMethods: Bool {
-        return true
     }
     
     private func updateAdditionalSafeAreaInsets() {
@@ -78,10 +75,6 @@ public class PocketController: UINavigationController {
     
     private var suggestedSafeAreaInsetBottom: CGFloat {
         return bottomViewControllerHeight - safeAreaInsetsMinusAdditional.bottom
-    }
-    
-    private func updateBottomViewControllerHeight() {
-        heightConstraint?.constant = bottomViewControllerHeight + additionalSafeAreaInsets.bottom
     }
     
     private var heightConstraint: NSLayoutConstraint?
@@ -108,23 +101,31 @@ public class PocketController: UINavigationController {
         
         bottomContainerViewController.view.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         bottomContainerViewController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        
         bottomContainerViewController.didMove(toParent: self)
         bottomContainerViewController.view.backgroundColor = .clear
         
-        bottomContainerViewController.view.addSubview(blurView)
-        blurView.pinFrameToSuperViewBounds()
+        let blurEffect = UIBlurEffect(style: effectStyle)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        bottomContainerViewController.view.addSubview(blurEffectView)
+        
+        blurEffectView.pinFrameToSuperViewBounds()
     }
     
     private lazy var blurView: UIVisualEffectView = {
-        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        let blurEffectView = UIVisualEffectView(effect: blur)
         return blurEffectView
     }()
     
-    private var blurEffect: UIBlurEffect {
+    private lazy var blur: UIBlurEffect = {
         return UIBlurEffect(style: effectStyle)
+    }()
+    
+    override var shouldAutomaticallyForwardAppearanceMethods: Bool {
+        return true
     }
     
-    private func addBottomViewControllerIfNeeded() {
+    func addBottomViewControllerIfNeeded() {
         guard let bottomViewController = bottomViewController else { return }
         bottomContainerViewController.addChild(bottomViewController)
         
@@ -133,11 +134,10 @@ public class PocketController: UINavigationController {
         bottomViewController.view.translatesAutoresizingMaskIntoConstraints = false
         bottomViewController.view.pinFrameToSuperViewBounds()
         bottomViewController.didMove(toParent: self)
-        
-//        bottomViewControllerHeight = bottomViewController.view.intrinsicContentSize.height
     }
     
 }
+
 
 
 public extension UIViewController {
