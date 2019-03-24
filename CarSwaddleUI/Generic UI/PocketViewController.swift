@@ -64,6 +64,10 @@ public class PocketController: UINavigationController {
         updateBottomViewControllerHeight()
     }
     
+    public override var shouldAutomaticallyForwardAppearanceMethods: Bool {
+        return true
+    }
+    
     private func updateAdditionalSafeAreaInsets() {
         additionalSafeAreaInsets = suggestedAdditionalSafeAreaInsets
     }
@@ -73,7 +77,7 @@ public class PocketController: UINavigationController {
     }
     
     private var suggestedSafeAreaInsetBottom: CGFloat {
-        return max(bottomViewControllerHeight - safeAreaInsetsMinusAdditional.bottom, view.safeAreaInsets.bottom)
+        return bottomViewControllerHeight - safeAreaInsetsMinusAdditional.bottom
     }
     
     private func updateBottomViewControllerHeight() {
