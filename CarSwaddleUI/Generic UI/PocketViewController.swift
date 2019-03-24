@@ -11,7 +11,7 @@ import UIKit
 
 let effectStyle: UIBlurEffect.Style = .light
 
-final class PocketController: UINavigationController {
+public final class PocketController: UINavigationController {
     
     public var bottomViewControllerHeight: CGFloat = 100 {
         didSet {
@@ -26,17 +26,17 @@ final class PocketController: UINavigationController {
         }
     }
     
-    init(rootViewController: UIViewController, bottomViewController: UIViewController) {
+    public init(rootViewController: UIViewController, bottomViewController: UIViewController) {
         super.init(rootViewController: rootViewController)
         self.bottomViewController = bottomViewController
         self.addBottomViewControllerIfNeeded()
     }
     
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+    public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
@@ -51,13 +51,13 @@ final class PocketController: UINavigationController {
         }
     }
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         
         addBottomContainerViewControllerIfNeeded()
     }
     
-    override func viewSafeAreaInsetsDidChange() {
+    public override func viewSafeAreaInsetsDidChange() {
         super.viewSafeAreaInsetsDidChange()
         
         if view.safeAreaInsets.bottom != suggestedSafeAreaInsetBottom {
@@ -121,11 +121,11 @@ final class PocketController: UINavigationController {
         return UIBlurEffect(style: effectStyle)
     }()
     
-    override var shouldAutomaticallyForwardAppearanceMethods: Bool {
+    public override var shouldAutomaticallyForwardAppearanceMethods: Bool {
         return true
     }
     
-    func addBottomViewControllerIfNeeded() {
+    private func addBottomViewControllerIfNeeded() {
         guard let bottomViewController = bottomViewController else { return }
         bottomContainerViewController.addChild(bottomViewController)
         
