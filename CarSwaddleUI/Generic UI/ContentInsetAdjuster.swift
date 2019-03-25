@@ -16,6 +16,8 @@ public protocol ContentInsetAdjusterDelegate: AnyObject {
 
 public class ContentInsetAdjuster {
     
+    public static var defaultBottomOffset: CGFloat = 0
+    
     public init(tableView: UITableView? = nil, actionButton: ActionButton? = nil) {
         self.tableView = tableView
         self.actionButton = actionButton
@@ -117,7 +119,7 @@ public class ContentInsetAdjuster {
         var keyboardHeight = keyboardFrame.cgRectValue.height
         keyboardHeight = keyboardHeight - (UIApplication.shared.keyWindow?.safeAreaInsets.bottom ?? 0)
         if includeTabBarInKeyboardCalculation {
-            let bottomOffset: CGFloat = (delegate?.bottomOffset(adjuster: self) ?? 0)
+            let bottomOffset: CGFloat = (delegate?.bottomOffset(adjuster: self) ?? ContentInsetAdjuster.defaultBottomOffset)
             keyboardHeight = keyboardHeight - bottomOffset + (UIApplication.shared.keyWindow?.safeAreaInsets.bottom ?? 0)
         }
         
