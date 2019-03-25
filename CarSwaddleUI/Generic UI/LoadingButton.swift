@@ -10,7 +10,7 @@ import UIKit
 
 open class LoadingButton: UIButton {
     
-    var isLoading: Bool = false {
+    open var isLoading: Bool = false {
         didSet {
             guard oldValue != isLoading else { return }
             if isLoading {
@@ -22,7 +22,7 @@ open class LoadingButton: UIButton {
         }
     }
     
-    var indicatorViewStyle: UIActivityIndicatorView.Style = .gray {
+    open var indicatorViewStyle: UIActivityIndicatorView.Style = .gray {
         didSet {
             spinner.style = indicatorViewStyle
         }
