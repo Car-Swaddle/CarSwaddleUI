@@ -39,7 +39,7 @@ public extension UIFont {
 }
 
 public extension UIFontDescriptor {
-    public var monospacedDigitFontDescriptor: UIFontDescriptor {
+    public var monospacedFontDescriptor: UIFontDescriptor {
         let fontDescriptorFeatureSettings = [[UIFontDescriptor.FeatureKey.featureIdentifier: kNumberSpacingType,
                                               UIFontDescriptor.FeatureKey.typeIdentifier: kMonospacedNumbersSelector]]
         
