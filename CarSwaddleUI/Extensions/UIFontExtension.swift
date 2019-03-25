@@ -38,8 +38,8 @@ public extension UIFont {
     
 }
 
-extension UIFontDescriptor {
-    var monospacedDigitFontDescriptor: UIFontDescriptor {
+public extension UIFontDescriptor {
+    public var monospacedDigitFontDescriptor: UIFontDescriptor {
         let fontDescriptorFeatureSettings = [[UIFontDescriptor.FeatureKey.featureIdentifier: kNumberSpacingType,
                                               UIFontDescriptor.FeatureKey.typeIdentifier: kMonospacedNumbersSelector]]
         
