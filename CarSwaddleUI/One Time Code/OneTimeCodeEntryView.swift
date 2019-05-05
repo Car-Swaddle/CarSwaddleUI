@@ -183,7 +183,8 @@ open class OneTimeCodeEntryView: UIView {
                 if let constraint = textFieldWidthConstraints[textField] {
                     constraint.constant = textFieldWidth
                 } else {
-                    let constraint = textField.widthAnchor.constraint(equalToConstant: textFieldWidth)
+                    guard let superview = textField.superview else { continue }
+                    let constraint = superview.widthAnchor.constraint(equalToConstant: textFieldWidth)
                     constraint.isActive = true
                     textFieldWidthConstraints[textField] = constraint
                 }
