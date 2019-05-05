@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q36-y6-hFU" customClass="OneTimeCodeEntryView" customModule="CarSwaddleUI" customModuleProvider="target">
-                                <rect key="frame" x="69" y="156.5" width="237" height="45"/>
+                                <rect key="frame" x="69" y="181" width="237" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="XOO-La-mNe"/>
                                     <constraint firstAttribute="width" constant="237" placeholder="YES" id="Ywd-yV-Hcc"/>
@@ -42,14 +42,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ia0-YO-OeF">
-                                <rect key="frame" x="103" y="233" width="169" height="30"/>
+                                <rect key="frame" x="103" y="257.5" width="169" height="30"/>
                                 <state key="normal" title="Resend verification code"/>
                                 <connections>
                                     <action selector="didSelectResendVerificationCode" destination="gjo-RK-Mgr" eventType="touchUpInside" id="Kel-tL-rje"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We've sent a verification code to 123-456-7890. Please enter the code in the space below." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHw-IQ-mBD">
-                                <rect key="frame" x="29" y="115" width="317.5" height="33.5"/>
+                                <rect key="frame" x="29" y="115.5" width="317.5" height="33.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -64,11 +64,11 @@
                             <constraint firstItem="V2a-LR-BU5" firstAttribute="centerX" secondItem="rah-t2-sSm" secondAttribute="centerX" id="CRd-qz-q2j"/>
                             <constraint firstItem="V2a-LR-BU5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rah-t2-sSm" secondAttribute="leading" constant="16" id="Kqz-8p-U2f"/>
                             <constraint firstItem="V2a-LR-BU5" firstAttribute="top" secondItem="rah-t2-sSm" secondAttribute="top" constant="16" id="OuK-jV-MM1"/>
-                            <constraint firstItem="bHw-IQ-mBD" firstAttribute="top" secondItem="V2a-LR-BU5" secondAttribute="bottom" constant="15.5" id="V4F-Of-G0m"/>
+                            <constraint firstItem="bHw-IQ-mBD" firstAttribute="top" secondItem="V2a-LR-BU5" secondAttribute="bottom" constant="16" id="V4F-Of-G0m"/>
                             <constraint firstItem="rah-t2-sSm" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="V2a-LR-BU5" secondAttribute="trailing" constant="15" id="fHw-C5-qIW"/>
                             <constraint firstItem="rah-t2-sSm" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bHw-IQ-mBD" secondAttribute="trailing" constant="8" id="huh-BT-we5"/>
                             <constraint firstItem="Ia0-YO-OeF" firstAttribute="top" secondItem="q36-y6-hFU" secondAttribute="bottom" constant="31.5" id="m6o-sr-dOb"/>
-                            <constraint firstItem="q36-y6-hFU" firstAttribute="top" secondItem="bHw-IQ-mBD" secondAttribute="bottom" constant="8" id="vcq-zs-Zt8"/>
+                            <constraint firstItem="q36-y6-hFU" firstAttribute="top" secondItem="bHw-IQ-mBD" secondAttribute="bottom" constant="32" id="vcq-zs-Zt8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rah-t2-sSm"/>
                     </view>
