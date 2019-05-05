@@ -42,7 +42,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ia0-YO-OeF">
-                                <rect key="frame" x="103" y="257.5" width="169" height="30"/>
+                                <rect key="frame" x="103" y="274" width="169" height="30"/>
                                 <state key="normal" title="Resend verification code"/>
                                 <connections>
                                     <action selector="didSelectResendVerificationCode" destination="gjo-RK-Mgr" eventType="touchUpInside" id="Kel-tL-rje"/>
@@ -54,6 +54,13 @@
                                 <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNL-mZ-3QG">
+                                <rect key="frame" x="110.5" y="317.5" width="154" height="30"/>
+                                <state key="normal" title="Update phone number"/>
+                                <connections>
+                                    <action selector="tapUpdatePhoneNumber" destination="gjo-RK-Mgr" eventType="touchUpInside" id="YCC-a5-cgv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -61,13 +68,15 @@
                             <constraint firstItem="bHw-IQ-mBD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rah-t2-sSm" secondAttribute="leading" constant="8" id="6vX-MT-OTQ"/>
                             <constraint firstItem="Ia0-YO-OeF" firstAttribute="centerX" secondItem="rah-t2-sSm" secondAttribute="centerX" id="75e-oE-j5S"/>
                             <constraint firstItem="bHw-IQ-mBD" firstAttribute="centerX" secondItem="6rK-xY-oYn" secondAttribute="centerX" id="9Vf-3K-7rk"/>
+                            <constraint firstItem="tNL-mZ-3QG" firstAttribute="centerX" secondItem="rah-t2-sSm" secondAttribute="centerX" id="AZz-ts-TKD"/>
                             <constraint firstItem="V2a-LR-BU5" firstAttribute="centerX" secondItem="rah-t2-sSm" secondAttribute="centerX" id="CRd-qz-q2j"/>
                             <constraint firstItem="V2a-LR-BU5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rah-t2-sSm" secondAttribute="leading" constant="16" id="Kqz-8p-U2f"/>
                             <constraint firstItem="V2a-LR-BU5" firstAttribute="top" secondItem="rah-t2-sSm" secondAttribute="top" constant="16" id="OuK-jV-MM1"/>
                             <constraint firstItem="bHw-IQ-mBD" firstAttribute="top" secondItem="V2a-LR-BU5" secondAttribute="bottom" constant="16" id="V4F-Of-G0m"/>
                             <constraint firstItem="rah-t2-sSm" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="V2a-LR-BU5" secondAttribute="trailing" constant="15" id="fHw-C5-qIW"/>
+                            <constraint firstItem="tNL-mZ-3QG" firstAttribute="top" secondItem="Ia0-YO-OeF" secondAttribute="bottom" constant="13.5" id="gfH-fB-nfh"/>
                             <constraint firstItem="rah-t2-sSm" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bHw-IQ-mBD" secondAttribute="trailing" constant="8" id="huh-BT-we5"/>
-                            <constraint firstItem="Ia0-YO-OeF" firstAttribute="top" secondItem="q36-y6-hFU" secondAttribute="bottom" constant="31.5" id="m6o-sr-dOb"/>
+                            <constraint firstItem="Ia0-YO-OeF" firstAttribute="top" secondItem="q36-y6-hFU" secondAttribute="bottom" constant="48" id="m6o-sr-dOb"/>
                             <constraint firstItem="q36-y6-hFU" firstAttribute="top" secondItem="bHw-IQ-mBD" secondAttribute="bottom" constant="32" id="vcq-zs-Zt8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rah-t2-sSm"/>
@@ -76,6 +85,7 @@
                     <connections>
                         <outlet property="oneTimeCodeEntryView" destination="q36-y6-hFU" id="VfU-IB-aC6"/>
                         <outlet property="resendCodeButton" destination="Ia0-YO-OeF" id="5ib-mz-Hs3"/>
+                        <outlet property="updatePhoneNumberButton" destination="tNL-mZ-3QG" id="gpU-bu-06E"/>
                         <outlet property="verifyPhoneNumberDescriptionLabel" destination="bHw-IQ-mBD" id="Vip-sT-yTP"/>
                         <outlet property="verifyPhoneNumberTitleLabel" destination="V2a-LR-BU5" id="a7r-j8-V5w"/>
                     </connections>
