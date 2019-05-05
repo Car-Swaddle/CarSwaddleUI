@@ -131,7 +131,7 @@ open class OneTimeCodeEntryView: UIView {
             wrapperView.layer.shadowRadius = 4
             wrapperView.layer.shadowOpacity = 0.2
             
-            stackView.addArrangedSubview(textField)
+            stackView.addArrangedSubview(wrapperView)
             textFields.append(textField)
             
             if indexesPrecedingSpacer.contains(index) {
