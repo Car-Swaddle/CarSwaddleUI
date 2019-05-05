@@ -211,7 +211,7 @@ open class OneTimeCodeEntryView: UIView {
         
         textField.tintColor = textFieldTintColor
         textField.underlineColor = underlineColor
-        textField.layer.masksToBounds = true
+//        textField.layer.masksToBounds = true
         
         textField.adjustsFontSizeToFitWidth = true
         
