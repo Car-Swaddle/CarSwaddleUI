@@ -147,7 +147,18 @@ open class OneTimeCodeEntryView: UIView {
         
         for index in 0..<digits {
             let textField = self.createTextField()
-            stackView.addArrangedSubview(textField)
+            let wrapperView = UIView()
+            wrapperView.translatesAutoresizingMaskIntoConstraints = false
+            wrapperView.addSubview(textField)
+            textField.pinFrameToSuperViewBounds()
+            
+            wrapperView.layer.cornerRadius = textFieldCornerRadius
+            wrapperView.layer.shadowColor = UIColor.black.cgColor
+            wrapperView.layer.shadowOffset = CGSize(width: 2, height: 2)
+            wrapperView.layer.shadowRadius = 4
+            wrapperView.layer.shadowOpacity = 0.2
+            
+            stackView.addArrangedSubview(wrapperView)
             textFields.append(textField)
             
             if indexesPrecedingSpacer.contains(index) {
@@ -203,14 +214,9 @@ open class OneTimeCodeEntryView: UIView {
         textField.font = textFieldFont
         textField.layer.cornerRadius = textFieldCornerRadius
         textField.backgroundColor = textFieldBackgroundColor
-        
-        textField.layer.shadowColor = UIColor.black.cgColor
-        textField.layer.shadowOffset = CGSize(width: 2, height: 2)
-        textField.layer.shadowRadius = 4
-        textField.layer.shadowOpacity = 0.2
-        
         textField.tintColor = textFieldTintColor
         textField.underlineColor = underlineColor
+        textField.layer.masksToBounds = true
         
         textField.adjustsFontSizeToFitWidth = true
         
