@@ -147,18 +147,18 @@ open class OneTimeCodeEntryView: UIView {
         
         for index in 0..<digits {
             let textField = self.createTextField()
-            let wrapperView = UIView()
-            wrapperView.translatesAutoresizingMaskIntoConstraints = false
-            wrapperView.addSubview(textField)
-            textField.pinFrameToSuperViewBounds()
+//            let wrapperView = UIView()
+//            wrapperView.translatesAutoresizingMaskIntoConstraints = false
+//            wrapperView.addSubview(textField)
+//            textField.pinFrameToSuperViewBounds()
             
-            wrapperView.layer.cornerRadius = textFieldCornerRadius
-            wrapperView.layer.shadowColor = UIColor.black.cgColor
-            wrapperView.layer.shadowOffset = CGSize(width: 2, height: 2)
-            wrapperView.layer.shadowRadius = 4
-            wrapperView.layer.shadowOpacity = 0.2
+//            wrapperView.layer.cornerRadius = textFieldCornerRadius
+//            wrapperView.layer.shadowColor = UIColor.black.cgColor
+//            wrapperView.layer.shadowOffset = CGSize(width: 2, height: 2)
+//            wrapperView.layer.shadowRadius = 4
+//            wrapperView.layer.shadowOpacity = 0.2
             
-            stackView.addArrangedSubview(wrapperView)
+            stackView.addArrangedSubview(textField)
             textFields.append(textField)
             
             if indexesPrecedingSpacer.contains(index) {
@@ -183,8 +183,7 @@ open class OneTimeCodeEntryView: UIView {
                 if let constraint = textFieldWidthConstraints[textField] {
                     constraint.constant = textFieldWidth
                 } else {
-                    guard let superview = textField.superview else { continue }
-                    let constraint = superview.widthAnchor.constraint(equalToConstant: textFieldWidth)
+                    let constraint = textField.widthAnchor.constraint(equalToConstant: textFieldWidth)
                     constraint.isActive = true
                     textFieldWidthConstraints[textField] = constraint
                 }
