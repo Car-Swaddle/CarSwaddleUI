@@ -179,7 +179,7 @@ public final class LabeledTextField: UIView {
     }
     
     @objc private func textDidChange() {
-        updateLabelFontForCurrentText()
+//        updateLabelFontForCurrentText()
     }
     
     public func updateLabelFontForCurrentText() {
