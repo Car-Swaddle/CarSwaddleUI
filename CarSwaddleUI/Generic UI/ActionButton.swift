@@ -66,7 +66,7 @@ open class ActionButton: LoadingButton {
     }
     
     private func updateBackgroundColor() {
-        backgroundColor = defaultBackgroundColor
+        backgroundColor = backgroundColorForCurrentState
     }
     
     private func updateTitleFont() {
