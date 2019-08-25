@@ -26,6 +26,7 @@ public final class LabeledTextField: UIView {
         let containerView = UIStackView()
         containerView.translatesAutoresizingMaskIntoConstraints = false
         containerView.spacing = 8
+        containerView.alignment = .leading
         return containerView
     }()
     
@@ -138,14 +139,16 @@ public final class LabeledTextField: UIView {
         textFieldContainerView.addArrangedSubview(prefixTextLabel)
         textFieldContainerView.addArrangedSubview(textField)
         
+        prefixTextLabel.setContentHuggingPriority(.init(rawValue: 900), for: .horizontal)
+        
         textFieldContainerView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         textFieldContainerView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         textFieldContainerView.topAnchor.constraint(equalTo: topAnchor).isActive = true
         
 //        textField.leadingAnchor.constraint(equalTo: textFieldContainerView.leadingAnchor, constant: 8).isActive = true
 //        textField.trailingAnchor.constraint(equalTo: textFieldContainerView.trailingAnchor, constant: -8).isActive = true
-        textField.topAnchor.constraint(equalTo: textFieldContainerView.topAnchor, constant: 8).isActive = true
-        textField.bottomAnchor.constraint(equalTo: textFieldContainerView.bottomAnchor, constant: -8).isActive = true
+//        textField.topAnchor.constraint(equalTo: textFieldContainerView.topAnchor, constant: 8).isActive = true
+//        textField.bottomAnchor.constraint(equalTo: textFieldContainerView.bottomAnchor, constant: -8).isActive = true
         
         addSubview(label)
         
