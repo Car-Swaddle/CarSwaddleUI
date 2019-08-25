@@ -28,6 +28,10 @@ open class TableViewController: UIViewController, UITableViewDataSource {
     
     public struct Section {
         let rows: [TableViewControllerRow]
+        
+        public init(rows: [TableViewControllerRow]) {
+            self.rows = rows
+        }
     }
     
     public func setSchema(newSchema: [Section], animated: Bool) {
