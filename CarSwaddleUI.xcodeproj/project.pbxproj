@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9905FF64231266BB00DFBCB9 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9905FF63231266BB00DFBCB9 /* TableViewController.swift */; };
+		9905FF662312677700DFBCB9 /* TableButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9905FF652312677700DFBCB9 /* TableButtonViewController.swift */; };
 		9912CD8F216C6F3A0006FDDF /* HorizontalSlideTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9912CD8E216C6F3A0006FDDF /* HorizontalSlideTransition.swift */; };
 		9912CD98216C75F70006FDDF /* UIAlertControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9912CD97216C75F70006FDDF /* UIAlertControllerExtensions.swift */; };
 		9912CD9A216C76260006FDDF /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9912CD99216C76260006FDDF /* UIViewControllerExtension.swift */; };
@@ -69,6 +71,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9905FF63231266BB00DFBCB9 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		9905FF652312677700DFBCB9 /* TableButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableButtonViewController.swift; sourceTree = "<group>"; };
 		9912CD8E216C6F3A0006FDDF /* HorizontalSlideTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalSlideTransition.swift; sourceTree = "<group>"; };
 		9912CD97216C75F70006FDDF /* UIAlertControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtensions.swift; sourceTree = "<group>"; };
 		9912CD99216C76260006FDDF /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
@@ -282,6 +286,8 @@
 				99E66DA021E28F0100C6E3E1 /* TextCell.xib */,
 				99675CA121E8546E003C9D70 /* NavigationDelegateViewController.swift */,
 				99DC25F722469AAE009E0A15 /* PocketViewController.swift */,
+				9905FF63231266BB00DFBCB9 /* TableViewController.swift */,
+				9905FF652312677700DFBCB9 /* TableButtonViewController.swift */,
 			);
 			path = "Generic UI";
 			sourceTree = "<group>";
@@ -450,6 +456,7 @@
 				995B9F222154B2CB0030A7CA /* ReuseIdentifying.swift in Sources */,
 				99E66CAD21DDDC7600C6E3E1 /* CustomAlertController.swift in Sources */,
 				99F027752184533D005FEFC7 /* LocationManager.swift in Sources */,
+				9905FF64231266BB00DFBCB9 /* TableViewController.swift in Sources */,
 				9912CD9A216C76260006FDDF /* UIViewControllerExtension.swift in Sources */,
 				99F696A6220F3AF50021A719 /* OneTimeCodeViewController.swift in Sources */,
 				99BC8D282245F47A00B732E7 /* ActionButton.swift in Sources */,
@@ -466,6 +473,7 @@
 				9912CD8F216C6F3A0006FDDF /* HorizontalSlideTransition.swift in Sources */,
 				99E66CB321DDDFD100C6E3E1 /* ArrayExtension.swift in Sources */,
 				99E66CAF21DDDDB700C6E3E1 /* UIFontExtension.swift in Sources */,
+				9905FF662312677700DFBCB9 /* TableButtonViewController.swift in Sources */,
 				99675CA221E8546E003C9D70 /* NavigationDelegateViewController.swift in Sources */,
 				992BFDCC220567AF006B64CC /* TweakViewController.swift in Sources */,
 				992BFDC5220567AF006B64CC /* TweakStringValueCell.swift in Sources */,
