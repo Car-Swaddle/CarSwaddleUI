@@ -111,7 +111,7 @@ public final class LabeledTextField: UIView {
         let containerView = UIStackView()
         containerView.translatesAutoresizingMaskIntoConstraints = false
         containerView.spacing = 8
-        containerView.alignment = .leading
+        containerView.alignment = UIStackView.Alignment.center
         return containerView
     }()
     
