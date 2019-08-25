@@ -22,11 +22,13 @@ public final class LabeledTextField: UIView {
         return label
     }()
     
-    lazy public var textFieldContainerView: UIStackView = {
-        let containerView = UIStackView()
+    
+    
+    lazy public var textFieldContainerView: UIView = {
+        let containerView = UIView()
         containerView.translatesAutoresizingMaskIntoConstraints = false
-        containerView.spacing = 8
-        containerView.alignment = .leading
+//        containerView.spacing = 8
+//        containerView.alignment = .leading
         return containerView
     }()
     
@@ -104,7 +106,16 @@ public final class LabeledTextField: UIView {
         }
     }
     
-    private lazy var prefixTextLabel: UILabel = {
+    
+    lazy public var topRowContainerView: UIStackView = {
+        let containerView = UIStackView()
+        containerView.translatesAutoresizingMaskIntoConstraints = false
+        containerView.spacing = 8
+        containerView.alignment = .leading
+        return containerView
+    }()
+    
+    public lazy var prefixTextLabel: UILabel = {
         let label = UILabel()
         label.font = textFieldFont
         return label
@@ -134,21 +145,24 @@ public final class LabeledTextField: UIView {
     private var textFieldToLabelVerticalConstraint: NSLayoutConstraint?
     
     private func setup() {
-        addSubview(textFieldContainerView)
+//        addSubview(textFieldContainerView)
+        addSubview(topRowContainerView)
         
-        textFieldContainerView.addArrangedSubview(prefixTextLabel)
-        textFieldContainerView.addArrangedSubview(textField)
+        topRowContainerView.addArrangedSubview(prefixTextLabel)
+        topRowContainerView.addArrangedSubview(textFieldContainerView)
+        
+        textFieldContainerView.addSubview(textField)
         
         prefixTextLabel.setContentHuggingPriority(.init(rawValue: 900), for: .horizontal)
         
-        textFieldContainerView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
-        textFieldContainerView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
-        textFieldContainerView.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        topRowContainerView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
+        topRowContainerView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+        topRowContainerView.topAnchor.constraint(equalTo: topAnchor).isActive = true
         
-//        textField.leadingAnchor.constraint(equalTo: textFieldContainerView.leadingAnchor, constant: 8).isActive = true
-//        textField.trailingAnchor.constraint(equalTo: textFieldContainerView.trailingAnchor, constant: -8).isActive = true
-//        textField.topAnchor.constraint(equalTo: textFieldContainerView.topAnchor, constant: 8).isActive = true
-//        textField.bottomAnchor.constraint(equalTo: textFieldContainerView.bottomAnchor, constant: -8).isActive = true
+        textField.leadingAnchor.constraint(equalTo: textFieldContainerView.leadingAnchor, constant: 8).isActive = true
+        textField.trailingAnchor.constraint(equalTo: textFieldContainerView.trailingAnchor, constant: -8).isActive = true
+        textField.topAnchor.constraint(equalTo: textFieldContainerView.topAnchor, constant: 8).isActive = true
+        textField.bottomAnchor.constraint(equalTo: textFieldContainerView.bottomAnchor, constant: -8).isActive = true
         
         addSubview(label)
         
