@@ -66,15 +66,15 @@ open class FetchedResultsTableViewController<T: NSFetchRequestResult>: TableView
     
     // MARK: Convenience
     
-    final func object(at indexPath: IndexPath) -> T {
+    final public func object(at indexPath: IndexPath) -> T {
         return fetchedResultsController.object(at: indexPath)
     }
     
-    final func indexPath(forObject object: T) -> IndexPath? {
+    final public func indexPath(forObject object: T) -> IndexPath? {
         return fetchedResultsController.indexPath(forObject: object)
     }
     
-    final func count(for section: Int) -> Int {
+    final public func count(for section: Int) -> Int {
         return fetchedResultsController.sections?[section].numberOfObjects ?? 0
     }
     
