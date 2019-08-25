@@ -9,57 +9,44 @@
 import UIKit
 
 
-public protocol TableViewControllerRow {
-    var identifier: String { get }
-}
-
 open class TableViewController: UIViewController, UITableViewDataSource {
     
+    @IBInspectable
+    open var tableViewStyle: UITableView.Style = .plain
     
-    public init(schema: [Section]) {
-        super.init(nibName: nil, bundle: nil)
-        
-        self.schema = schema
-    }
-    
-    required public init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    public struct Section {
-        let rows: [TableViewControllerRow]
-        
-        public init(rows: [TableViewControllerRow]) {
-            self.rows = rows
-        }
-    }
-    
-    public func setSchema(newSchema: [Section], animated: Bool) {
-        schema = newSchema
-        // TODO: do that animation
-    }
-    
-    open var schema: [Section] = []
-    
-    override open func viewDidLoad() {
-        super.viewDidLoad()
-        
-        setupTableView()
-    }
-    
-    public lazy var tableView: UITableView = {
-        let tableView = UITableView()
-        tableView.dataSource = self
-        tableView.keyboardDismissMode = .interactive
+    @IBInspectable final private(set) public lazy var tableView: UITableView = {
+        var tableView = UITableView(frame: self.view.bounds, style: tableViewStyle)
         return tableView
     }()
     
-    private func setupTableView() {
+    public var refreshControl: UIRefreshControl? {
+        didSet {
+            guard viewIfLoaded != nil else { return }
+            updateRefreshControl()
+        }
+    }
+    
+    @objc open func didPullToRefresh() {
+        
+    }
+    
+    open override func viewDidLoad() {
+        super.viewDidLoad()
+        
         registerCells()
         
         view.addSubview(tableView)
         tableView.pinFrameToSuperViewBounds()
-        tableView.tableFooterView = UIView()
+        
+        tableView.dataSource = self
+        //        tableView.delegate = self
+        view.sendSubviewToBack(tableView)
+        
+        let refresh = UIRefreshControl()
+        refresh.addTarget(self, action: #selector(TableViewController.didPullToRefresh), for: .valueChanged)
+        self.refreshControl = refresh
+        
+        updateRefreshControl()
     }
     
     open var cellTypes: [NibRegisterable.Type] = [] {
@@ -68,33 +55,54 @@ open class TableViewController: UIViewController, UITableViewDataSource {
         }
     }
     
-    
     private func registerCells() {
-        for cellType in cellTypes {
-            tableView.register(cellType.nib, forCellReuseIdentifier: cellType.reuseIdentifier)
+        cellTypes.forEach {
+            tableView.register($0.nib, forCellReuseIdentifier: $0.reuseIdentifier)
         }
     }
     
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return schema[section].rows.count
+    private func updateRefreshControl() {
+        tableView.refreshControl = refreshControl
     }
     
-    public func numberOfSections(in tableView: UITableView) -> Int {
-        return schema.count
+    // MARK: - Tableview Datasource
+    
+    open func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        fatalError("subclass must override")
     }
     
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return cell(for: self.row(with: indexPath))
+    open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        fatalError("subclass must override")
     }
-    
-    
-    open func cell(for row: TableViewControllerRow) -> UITableViewCell {
-        fatalError("Subclass must override")
-    }
-    
-    private func row(with indexPath: IndexPath) -> TableViewControllerRow {
-        return schema[indexPath.section].rows[indexPath.row]
-    }
-    
+    //
+    //    open func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    //        return nil
+    //    }
+    //    open func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+    //        return nil
+    //    }
+    //    open func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+    //        return false
+    //    }
+    //    open func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+    //        return false
+    //    }
+    //    open func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+    //        return nil
+    //    }
+    //    open func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
+    //        return index
+    //    }
+    //    open func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) { }
+    //    open func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) { }
+    //
+    //
+    //    public func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+    //        return nil                Q!
+    //    }
 }
+
 
