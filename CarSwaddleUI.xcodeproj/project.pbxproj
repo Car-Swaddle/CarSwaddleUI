@@ -13,6 +13,8 @@
 		9905FF6A23130CEF00DFBCB9 /* FetchedResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9905FF6923130CEF00DFBCB9 /* FetchedResultsTableViewController.swift */; };
 		9905FF6C231317CC00DFBCB9 /* FetchedResultsTableButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9905FF6B231317CC00DFBCB9 /* FetchedResultsTableButtonViewController.swift */; };
 		9905FF6E2313188900DFBCB9 /* TableViewSchemaButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9905FF6D2313188900DFBCB9 /* TableViewSchemaButtonViewController.swift */; };
+		9905FF702313694F00DFBCB9 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9905FF6F2313694E00DFBCB9 /* UITableViewExtension.swift */; };
+		9905FF7223136C9000DFBCB9 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9905FF7123136C9000DFBCB9 /* UIViewExtension.swift */; };
 		9912CD8F216C6F3A0006FDDF /* HorizontalSlideTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9912CD8E216C6F3A0006FDDF /* HorizontalSlideTransition.swift */; };
 		9912CD98216C75F70006FDDF /* UIAlertControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9912CD97216C75F70006FDDF /* UIAlertControllerExtensions.swift */; };
 		9912CD9A216C76260006FDDF /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9912CD99216C76260006FDDF /* UIViewControllerExtension.swift */; };
@@ -81,6 +83,8 @@
 		9905FF6923130CEF00DFBCB9 /* FetchedResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchedResultsTableViewController.swift; sourceTree = "<group>"; };
 		9905FF6B231317CC00DFBCB9 /* FetchedResultsTableButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchedResultsTableButtonViewController.swift; sourceTree = "<group>"; };
 		9905FF6D2313188900DFBCB9 /* TableViewSchemaButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSchemaButtonViewController.swift; sourceTree = "<group>"; };
+		9905FF6F2313694E00DFBCB9 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		9905FF7123136C9000DFBCB9 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		9912CD8E216C6F3A0006FDDF /* HorizontalSlideTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalSlideTransition.swift; sourceTree = "<group>"; };
 		9912CD97216C75F70006FDDF /* UIAlertControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtensions.swift; sourceTree = "<group>"; };
 		9912CD99216C76260006FDDF /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
@@ -300,6 +304,8 @@
 				9905FF6D2313188900DFBCB9 /* TableViewSchemaButtonViewController.swift */,
 				9905FF63231266BB00DFBCB9 /* TableViewController.swift */,
 				9905FF652312677700DFBCB9 /* TableButtonViewController.swift */,
+				9905FF6F2313694E00DFBCB9 /* UITableViewExtension.swift */,
+				9905FF7123136C9000DFBCB9 /* UIViewExtension.swift */,
 			);
 			path = "Generic UI";
 			sourceTree = "<group>";
@@ -470,6 +476,7 @@
 				99E66CAD21DDDC7600C6E3E1 /* CustomAlertController.swift in Sources */,
 				99F027752184533D005FEFC7 /* LocationManager.swift in Sources */,
 				9905FF64231266BB00DFBCB9 /* TableViewController.swift in Sources */,
+				9905FF7223136C9000DFBCB9 /* UIViewExtension.swift in Sources */,
 				9912CD9A216C76260006FDDF /* UIViewControllerExtension.swift in Sources */,
 				9905FF6C231317CC00DFBCB9 /* FetchedResultsTableButtonViewController.swift in Sources */,
 				99F696A6220F3AF50021A719 /* OneTimeCodeViewController.swift in Sources */,
@@ -486,6 +493,7 @@
 				99E66CAA21DDDC7600C6E3E1 /* CustomAlertContentView.swift in Sources */,
 				99A2CDAC218D9D6B003ED903 /* UIBarButtonItem.swift in Sources */,
 				9912CD8F216C6F3A0006FDDF /* HorizontalSlideTransition.swift in Sources */,
+				9905FF702313694F00DFBCB9 /* UITableViewExtension.swift in Sources */,
 				99E66CB321DDDFD100C6E3E1 /* ArrayExtension.swift in Sources */,
 				99E66CAF21DDDDB700C6E3E1 /* UIFontExtension.swift in Sources */,
 				9905FF662312677700DFBCB9 /* TableButtonViewController.swift in Sources */,
