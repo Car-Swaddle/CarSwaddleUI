@@ -155,7 +155,6 @@ open class FetchedResultsTableViewController<T: NSFetchRequestResult>: TableView
         return cell(for: object(at: indexPath), indexPath: indexPath)
     }
     
-    
     open func cell(for object: T, indexPath: IndexPath) -> UITableViewCell {
         fatalError("Must override this method of the default cellForRowAt UITableViewDataSource method")
     }

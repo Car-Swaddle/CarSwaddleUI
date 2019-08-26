@@ -49,10 +49,8 @@ open class TableViewController: UIViewController, UITableViewDataSource {
         updateRefreshControl()
     }
     
-    open var cellTypes: [NibRegisterable.Type] = [] {
-        didSet {
-            registerCells()
-        }
+    open var cellTypes: [NibRegisterable.Type] {
+        return []
     }
     
     private func registerCells() {
