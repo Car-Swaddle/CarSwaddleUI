@@ -27,6 +27,25 @@ public extension UITableView {
     
 }
 
+extension UICollectionView {
+    
+    public func firstCell<T>(of type: T.Type) -> T? {
+        let cell = visibleCells.first { cell -> Bool in
+            return cell is T
+        } as? T
+        return cell
+    }
+    
+    func allVisibleCells<T: UITableViewCell>(of type: T.Type) -> [T] {
+        let cells = visibleCells.filter { cell -> Bool in
+            return cell is T
+        } as? [T]
+        return cells ?? []
+    }
+    
+}
+
+
 public extension UINavigationController {
     
     func popToRootViewController(animated: Bool, completion: @escaping () -> Void) {
