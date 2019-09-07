@@ -71,6 +71,7 @@ open class PagingTableViewController: TableViewController {
             if numberOfObjectsFetched <= requestedItemCount {
                 self.didReachEndOfPage = true
             }
+            self.currentPageOffset += numberOfObjectsFetched
         }
     }
     
