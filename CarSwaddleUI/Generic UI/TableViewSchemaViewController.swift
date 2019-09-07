@@ -49,11 +49,10 @@ open class TableViewSchemaController: TableViewController {
     }
     
     final override public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return cell(for: self.row(with: indexPath))
+        return cell(for: self.row(with: indexPath), indexPath: indexPath)
     }
     
-    
-    open func cell(for row: TableViewControllerRow) -> UITableViewCell {
+    open func cell(for row: TableViewControllerRow, indexPath: IndexPath) -> UITableViewCell {
         fatalError("Subclass must override")
     }
     
