@@ -61,7 +61,6 @@ open class FetchedResultsTableViewController<T: NSFetchRequestResult>: PagingTab
         extendedLayoutIncludesOpaqueBars = true
         tableView.contentInsetAdjustmentBehavior = .always
         tableView.refreshControl = refreshControl
-        tableView.tableFooterView = UIView()
     }
     
     // MARK: Convenience

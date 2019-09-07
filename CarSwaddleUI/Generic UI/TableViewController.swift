@@ -41,6 +41,7 @@ open class TableViewController: UIViewController, UITableViewDataSource, UITable
         tableView.dataSource = self
         tableView.delegate = self
         view.sendSubviewToBack(tableView)
+        tableView.tableFooterView = UIView()
         
         let refresh = UIRefreshControl()
         refresh.addTarget(self, action: #selector(TableViewController.didPullToRefresh), for: .valueChanged)
