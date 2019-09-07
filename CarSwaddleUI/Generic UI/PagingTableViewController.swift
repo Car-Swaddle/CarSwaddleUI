@@ -45,7 +45,7 @@ open class PagingTableViewController: TableViewController {
         return indexPath.row >= (currentPageOffset - pageOffset)
     }
     
-    private func requestDataIfNeeded(completion: @escaping () -> Void = {}) {
+    public func requestDataIfNeeded(completion: @escaping () -> Void = {}) {
         if currentPageOffset == 0 {
             didReachEndOfPage = false
         }
