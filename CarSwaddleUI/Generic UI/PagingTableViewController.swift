@@ -22,7 +22,7 @@ open class PagingTableViewController: TableViewController {
     /// The number of items to fetch for the next page request
     open var pageCount: Int = 30
     
-    open var shouldPage: Bool = false
+    open var shouldPage: Bool = true
     
     /// The current number of items locally
     public private(set) var currentPageOffset: Int = 0
@@ -42,7 +42,7 @@ open class PagingTableViewController: TableViewController {
     open override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         super.tableView(tableView, willDisplay: cell, forRowAt: indexPath)
         
-        if isIndexPathPastItemOffset(indexPath: indexPath) {
+        if isIndexPathPastItemOffset(indexPath: indexPath) && shouldPage {
             requestDataIfNeeded()
         }
     }
@@ -55,8 +55,12 @@ open class PagingTableViewController: TableViewController {
         if currentPageOffset == 0 {
             didReachEndOfPage = false
         }
-        guard shouldRequestData else { return }
+        guard shouldRequestData else {
+            completion()
+            return
+        }
         let requestedItemCount = pageCount
+        self.isRequestingData = true
         requestData(offset: currentPageOffset, count: requestedItemCount) { [weak self] numberOfObjectsFetched in
             guard let self = self else { return }
             defer {
@@ -71,7 +75,7 @@ open class PagingTableViewController: TableViewController {
     }
     
     private var shouldRequestData: Bool {
-        return !didReachEndOfPage && !isRequestingData && shouldPage
+        return !didReachEndOfPage && !isRequestingData
     }
     
     open func requestData(offset: Int, count: Int, completion: @escaping (_ numberOfObjectsFetched: Int?) -> Void) {
