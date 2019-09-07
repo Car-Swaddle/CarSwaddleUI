@@ -105,6 +105,7 @@ open class TableViewController: UIViewController, UITableViewDataSource, UITable
     open func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? { return NSLocalizedString("Delete", comment: "Delete ") }
     open func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? { return nil }
     open func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? { return nil }
+    open func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? { return nil }
     open func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath: IndexPath) -> Bool { return true }
     open func tableView(_ tableView: UITableView, willBeginEditingRowAt indexPath: IndexPath) { }
     open func tableView(_ tableView: UITableView, didEndEditingRowAt indexPath: IndexPath?) { }
