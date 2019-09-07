@@ -11,6 +11,12 @@ import UIKit
 
 open class PagingTableViewController: TableViewController {
     
+    open override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        requestDataIfNeeded()
+    }
+    
     /// The offset at which to trigger the request of more data
     open var pageOffset: Int = 3
     /// The number of items to fetch for the next page request
