@@ -22,7 +22,7 @@ open class TableViewController: UIViewController, UITableViewDataSource, UITable
     public var refreshControl: UIRefreshControl? {
         didSet {
             guard viewIfLoaded != nil else { return }
-            if let oldValue = oldValue, newValue == nil {
+            if let oldValue = oldValue, refreshControl == nil {
                 oldValue.removeFromSuperview()
             }
             updateRefreshControl()
