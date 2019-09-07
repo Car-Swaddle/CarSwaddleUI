@@ -18,6 +18,7 @@ open class TableViewSchemaController: TableViewController {
     public init(schema: [Section]) {
         super.init(nibName: nil, bundle: nil)
         
+        refreshControl = nil
         self.schema = schema
     }
     
