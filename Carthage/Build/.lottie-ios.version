@@ -1,13 +1,15 @@
 {
-  "commitish" : "32be591c8f5b278e54a8cffcc041787bf2a00acd",
+  "commitish" : "860124f1e8fe2163a87c225a931132fc57324b26",
   "iOS" : [
     {
       "name" : "Lottie",
-      "hash" : "cb45c166580ee98f8242477f6c13d16f4d9f46b500777fea031502ef935b6aff"
+      "hash" : "cb16b186952460fcfdd84bfbbae3dc068493b8831d7dac1b101daab4338ad2dd",
+      "swiftToolchainVersion" : "5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
     },
     {
       "name" : "Lottie",
-      "hash" : "cb45c166580ee98f8242477f6c13d16f4d9f46b500777fea031502ef935b6aff"
+      "hash" : "cb16b186952460fcfdd84bfbbae3dc068493b8831d7dac1b101daab4338ad2dd",
+      "swiftToolchainVersion" : "5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
     }
   ]
 }
