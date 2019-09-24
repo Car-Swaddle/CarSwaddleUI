@@ -70,7 +70,7 @@ public final class LabeledTextField: UIView {
         }
     }
     
-    @IBInspectable public var textFieldTextColor: UIColor = .black {
+    @IBInspectable dynamic public var textFieldTextColor: UIColor = .black {
         didSet {
             textField.textColor = textFieldTextColor
         }
