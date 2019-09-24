@@ -67,6 +67,7 @@ public final class LabeledTextField: UIView {
     @IBInspectable dynamic public var textFieldBackgroundColor: UIColor = UIColor(white255: 244) {
         didSet {
             textFieldContainerView.backgroundColor = textFieldBackgroundColor
+            textField.backgroundColor = textFieldBackgroundColor
         }
     }
     
