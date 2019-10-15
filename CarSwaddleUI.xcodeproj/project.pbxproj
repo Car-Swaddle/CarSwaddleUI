@@ -210,14 +210,6 @@
 			path = "Tweak Select";
 			sourceTree = "<group>";
 		};
-		9960EC252355AB9E00BA4C1F /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				997012212154B14200D547C5 /* Info.plist */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		997012072154B14200D547C5 = {
 			isa = PBXGroup;
 			children = (
@@ -258,7 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				9970121F2154B14200D547C5 /* CarSwaddleUITests.swift */,
-				9960EC252355AB9E00BA4C1F /* Resources */,
+				997012212154B14200D547C5 /* Info.plist */,
 			);
 			path = CarSwaddleUITests;
 			sourceTree = "<group>";
@@ -733,7 +725,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MG7WLQ6J4A;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS";
-				INFOPLIST_FILE = CarSwaddleUITests/Resources/Info.plist;
+				INFOPLIST_FILE = CarSwaddleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -753,7 +745,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MG7WLQ6J4A;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS";
-				INFOPLIST_FILE = CarSwaddleUITests/Resources/Info.plist;
+				INFOPLIST_FILE = CarSwaddleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
