@@ -210,6 +210,14 @@
 			path = "Tweak Select";
 			sourceTree = "<group>";
 		};
+		9960EC252355AB9E00BA4C1F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				997012212154B14200D547C5 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		997012072154B14200D547C5 = {
 			isa = PBXGroup;
 			children = (
@@ -250,7 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				9970121F2154B14200D547C5 /* CarSwaddleUITests.swift */,
-				997012212154B14200D547C5 /* Info.plist */,
+				9960EC252355AB9E00BA4C1F /* Resources */,
 			);
 			path = CarSwaddleUITests;
 			sourceTree = "<group>";
