@@ -92,8 +92,6 @@
 		997012112154B14200D547C5 /* CarSwaddleUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CarSwaddleUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		997012142154B14200D547C5 /* CarSwaddleUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarSwaddleUI.h; sourceTree = "<group>"; };
 		997012152154B14200D547C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9970121F2154B14200D547C5 /* CarSwaddleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSwaddleUITests.swift; sourceTree = "<group>"; };
-		997012212154B14200D547C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99A2CDAB218D9D6B003ED903 /* UIBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButtonItem.swift; sourceTree = "<group>"; };
 		99A87F4B2323A45D00FF1563 /* TableButtonPagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableButtonPagingViewController.swift; sourceTree = "<group>"; };
 		99A87F4D2323A75900FF1563 /* PagingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingTableViewController.swift; sourceTree = "<group>"; };
@@ -193,7 +191,6 @@
 			isa = PBXGroup;
 			children = (
 				997012132154B14200D547C5 /* CarSwaddleUI */,
-				9970121E2154B14200D547C5 /* CarSwaddleUITests */,
 				997012122154B14200D547C5 /* Products */,
 				99F69684220BD2600021A719 /* Frameworks */,
 			);
@@ -222,15 +219,6 @@
 				99DC26012246E498009E0A15 /* Resources */,
 			);
 			path = CarSwaddleUI;
-			sourceTree = "<group>";
-		};
-		9970121E2154B14200D547C5 /* CarSwaddleUITests */ = {
-			isa = PBXGroup;
-			children = (
-				9970121F2154B14200D547C5 /* CarSwaddleUITests.swift */,
-				997012212154B14200D547C5 /* Info.plist */,
-			);
-			path = CarSwaddleUITests;
 			sourceTree = "<group>";
 		};
 		99DC26012246E498009E0A15 /* Resources */ = {
