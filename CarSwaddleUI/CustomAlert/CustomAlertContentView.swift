@@ -3,10 +3,10 @@ import UIKit
 //import Lottie
 
 
-private let defaultTitleTextAttributes: [NSAttributedString.Key: Any] = [.foregroundColor: #colorLiteral(red: 0.4470588235, green: 0.6901960784, blue: 0.8431372549, alpha: 1), .font: UIFont.systemFont(ofSize: 17, weight: .medium)]
-private let defaultMessageTextAttributes: [NSAttributedString.Key: Any] = [.foregroundColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.6), .font: UIFont.systemFont(ofSize: 14)]
+//private let defaultTitleTextAttributes: [NSAttributedString.Key: Any] = [.foregroundColor: #colorLiteral(red: 0.4470588235, green: 0.6901960784, blue: 0.8431372549, alpha: 1), .font: UIFont.systemFont(ofSize: 17, weight: .medium)]
+//private let defaultMessageTextAttributes: [NSAttributedString.Key: Any] = [.foregroundColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.6), .font: UIFont.systemFont(ofSize: 14)]
 
-private let buttonTitleFont = UIFont.systemFont(ofSize: 15, weight: .medium)
+//private let buttonTitleFont = UIFont.systemFont(ofSize: 15, weight: .medium)
 private let buttonContentInsets = UIEdgeInsets(top: 10, left: 16, bottom: 10, right: 16)
 
 
@@ -74,7 +74,7 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
                 attributedTitleText = nil
                 return
             }
-            attributedTitleText = NSAttributedString(string: titleText, attributes: defaultTitleTextAttributes)
+            attributedTitleText = NSAttributedString(string: titleText, attributes: defaultTitleTextAttributes())
         }
     }
     
@@ -88,7 +88,7 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
                 attributedMessageText = nil
                 return
             }
-            attributedMessageText = NSAttributedString(string: messageText, attributes: defaultMessageTextAttributes)
+            attributedMessageText = NSAttributedString(string: messageText, attributes: defaultMessageTextAttributes())
         }
     }
     
@@ -190,8 +190,8 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
         let actionSwitch = UISwitch()
         
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 12)
-        label.textColor = #colorLiteral(red: 0.5333333333, green: 0.5333333333, blue: 0.5333333333, alpha: 1)
+        label.font = switchLabelFont
+        label.textColor = switchLabelTextColor
         label.numberOfLines = 2
         label.textAlignment = .right
         label.setContentCompressionResistancePriority(.required, for: .horizontal)
@@ -267,7 +267,39 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
         return actionsButtons[preferredAction]
     }
     
+    public dynamic var titleForegroundColor: UIColor = #colorLiteral(red: 0.4470588235, green: 0.6901960784, blue: 0.8431372549, alpha: 1)
+    public dynamic var messageForegroundColor: UIColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.6)
+    
+    public dynamic var normalButtonColor: UIColor = #colorLiteral(red: 0.4470588235, green: 0.6901960784, blue: 0.8431372549, alpha: 1)
+    public dynamic var preferredButtonColor: UIColor = #colorLiteral(red: 0.4470588235, green: 0.6901960784, blue: 0.8431372549, alpha: 1)
+    
+    public dynamic var normalButtonTitleColor: UIColor = #colorLiteral(red: 0.4470588235, green: 0.6901960784, blue: 0.8431372549, alpha: 1)
+    public dynamic var preferredButtonTitleColor: UIColor = #colorLiteral(red: 0.4470588235, green: 0.6901960784, blue: 0.8431372549, alpha: 1)
+    
+    public dynamic var textFieldUnderlineColor: UIColor = #colorLiteral(red: 0.5647058824, green: 0.768627451, blue: 0.8941176471, alpha: 1)
+    
+    public dynamic var buttonTitleFont: UIFont = UIFont.systemFont(ofSize: 15, weight: .medium)
+    
+    public dynamic var defaultButtonBorderColor: UIColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.1)
+    
+    public dynamic var titleFont: UIFont = UIFont.systemFont(ofSize: 17, weight: .medium)
+    public dynamic var messageFont: UIFont = UIFont.systemFont(ofSize: 14, weight: .medium)
+    
+    public dynamic var textFieldFont: UIFont = UIFont.systemFont(ofSize: 14)
+    
+    public dynamic var switchLabelFont: UIFont = UIFont.systemFont(ofSize: 12)
+    public dynamic var switchLabelTextColor: UIColor = #colorLiteral(red: 0.5333333333, green: 0.5333333333, blue: 0.5333333333, alpha: 1)
+    public dynamic var textFieldBorderColor: UIColor = .lightGray
+    
     // MARK: - Internal
+    
+    internal func defaultTitleTextAttributes() -> [NSAttributedString.Key: Any] {
+        return [.foregroundColor: titleForegroundColor, .font: titleFont]
+    }
+    
+    internal func defaultMessageTextAttributes() -> [NSAttributedString.Key: Any] {
+        return [.foregroundColor: messageForegroundColor, .font: messageFont]
+    }
     
     internal var maxHeight: CGFloat = CGFloat.greatestFiniteMagnitude {
         didSet {
@@ -390,28 +422,22 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
     }
     
     private func configureButtonForDefault(_ button: UIButton) {
-        button.setTitleColor(#colorLiteral(red: 0.3058823529, green: 0.5490196078, blue: 0.7294117647, alpha: 1), for: .normal)
-        button.setTitleColor(#colorLiteral(red: 0.1921568627, green: 0.4078431373, blue: 0.6078431373, alpha: 1), for: .highlighted)
+        button.setTitleColor(normalButtonTitleColor, for: .normal)
         
         button.layer.borderWidth = 1
-        button.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.1).cgColor
+        button.layer.borderColor = defaultButtonBorderColor.cgColor
         
-        let background = UIColor(white255: 244)
-        
-        button.setBackgroundImage(UIImage.from(color: background), for: .normal)
-        button.setBackgroundImage(UIImage.from(color: background.color(adjustedBy255Points: -40)), for: .highlighted)
+        button.setBackgroundImage(UIImage.from(color: normalButtonColor), for: .normal)
+        button.setBackgroundImage(UIImage.from(color: normalButtonColor.color(adjustedBy255Points: -40)), for: .highlighted)
     }
     
     private func configureButtonForPreferred(_ button: UIButton) {
-        button.setTitleColor(.white, for: .normal)
-        button.setTitleColor(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.1), for: .highlighted)
+        button.setTitleColor(preferredButtonTitleColor, for: .normal)
         
         button.layer.borderWidth = 0
         
-        let backgroundColor: UIColor = #colorLiteral(red: 0.4117647059, green: 0.7450980392, blue: 0.6588235294, alpha: 1)
-        
-        button.setBackgroundImage(UIImage.from(color: backgroundColor), for: .normal)
-        button.setBackgroundImage(UIImage.from(color: backgroundColor.color(adjustedBy: -0.1)), for: .highlighted)
+        button.setBackgroundImage(UIImage.from(color: preferredButtonColor), for: .normal)
+        button.setBackgroundImage(UIImage.from(color: preferredButtonColor.color(adjustedBy: -0.1)), for: .highlighted)
     }
     
     private func updateButtonStackViewAxis() {
@@ -476,11 +502,11 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
         let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.borderStyle = .roundedRect
-        let underlineView = textField.addHairlineView(toSide: .bottom, color: #colorLiteral(red: 0.5647058824, green: 0.768627451, blue: 0.8941176471, alpha: 1), size: 3.0)
+        let underlineView = textField.addHairlineView(toSide: .bottom, color: textFieldUnderlineColor, size: 3.0)
         underlineView.isHidden = true
         underlineViews[textField] = underlineView
         textField.layer.cornerRadius = 3
-        textField.layer.borderColor = UIColor.lightGray.cgColor
+        textField.layer.borderColor = textFieldBorderColor.cgColor
         textField.clipsToBounds = true
         let constraint = textField.widthAnchor.constraint(lessThanOrEqualToConstant: 180)
         constraint.priority = .defaultHigh
@@ -489,7 +515,7 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
         textField.addTarget(self, action: #selector(CustomAlertContentView.didBeginEditingTextField(_:)), for: .editingDidBegin)
         textField.addTarget(self, action: #selector(CustomAlertContentView.didEndEditingTextField(_:)), for: .editingDidEnd)
         
-        textField.font = UIFont.systemFont(ofSize: 14)
+        textField.font = textFieldFont
         
         return textField
     }
