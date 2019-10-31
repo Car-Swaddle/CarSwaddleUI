@@ -267,29 +267,29 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
         return actionsButtons[preferredAction]
     }
     
-    public dynamic var titleForegroundColor: UIColor = #colorLiteral(red: 0.4470588235, green: 0.6901960784, blue: 0.8431372549, alpha: 1)
-    public dynamic var messageForegroundColor: UIColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.6)
+    @objc public dynamic var titleForegroundColor: UIColor = #colorLiteral(red: 0.4470588235, green: 0.6901960784, blue: 0.8431372549, alpha: 1)
+    @objc public dynamic var messageForegroundColor: UIColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.6)
     
-    public dynamic var normalButtonColor: UIColor = #colorLiteral(red: 0.4470588235, green: 0.6901960784, blue: 0.8431372549, alpha: 1)
-    public dynamic var preferredButtonColor: UIColor = #colorLiteral(red: 0.4470588235, green: 0.6901960784, blue: 0.8431372549, alpha: 1)
+    @objc public dynamic var normalButtonColor: UIColor = #colorLiteral(red: 0.4470588235, green: 0.6901960784, blue: 0.8431372549, alpha: 1)
+    @objc public dynamic var preferredButtonColor: UIColor = #colorLiteral(red: 0.4470588235, green: 0.6901960784, blue: 0.8431372549, alpha: 1)
     
-    public dynamic var normalButtonTitleColor: UIColor = #colorLiteral(red: 0.4470588235, green: 0.6901960784, blue: 0.8431372549, alpha: 1)
-    public dynamic var preferredButtonTitleColor: UIColor = #colorLiteral(red: 0.4470588235, green: 0.6901960784, blue: 0.8431372549, alpha: 1)
+    @objc public dynamic var normalButtonTitleColor: UIColor = #colorLiteral(red: 0.4470588235, green: 0.6901960784, blue: 0.8431372549, alpha: 1)
+    @objc public dynamic var preferredButtonTitleColor: UIColor = #colorLiteral(red: 0.4470588235, green: 0.6901960784, blue: 0.8431372549, alpha: 1)
     
-    public dynamic var textFieldUnderlineColor: UIColor = #colorLiteral(red: 0.5647058824, green: 0.768627451, blue: 0.8941176471, alpha: 1)
+    @objc public dynamic var textFieldUnderlineColor: UIColor = #colorLiteral(red: 0.5647058824, green: 0.768627451, blue: 0.8941176471, alpha: 1)
     
-    public dynamic var buttonTitleFont: UIFont = UIFont.systemFont(ofSize: 15, weight: .medium)
+    @objc public dynamic var buttonTitleFont: UIFont = UIFont.systemFont(ofSize: 15, weight: .medium)
     
-    public dynamic var defaultButtonBorderColor: UIColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.1)
+    @objc public dynamic var defaultButtonBorderColor: UIColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.1)
     
-    public dynamic var titleFont: UIFont = UIFont.systemFont(ofSize: 17, weight: .medium)
-    public dynamic var messageFont: UIFont = UIFont.systemFont(ofSize: 14, weight: .medium)
+    @objc public dynamic var titleFont: UIFont = UIFont.systemFont(ofSize: 17, weight: .medium)
+    @objc public dynamic var messageFont: UIFont = UIFont.systemFont(ofSize: 14, weight: .medium)
     
-    public dynamic var textFieldFont: UIFont = UIFont.systemFont(ofSize: 14)
+    @objc public dynamic var textFieldFont: UIFont = UIFont.systemFont(ofSize: 14)
     
-    public dynamic var switchLabelFont: UIFont = UIFont.systemFont(ofSize: 12)
-    public dynamic var switchLabelTextColor: UIColor = #colorLiteral(red: 0.5333333333, green: 0.5333333333, blue: 0.5333333333, alpha: 1)
-    public dynamic var textFieldBorderColor: UIColor = .lightGray
+    @objc public dynamic var switchLabelFont: UIFont = UIFont.systemFont(ofSize: 12)
+    @objc public dynamic var switchLabelTextColor: UIColor = #colorLiteral(red: 0.5333333333, green: 0.5333333333, blue: 0.5333333333, alpha: 1)
+    @objc public dynamic var textFieldBorderColor: UIColor = .lightGray
     
     // MARK: - Internal
     
