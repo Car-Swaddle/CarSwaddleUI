@@ -66,29 +66,29 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
     
     /// Title displayed in the content
     public var titleText: String? {
-        get {
-            return attributedTitleText?.string
-        }
-        set {
-            guard let titleText = newValue else {
-                attributedTitleText = nil
-                return
-            }
+        get { return attributedTitleText?.string }
+        set { updateTitleText() }
+    }
+    
+    private func updateTitleText() {
+        if let titleText = titleText {
             attributedTitleText = NSAttributedString(string: titleText, attributes: defaultTitleTextAttributes())
+        } else {
+            attributedTitleText = nil
         }
     }
     
     /// Message that describes the reason for the alert.
     public var messageText: String? {
-        get {
-            return attributedMessageText?.string
-        }
-        set {
-            guard let messageText = newValue else {
-                attributedMessageText = nil
-                return
-            }
+        get { return attributedMessageText?.string }
+        set { updateMessageText() }
+    }
+    
+    private func updateMessageText() {
+        if let messageText = messageText {
             attributedMessageText = NSAttributedString(string: messageText, attributes: defaultMessageTextAttributes())
+        } else {
+            attributedMessageText = nil
         }
     }
     
@@ -267,10 +267,40 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
         return actionsButtons[preferredAction]
     }
     
-    @objc public dynamic var titleForegroundColor: UIColor = #colorLiteral(red: 0.4470588235, green: 0.6901960784, blue: 0.8431372549, alpha: 1)
-    @objc public dynamic var messageForegroundColor: UIColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.6)
     
-    @objc public dynamic var normalButtonColor: UIColor = #colorLiteral(red: 0.4470588235, green: 0.6901960784, blue: 0.8431372549, alpha: 1)
+    @objc public dynamic var titleTextColor: UIColor = #colorLiteral(red: 0.4470588235, green: 0.6901960784, blue: 0.8431372549, alpha: 1) {
+        didSet {
+            updateTitleText()
+        }
+//        get { return _titleTextColor }
+//        set { _titleTextColor = newValue }
+    }
+    
+//    private var _titleTextColor: UIColor = #colorLiteral(red: 0.4470588235, green: 0.6901960784, blue: 0.8431372549, alpha: 1) {
+//        didSet {
+//            updateMessageText()
+//        }
+//    }
+    
+    
+    @objc public dynamic var messageTextColor: UIColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.6) {
+        didSet {
+            updateMessageText()
+        }
+    }
+    
+//    @objc public dynamic var normalButtonColor: UIColor = #colorLiteral(red: 0.4470588235, green: 0.6901960784, blue: 0.8431372549, alpha: 1)
+    
+    // #colorLiteral(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
+    
+    @objc public dynamic var normalButtonColor: UIColor {
+        get { return _normalButtonTitleColor }
+        set { _normalButtonTitleColor = newValue }
+    }
+    
+    private var _normalButtonColor: UIColor = .white
+    
+    
     @objc public dynamic var preferredButtonColor: UIColor = #colorLiteral(red: 0.4470588235, green: 0.6901960784, blue: 0.8431372549, alpha: 1)
     
     @objc public dynamic var normalButtonTitleColor: UIColor {
@@ -288,7 +318,12 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
     
     @objc public dynamic var defaultButtonBorderColor: UIColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.1)
     
-    @objc public dynamic var titleFont: UIFont = UIFont.systemFont(ofSize: 17, weight: .medium)
+    
+    @objc public dynamic var titleFont: UIFont = UIFont.systemFont(ofSize: 16, weight: .medium) {
+        didSet {
+            updateTitleText()
+        }
+    }
     @objc public dynamic var messageFont: UIFont = UIFont.systemFont(ofSize: 14, weight: .medium)
     
     @objc public dynamic var textFieldFont: UIFont = UIFont.systemFont(ofSize: 14)
@@ -300,11 +335,11 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
     // MARK: - Internal
     
     internal func defaultTitleTextAttributes() -> [NSAttributedString.Key: Any] {
-        return [.foregroundColor: titleForegroundColor, .font: titleFont]
+        return [.foregroundColor: titleTextColor, .font: titleFont]
     }
     
     internal func defaultMessageTextAttributes() -> [NSAttributedString.Key: Any] {
-        return [.foregroundColor: messageForegroundColor, .font: messageFont]
+        return [.foregroundColor: messageTextColor, .font: messageFont]
     }
     
     internal var maxHeight: CGFloat = CGFloat.greatestFiniteMagnitude {
@@ -433,8 +468,8 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
         button.layer.borderWidth = 1
         button.layer.borderColor = defaultButtonBorderColor.cgColor
         
-        button.setBackgroundImage(UIImage.from(color: normalButtonColor), for: .normal)
-        button.setBackgroundImage(UIImage.from(color: normalButtonColor.color(adjustedBy255Points: -40)), for: .highlighted)
+        button.setBackgroundImage(UIImage.from(color: _normalButtonColor), for: .normal)
+        button.setBackgroundImage(UIImage.from(color: _normalButtonColor.color(adjustedBy255Points: -40)), for: .highlighted)
     }
     
     private func configureButtonForPreferred(_ button: UIButton) {
