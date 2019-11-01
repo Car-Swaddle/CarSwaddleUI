@@ -240,11 +240,11 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
     }
     
     
-    @objc public dynamic var titleTextColor: UIColor = #colorLiteral(red: 0.4470588235, green: 0.6901960784, blue: 0.8431372549, alpha: 1) {
+    @objc public dynamic var titleTextColor: UIColor = .black {
         didSet { titleLabel.textColor = titleTextColor }
     }
     
-    @objc public dynamic var messageTextColor: UIColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.6) {
+    @objc public dynamic var messageTextColor: UIColor = .gray {
         didSet { messageLabel.textColor = messageTextColor }
     }
     
