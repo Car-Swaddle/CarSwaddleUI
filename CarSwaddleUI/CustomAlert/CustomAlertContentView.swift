@@ -585,4 +585,13 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
         return !messageText.isEmpty
     }
     
+    public override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        
+        normalButtons.forEach {
+            $0.setBackgroundImage(UIImage.from(color: normalButtonColor), for: .normal)
+        }
+        preferredButton?.setBackgroundImage(UIImage.from(color: preferredButtonColor), for: .normal)
+    }
+    
 }

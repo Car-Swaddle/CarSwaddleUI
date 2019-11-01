@@ -51,6 +51,14 @@ final public class CustomAlertController: UIViewController, StoryboardInstantiat
         }
     }
     
+    @objc public dynamic var alertBackgroundColor: UIColor = .white {
+        didSet { alertView.backgroundColor = alertBackgroundColor }
+    }
+    
+    @objc public dynamic var transparentBackgroundColor: UIColor = UIColor(white: 1, alpha: 0.7) {
+        didSet { view.backgroundColor = transparentBackgroundColor }
+    }
+    
     
     // MARK: - Private
     
@@ -91,6 +99,8 @@ final public class CustomAlertController: UIViewController, StoryboardInstantiat
         view.layoutIfNeeded()
         updateTopImageHeightIfNeeded()
         updateTopContentInset()
+        view.backgroundColor = transparentBackgroundColor
+        alertView.backgroundColor = alertBackgroundColor
     }
     
     public override var preferredStatusBarStyle: UIStatusBarStyle {
