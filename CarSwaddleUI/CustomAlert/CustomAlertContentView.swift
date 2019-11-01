@@ -302,30 +302,69 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
     
     // #colorLiteral(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
     
-    @objc public dynamic var normalButtonColor: UIColor {
-        get { return _normalButtonTitleColor }
-        set { _normalButtonTitleColor = newValue }
+    @objc public dynamic var normalButtonColor: UIColor = .white {
+//        get { return _normalButtonTitleColor }
+//        set { _normalButtonTitleColor = newValue }
+        didSet {
+            normalButtons.forEach {
+//                $0.backgroundColor = normalButtonColor
+                $0.setBackgroundImage(UIImage.from(color: normalButtonColor), for: .normal)
+            }
+        }
     }
     
-    private var _normalButtonColor: UIColor = .white
+//    private var _normalButtonColor: UIColor = .white
     
     
-    @objc public dynamic var preferredButtonColor: UIColor = #colorLiteral(red: 0.4470588235, green: 0.6901960784, blue: 0.8431372549, alpha: 1)
-    
-    @objc public dynamic var normalButtonTitleColor: UIColor {
-        get { return _normalButtonTitleColor }
-        set { _normalButtonTitleColor = newValue }
+    @objc public dynamic var preferredButtonColor: UIColor = .white {
+        didSet {
+            preferredButton?.setBackgroundImage(UIImage.from(color: preferredButtonColor), for: .normal)
+//            preferredButton?.backgroundColor = preferredButtonColor
+        }
     }
     
-    private var _normalButtonTitleColor: UIColor = .white
+    @objc public dynamic var normalButtonTitleColor: UIColor = .black {
+//        get { return _normalButtonTitleColor }
+//        set { _normalButtonTitleColor = newValue }
+        didSet {
+            normalButtons.forEach {
+                $0.setTitleColor(normalButtonTitleColor, for: .normal)
+                
+            }
+        }
+    }
     
-    @objc public dynamic var preferredButtonTitleColor: UIColor = #colorLiteral(red: 0.4470588235, green: 0.6901960784, blue: 0.8431372549, alpha: 1)
+//    private var _normalButtonTitleColor: UIColor = .white
     
-    @objc public dynamic var textFieldUnderlineColor: UIColor = #colorLiteral(red: 0.5647058824, green: 0.768627451, blue: 0.8941176471, alpha: 1)
+    @objc public dynamic var preferredButtonTitleColor: UIColor = .systemBlue {
+        didSet {
+            preferredButton?.setTitleColor(preferredButtonTitleColor, for: .normal)
+        }
+    }
     
-    @objc public dynamic var buttonTitleFont: UIFont = UIFont.systemFont(ofSize: 15, weight: .medium)
+    @objc public dynamic var textFieldUnderlineColor: UIColor = .systemBlue {
+        didSet {
+            textFields.forEach {
+                underlineViews[$0]?.backgroundColor = textFieldUnderlineColor
+            }
+        }
+    }
     
-    @objc public dynamic var defaultButtonBorderColor: UIColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.1)
+    @objc public dynamic var buttonTitleFont: UIFont = UIFont.systemFont(ofSize: 15, weight: .medium) {
+        didSet {
+            normalButtons.forEach {
+                $0.titleLabel?.font = buttonTitleFont
+            }
+        }
+    }
+    
+    @objc public dynamic var buttonBorderColor: UIColor = .white {
+        didSet {
+            normalButtons.forEach {
+                $0.borderColor = buttonBorderColor
+            }
+        }
+    }
     
     
     @objc public dynamic var titleFont: UIFont = UIFont.systemFont(ofSize: 16, weight: .medium) {
@@ -333,13 +372,29 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
             titleLabel.font = titleFont
         }
     }
-    @objc public dynamic var messageFont: UIFont = UIFont.systemFont(ofSize: 14, weight: .medium)
+    @objc public dynamic var messageFont: UIFont = UIFont.systemFont(ofSize: 14, weight: .medium) {
+        didSet {
+            messageLabel.font = messageFont
+        }
+    }
     
-    @objc public dynamic var textFieldFont: UIFont = UIFont.systemFont(ofSize: 14)
+    @objc public dynamic var textFieldFont: UIFont = UIFont.systemFont(ofSize: 14) {
+        didSet {
+            textFields.forEach {
+                $0.font = textFieldFont
+            }
+        }
+    }
     
     @objc public dynamic var switchLabelFont: UIFont = UIFont.systemFont(ofSize: 12)
     @objc public dynamic var switchLabelTextColor: UIColor = #colorLiteral(red: 0.5333333333, green: 0.5333333333, blue: 0.5333333333, alpha: 1)
-    @objc public dynamic var textFieldBorderColor: UIColor = .lightGray
+    @objc public dynamic var textFieldBorderColor: UIColor = .lightGray {
+        didSet {
+            textFields.forEach {
+                $0.borderColor = textFieldBorderColor
+            }
+        }
+    }
     
     // MARK: - Internal
     
@@ -472,13 +527,14 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
     }
     
     private func configureButtonForDefault(_ button: UIButton) {
-        button.setTitleColor(_normalButtonTitleColor, for: .normal)
+        button.setTitleColor(normalButtonTitleColor, for: .normal)
         
         button.layer.borderWidth = 1
-        button.layer.borderColor = defaultButtonBorderColor.cgColor
+        button.layer.borderColor = buttonBorderColor.cgColor
         
-        button.setBackgroundImage(UIImage.from(color: _normalButtonColor), for: .normal)
-        button.setBackgroundImage(UIImage.from(color: _normalButtonColor.color(adjustedBy255Points: -40)), for: .highlighted)
+        button.setBackgroundImage(UIImage.from(color: normalButtonColor), for: .normal)
+//        button.setBackgroundImage(UIImage.from(color: normalButtonColor.color(adjustedBy255Points: -40)), for: .highlighted)
+//        button.backgroundColor = normalButtonColor
     }
     
     private func configureButtonForPreferred(_ button: UIButton) {
@@ -487,7 +543,7 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
         button.layer.borderWidth = 0
         
         button.setBackgroundImage(UIImage.from(color: preferredButtonColor), for: .normal)
-        button.setBackgroundImage(UIImage.from(color: preferredButtonColor.color(adjustedBy: -0.1)), for: .highlighted)
+//        button.setBackgroundImage(UIImage.from(color: preferredButtonColor.color(adjustedBy: -0.1)), for: .highlighted)
     }
     
     private func updateButtonStackViewAxis() {
