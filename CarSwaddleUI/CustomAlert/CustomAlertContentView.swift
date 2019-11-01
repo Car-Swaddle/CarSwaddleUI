@@ -67,56 +67,18 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
     /// Title displayed in the content
     public var titleText: String? {
         didSet {
+            updateTitleLabelDisplay()
             titleLabel.text = titleText
         }
     }
     
-//    private func updateTitleText() {
-//        if let titleText = titleText {
-//            attributedTitleText = NSAttributedString(string: titleText, attributes: defaultTitleTextAttributes())
-//        } else {
-//            attributedTitleText = nil
-//        }
-//    }
-    
     /// Message that describes the reason for the alert.
     public var messageText: String? {
         didSet {
+            updateMessageLabelDisplay()
             messageLabel.text = messageText
         }
     }
-    
-//    private func updateMessageText() {
-//        if let messageText = messageText {
-//            attributedMessageText = NSAttributedString(string: messageText, attributes: defaultMessageTextAttributes())
-//        } else {
-//            attributedMessageText = nil
-//        }
-//    }
-    
-//    public lazy var titleTextAttributes: [NSAttributedString.Key: Any] = self.defaultTitleTextAttributes() {
-//        didSet {
-//
-//        }
-//    }
-    
-    /// Title displayed in the content. The display will respect the last value set
-    /// between `attributedTitleText` and `titleText`
-//    public var attributedTitleText: NSAttributedString? {
-//        didSet {
-//            updateTitleLabelDisplay()
-//            titleLabel.attributedText = attributedTitleText
-//        }
-//    }
-    
-    /// Message displayed in the content. The display will respect the last value set
-    /// between `attributedMessageText` and `messageText`
-//    public var attributedMessageText: NSAttributedString? {
-//        didSet {
-//            updateMessageLabelDisplay()
-//            messageLabel.attributedText = attributedMessageText
-//        }
-//    }
     
     /// Image centered above the title.
     public var image: UIImage? {
@@ -205,6 +167,8 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
         label.setContentCompressionResistancePriority(.required, for: .horizontal)
         label.setContentHuggingPriority(.defaultLow, for: .horizontal)
         
+        switchLabels.append(label)
+        
         let rightSpacer = UIView()
         rightSpacer.translatesAutoresizingMaskIntoConstraints = false
         rightSpacer.widthAnchor.constraint(equalToConstant: 0).isActive = true
@@ -277,77 +241,31 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
     
     
     @objc public dynamic var titleTextColor: UIColor = #colorLiteral(red: 0.4470588235, green: 0.6901960784, blue: 0.8431372549, alpha: 1) {
-        didSet {
-//            updateTitleText()
-            titleLabel.textColor = titleTextColor
-        }
-//        get { return _titleTextColor }
-//        set { _titleTextColor = newValue }
+        didSet { titleLabel.textColor = titleTextColor }
     }
-    
-//    private var _titleTextColor: UIColor = #colorLiteral(red: 0.4470588235, green: 0.6901960784, blue: 0.8431372549, alpha: 1) {
-//        didSet {
-//            updateMessageText()
-//        }
-//    }
-    
     
     @objc public dynamic var messageTextColor: UIColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.6) {
-        didSet {
-            messageLabel.textColor = messageTextColor
-        }
+        didSet { messageLabel.textColor = messageTextColor }
     }
-    
-//    @objc public dynamic var normalButtonColor: UIColor = #colorLiteral(red: 0.4470588235, green: 0.6901960784, blue: 0.8431372549, alpha: 1)
-    
-    // #colorLiteral(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
     
     @objc public dynamic var normalButtonColor: UIColor = .white {
-//        get { return _normalButtonTitleColor }
-//        set { _normalButtonTitleColor = newValue }
-        didSet {
-            normalButtons.forEach {
-//                $0.backgroundColor = normalButtonColor
-                $0.setBackgroundImage(UIImage.from(color: normalButtonColor), for: .normal)
-            }
-        }
+        didSet { normalButtons.forEach { $0.setBackgroundImage(UIImage.from(color: normalButtonColor), for: .normal) } }
     }
     
-//    private var _normalButtonColor: UIColor = .white
-    
-    
     @objc public dynamic var preferredButtonColor: UIColor = .white {
-        didSet {
-            preferredButton?.setBackgroundImage(UIImage.from(color: preferredButtonColor), for: .normal)
-//            preferredButton?.backgroundColor = preferredButtonColor
-        }
+        didSet { preferredButton?.setBackgroundImage(UIImage.from(color: preferredButtonColor), for: .normal) }
     }
     
     @objc public dynamic var normalButtonTitleColor: UIColor = .black {
-//        get { return _normalButtonTitleColor }
-//        set { _normalButtonTitleColor = newValue }
-        didSet {
-            normalButtons.forEach {
-                $0.setTitleColor(normalButtonTitleColor, for: .normal)
-                
-            }
-        }
+        didSet { normalButtons.forEach { $0.setTitleColor(normalButtonTitleColor, for: .normal) } }
     }
     
-//    private var _normalButtonTitleColor: UIColor = .white
-    
     @objc public dynamic var preferredButtonTitleColor: UIColor = .systemBlue {
-        didSet {
-            preferredButton?.setTitleColor(preferredButtonTitleColor, for: .normal)
-        }
+        didSet { preferredButton?.setTitleColor(preferredButtonTitleColor, for: .normal) }
     }
     
     @objc public dynamic var textFieldUnderlineColor: UIColor = .systemBlue {
-        didSet {
-            textFields.forEach {
-                underlineViews[$0]?.backgroundColor = textFieldUnderlineColor
-            }
-        }
+        didSet { textFields.forEach { underlineViews[$0]?.backgroundColor = textFieldUnderlineColor } }
     }
     
     @objc public dynamic var buttonTitleFont: UIFont = UIFont.systemFont(ofSize: 15, weight: .medium) {
@@ -355,6 +273,7 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
             normalButtons.forEach {
                 $0.titleLabel?.font = buttonTitleFont
             }
+            preferredButton?.titleLabel?.font = buttonTitleFont
         }
     }
     
@@ -363,37 +282,30 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
             normalButtons.forEach {
                 $0.borderColor = buttonBorderColor
             }
+            preferredButton?.borderColor = buttonBorderColor
         }
     }
     
     
     @objc public dynamic var titleFont: UIFont = UIFont.systemFont(ofSize: 16, weight: .medium) {
-        didSet {
-            titleLabel.font = titleFont
-        }
+        didSet { titleLabel.font = titleFont }
     }
     @objc public dynamic var messageFont: UIFont = UIFont.systemFont(ofSize: 14, weight: .medium) {
-        didSet {
-            messageLabel.font = messageFont
-        }
+        didSet { messageLabel.font = messageFont }
     }
     
     @objc public dynamic var textFieldFont: UIFont = UIFont.systemFont(ofSize: 14) {
-        didSet {
-            textFields.forEach {
-                $0.font = textFieldFont
-            }
-        }
+        didSet { textFields.forEach { $0.font = textFieldFont } }
     }
     
-    @objc public dynamic var switchLabelFont: UIFont = UIFont.systemFont(ofSize: 12)
-    @objc public dynamic var switchLabelTextColor: UIColor = #colorLiteral(red: 0.5333333333, green: 0.5333333333, blue: 0.5333333333, alpha: 1)
+    @objc public dynamic var switchLabelFont: UIFont = UIFont.systemFont(ofSize: 12) {
+        didSet { switchLabels.forEach { $0.font = switchLabelFont } }
+    }
+    @objc public dynamic var switchLabelTextColor: UIColor = #colorLiteral(red: 0.5333333333, green: 0.5333333333, blue: 0.5333333333, alpha: 1) {
+        didSet { switchLabels.forEach { $0.textColor = switchLabelTextColor } }
+    }
     @objc public dynamic var textFieldBorderColor: UIColor = .lightGray {
-        didSet {
-            textFields.forEach {
-                $0.borderColor = textFieldBorderColor
-            }
-        }
+        didSet { textFields.forEach { $0.borderColor = textFieldBorderColor }  }
     }
     
     // MARK: - Internal
@@ -449,6 +361,8 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
     
     /// All switches added to the content view
     public private(set) var actionSwitches: [UISwitch] = []
+    
+    private var switchLabels: [UILabel] = []
     
     /// All text fields added to the content view
     public private(set) var textFields: [UITextField] = []
