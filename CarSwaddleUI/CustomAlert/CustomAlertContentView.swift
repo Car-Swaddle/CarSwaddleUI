@@ -66,49 +66,57 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
     
     /// Title displayed in the content
     public var titleText: String? {
-        get { return attributedTitleText?.string }
-        set { updateTitleText() }
-    }
-    
-    private func updateTitleText() {
-        if let titleText = titleText {
-            attributedTitleText = NSAttributedString(string: titleText, attributes: defaultTitleTextAttributes())
-        } else {
-            attributedTitleText = nil
+        didSet {
+            titleLabel.text = titleText
         }
     }
+    
+//    private func updateTitleText() {
+//        if let titleText = titleText {
+//            attributedTitleText = NSAttributedString(string: titleText, attributes: defaultTitleTextAttributes())
+//        } else {
+//            attributedTitleText = nil
+//        }
+//    }
     
     /// Message that describes the reason for the alert.
     public var messageText: String? {
-        get { return attributedMessageText?.string }
-        set { updateMessageText() }
-    }
-    
-    private func updateMessageText() {
-        if let messageText = messageText {
-            attributedMessageText = NSAttributedString(string: messageText, attributes: defaultMessageTextAttributes())
-        } else {
-            attributedMessageText = nil
+        didSet {
+            messageLabel.text = messageText
         }
     }
+    
+//    private func updateMessageText() {
+//        if let messageText = messageText {
+//            attributedMessageText = NSAttributedString(string: messageText, attributes: defaultMessageTextAttributes())
+//        } else {
+//            attributedMessageText = nil
+//        }
+//    }
+    
+//    public lazy var titleTextAttributes: [NSAttributedString.Key: Any] = self.defaultTitleTextAttributes() {
+//        didSet {
+//
+//        }
+//    }
     
     /// Title displayed in the content. The display will respect the last value set
     /// between `attributedTitleText` and `titleText`
-    public var attributedTitleText: NSAttributedString? {
-        didSet {
-            updateTitleLabelDisplay()
-            titleLabel.attributedText = attributedTitleText
-        }
-    }
+//    public var attributedTitleText: NSAttributedString? {
+//        didSet {
+//            updateTitleLabelDisplay()
+//            titleLabel.attributedText = attributedTitleText
+//        }
+//    }
     
     /// Message displayed in the content. The display will respect the last value set
     /// between `attributedMessageText` and `messageText`
-    public var attributedMessageText: NSAttributedString? {
-        didSet {
-            updateMessageLabelDisplay()
-            messageLabel.attributedText = attributedMessageText
-        }
-    }
+//    public var attributedMessageText: NSAttributedString? {
+//        didSet {
+//            updateMessageLabelDisplay()
+//            messageLabel.attributedText = attributedMessageText
+//        }
+//    }
     
     /// Image centered above the title.
     public var image: UIImage? {
@@ -270,7 +278,8 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
     
     @objc public dynamic var titleTextColor: UIColor = #colorLiteral(red: 0.4470588235, green: 0.6901960784, blue: 0.8431372549, alpha: 1) {
         didSet {
-            updateTitleText()
+//            updateTitleText()
+            titleLabel.textColor = titleTextColor
         }
 //        get { return _titleTextColor }
 //        set { _titleTextColor = newValue }
@@ -285,7 +294,7 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
     
     @objc public dynamic var messageTextColor: UIColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.6) {
         didSet {
-            updateMessageText()
+            messageLabel.textColor = messageTextColor
         }
     }
     
@@ -321,7 +330,7 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
     
     @objc public dynamic var titleFont: UIFont = UIFont.systemFont(ofSize: 16, weight: .medium) {
         didSet {
-            updateTitleText()
+            titleLabel.font = titleFont
         }
     }
     @objc public dynamic var messageFont: UIFont = UIFont.systemFont(ofSize: 14, weight: .medium)
