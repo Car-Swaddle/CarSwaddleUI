@@ -273,7 +273,13 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
     @objc public dynamic var normalButtonColor: UIColor = #colorLiteral(red: 0.4470588235, green: 0.6901960784, blue: 0.8431372549, alpha: 1)
     @objc public dynamic var preferredButtonColor: UIColor = #colorLiteral(red: 0.4470588235, green: 0.6901960784, blue: 0.8431372549, alpha: 1)
     
-    @objc public dynamic var normalButtonTitleColor: UIColor = #colorLiteral(red: 0.4470588235, green: 0.6901960784, blue: 0.8431372549, alpha: 1)
+    @objc public dynamic var normalButtonTitleColor: UIColor {
+        get { return _normalButtonTitleColor }
+        set { _normalButtonTitleColor = newValue }
+    }
+    
+    private var _normalButtonTitleColor: UIColor = .white
+    
     @objc public dynamic var preferredButtonTitleColor: UIColor = #colorLiteral(red: 0.4470588235, green: 0.6901960784, blue: 0.8431372549, alpha: 1)
     
     @objc public dynamic var textFieldUnderlineColor: UIColor = #colorLiteral(red: 0.5647058824, green: 0.768627451, blue: 0.8941176471, alpha: 1)
@@ -422,7 +428,7 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
     }
     
     private func configureButtonForDefault(_ button: UIButton) {
-        button.setTitleColor(normalButtonTitleColor, for: .normal)
+        button.setTitleColor(_normalButtonTitleColor, for: .normal)
         
         button.layer.borderWidth = 1
         button.layer.borderColor = defaultButtonBorderColor.cgColor
