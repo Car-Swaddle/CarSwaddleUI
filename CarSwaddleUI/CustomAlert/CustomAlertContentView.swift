@@ -69,6 +69,7 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
         didSet {
             updateTitleLabelDisplay()
             titleLabel.text = titleText
+            setNeedsLayout()
         }
     }
     
@@ -77,6 +78,7 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
         didSet {
             updateMessageLabelDisplay()
             messageLabel.text = messageText
+            setNeedsLayout()
         }
     }
     
@@ -85,6 +87,7 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
         didSet {
             imageView.image = image
             updateImageDisplay()
+            setNeedsLayout()
         }
     }
     
@@ -139,6 +142,8 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
         textField.trailingAnchor.constraint(equalTo: labelStackView.trailingAnchor).isActive = true
         textFields.append(textField)
         configurationHandler?(textField)
+        
+        setNeedsLayout()
     }
     
     /// Add one or many text fields to the alert. Use the closure to configure your text field as needed.
@@ -151,6 +156,8 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
         customView.leadingAnchor.constraint(equalTo: labelStackView.leadingAnchor).isActive = true
         customView.trailingAnchor.constraint(equalTo: labelStackView.trailingAnchor).isActive = true
         configurationHandler?(customView)
+        
+        setNeedsLayout()
     }
     
     /// Add one or more switches to the content. These will be added to the action section of the content view
@@ -186,13 +193,15 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
         switchStackView.setCustomSpacing(3, after: actionSwitch)
         
         let previousViewOptional = buttonStackView.arrangedSubviews.last
-        buttonStackView.addArrangedSubview(switchStackView)
+        labelStackView.addArrangedSubview(switchStackView)
         if let previousView = previousViewOptional {
-            buttonStackView.setCustomSpacing(16, after: previousView)
+            labelStackView.setCustomSpacing(16, after: previousView)
         }
         
         actionSwitches.append(actionSwitch)
         configurationHandler?(actionSwitch, label)
+        
+        setNeedsLayout()
     }
     
     /// Add a `CustomAlertAction` to the content view. Displays a button
@@ -217,6 +226,7 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
         }
         
         updateButtonStackViewAxis()
+        setNeedsLayout()
     }
     
     /// Styles the action with the default preferred action styling.
@@ -241,31 +251,52 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
     
     
     @objc public dynamic var titleTextColor: UIColor = .black {
-        didSet { titleLabel.textColor = titleTextColor }
+        didSet {
+            titleLabel.textColor = titleTextColor
+            setNeedsLayout()
+        }
     }
     
     @objc public dynamic var messageTextColor: UIColor = .gray {
-        didSet { messageLabel.textColor = messageTextColor }
+        didSet {
+            messageLabel.textColor = messageTextColor
+            setNeedsLayout()
+        }
     }
     
     @objc public dynamic var normalButtonColor: UIColor = .white {
-        didSet { normalButtons.forEach { $0.setBackgroundImage(UIImage.from(color: normalButtonColor), for: .normal) } }
+        didSet {
+            normalButtons.forEach { $0.setBackgroundImage(UIImage.from(color: normalButtonColor), for: .normal) }
+            setNeedsLayout()
+        }
     }
     
     @objc public dynamic var preferredButtonColor: UIColor = .white {
-        didSet { preferredButton?.setBackgroundImage(UIImage.from(color: preferredButtonColor), for: .normal) }
+        didSet {
+            preferredButton?.setBackgroundImage(UIImage.from(color: preferredButtonColor), for: .normal)
+            setNeedsLayout()
+        }
     }
     
     @objc public dynamic var normalButtonTitleColor: UIColor = .black {
-        didSet { normalButtons.forEach { $0.setTitleColor(normalButtonTitleColor, for: .normal) } }
+        didSet {
+            normalButtons.forEach { $0.setTitleColor(normalButtonTitleColor, for: .normal) }
+            setNeedsLayout()
+        }
     }
     
     @objc public dynamic var preferredButtonTitleColor: UIColor = .systemBlue {
-        didSet { preferredButton?.setTitleColor(preferredButtonTitleColor, for: .normal) }
+        didSet {
+            preferredButton?.setTitleColor(preferredButtonTitleColor, for: .normal)
+            setNeedsLayout()
+        }
     }
     
     @objc public dynamic var textFieldUnderlineColor: UIColor = .systemBlue {
-        didSet { textFields.forEach { underlineViews[$0]?.backgroundColor = textFieldUnderlineColor } }
+        didSet {
+            textFields.forEach { underlineViews[$0]?.backgroundColor = textFieldUnderlineColor }
+            setNeedsLayout()
+        }
     }
     
     @objc public dynamic var buttonTitleFont: UIFont = UIFont.systemFont(ofSize: 15, weight: .medium) {
@@ -274,6 +305,7 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
                 $0.titleLabel?.font = buttonTitleFont
             }
             preferredButton?.titleLabel?.font = buttonTitleFont
+            setNeedsLayout()
         }
     }
     
@@ -283,29 +315,48 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
                 $0.borderColor = buttonBorderColor
             }
             preferredButton?.borderColor = buttonBorderColor
+            setNeedsLayout()
         }
     }
     
     
     @objc public dynamic var titleFont: UIFont = UIFont.systemFont(ofSize: 16, weight: .medium) {
-        didSet { titleLabel.font = titleFont }
+        didSet {
+            titleLabel.font = titleFont
+            setNeedsLayout()
+        }
     }
     @objc public dynamic var messageFont: UIFont = UIFont.systemFont(ofSize: 14, weight: .medium) {
-        didSet { messageLabel.font = messageFont }
+        didSet {
+            messageLabel.font = messageFont
+            setNeedsLayout()
+        }
     }
     
     @objc public dynamic var textFieldFont: UIFont = UIFont.systemFont(ofSize: 14) {
-        didSet { textFields.forEach { $0.font = textFieldFont } }
+        didSet {
+            textFields.forEach { $0.font = textFieldFont }
+            setNeedsLayout()
+        }
     }
     
     @objc public dynamic var switchLabelFont: UIFont = UIFont.systemFont(ofSize: 12) {
-        didSet { switchLabels.forEach { $0.font = switchLabelFont } }
+        didSet {
+            switchLabels.forEach { $0.font = switchLabelFont }
+            setNeedsLayout()
+        }
     }
     @objc public dynamic var switchLabelTextColor: UIColor = #colorLiteral(red: 0.5333333333, green: 0.5333333333, blue: 0.5333333333, alpha: 1) {
-        didSet { switchLabels.forEach { $0.textColor = switchLabelTextColor } }
+        didSet {
+            switchLabels.forEach { $0.textColor = switchLabelTextColor }
+            setNeedsLayout()
+        }
     }
     @objc public dynamic var textFieldBorderColor: UIColor = .lightGray {
-        didSet { textFields.forEach { $0.borderColor = textFieldBorderColor }  }
+        didSet {
+            textFields.forEach { $0.borderColor = textFieldBorderColor }
+            setNeedsLayout()
+        }
     }
     
     // MARK: - Internal
