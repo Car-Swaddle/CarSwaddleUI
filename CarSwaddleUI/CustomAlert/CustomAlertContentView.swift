@@ -438,7 +438,7 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
     
     override public func layoutSubviews() {
         super.layoutSubviews()
-        labelScrollViewHeightConstraint.constant = labelStackView.frame.height + 5
+        labelScrollViewHeightConstraint.constant = labelStackView.frame.height - 5
         buttonScrollViewHeightConstraint.constant = buttonStackView.frame.height
         
         updateButtonStackViewAxis()
@@ -643,6 +643,10 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
             $0.setBackgroundImage(UIImage.from(color: normalButtonColor), for: .normal)
         }
         preferredButton?.setBackgroundImage(UIImage.from(color: preferredButtonColor), for: .normal)
+        
+        textFields.forEach {
+            $0.borderColor = textFieldBorderColor
+        }
     }
     
 }
