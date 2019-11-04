@@ -443,7 +443,7 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
         
         updateButtonStackViewAxis()
         buttonScrollViewMaxHeightConstraint.constant = min(buttonStackView.frame.height, 100)
-        labelScrollViewMinHeightConstraint.constant = min(labelStackView.frame.height + 15, 80)
+        labelScrollViewMinHeightConstraint.constant = min(labelStackView.frame.height + 30, 80)
     }
     
     // MARK: - Private Methods
