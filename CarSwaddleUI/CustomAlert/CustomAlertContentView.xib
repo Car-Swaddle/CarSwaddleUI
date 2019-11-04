@@ -60,7 +60,7 @@
                                 <constraint firstAttribute="trailing" secondItem="1JC-1X-CBZ" secondAttribute="trailing" id="UEl-Xa-jvk"/>
                                 <constraint firstItem="1JC-1X-CBZ" firstAttribute="leading" secondItem="XwI-Sn-tDX" secondAttribute="leading" id="Z3G-yM-tHR"/>
                                 <constraint firstItem="1JC-1X-CBZ" firstAttribute="width" secondItem="XwI-Sn-tDX" secondAttribute="width" id="cuQ-b2-jAE"/>
-                                <constraint firstAttribute="height" priority="999" constant="35.5" id="d0v-AS-iqw"/>
+                                <constraint firstAttribute="height" priority="600" constant="35.5" id="d0v-AS-iqw"/>
                                 <constraint firstItem="1JC-1X-CBZ" firstAttribute="top" secondItem="XwI-Sn-tDX" secondAttribute="top" id="tKh-Kg-bcu"/>
                             </constraints>
                         </scrollView>

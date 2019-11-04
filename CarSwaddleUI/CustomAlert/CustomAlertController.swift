@@ -110,7 +110,7 @@ final public class CustomAlertController: UIViewController, StoryboardInstantiat
     public override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         let safeAreasInsets: CGFloat = 0 //  view.safeAreaInsets.top + view.safeAreaInsets.bottom
-        let contentInsets = topConstraint.constant + bottomConstraint.constant + topContentConstraint.constant + bottomContentConstraint.constant
+        let contentInsets: CGFloat = 0 // topConstraint.constant + bottomConstraint.constant + topContentConstraint.constant + bottomContentConstraint.constant
         let maxHeight = view.frame.height - (safeAreasInsets + contentInsets + topImageViewHeightConstraint.constant)
         for contentView in contentViews {
             contentView.maxHeight = maxHeight
