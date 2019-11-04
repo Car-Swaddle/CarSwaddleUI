@@ -60,7 +60,7 @@
                                 <constraint firstAttribute="trailing" secondItem="1JC-1X-CBZ" secondAttribute="trailing" id="UEl-Xa-jvk"/>
                                 <constraint firstItem="1JC-1X-CBZ" firstAttribute="leading" secondItem="XwI-Sn-tDX" secondAttribute="leading" id="Z3G-yM-tHR"/>
                                 <constraint firstItem="1JC-1X-CBZ" firstAttribute="width" secondItem="XwI-Sn-tDX" secondAttribute="width" id="cuQ-b2-jAE"/>
-                                <constraint firstAttribute="height" priority="999" constant="35.5" id="d0v-AS-iqw"/>
+                                <constraint firstAttribute="height" priority="600" constant="35.5" id="d0v-AS-iqw"/>
                                 <constraint firstItem="1JC-1X-CBZ" firstAttribute="top" secondItem="XwI-Sn-tDX" secondAttribute="top" id="tKh-Kg-bcu"/>
                             </constraints>
                         </scrollView>
@@ -76,7 +76,7 @@
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="800" constant="100" id="36f-1f-rPu"/>
                                 <constraint firstItem="ojb-62-Vjp" firstAttribute="leading" secondItem="eJR-Nw-jAB" secondAttribute="leading" id="AZl-CK-7XF"/>
                                 <constraint firstAttribute="bottom" secondItem="ojb-62-Vjp" secondAttribute="bottom" id="GCI-VV-qek"/>
-                                <constraint firstAttribute="height" priority="999" constant="54" id="UgM-pE-cLW"/>
+                                <constraint firstAttribute="height" priority="600" constant="54" id="UgM-pE-cLW"/>
                                 <constraint firstItem="ojb-62-Vjp" firstAttribute="top" secondItem="eJR-Nw-jAB" secondAttribute="top" id="p0b-3A-fT1"/>
                                 <constraint firstAttribute="trailing" secondItem="ojb-62-Vjp" secondAttribute="trailing" id="peR-70-43M"/>
                                 <constraint firstItem="ojb-62-Vjp" firstAttribute="width" secondItem="eJR-Nw-jAB" secondAttribute="width" id="s0v-8e-VY4"/>
