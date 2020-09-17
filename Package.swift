@@ -12,7 +12,7 @@ let package = Package(
             targets: ["CarSwaddleUI"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/airbnb/lottie-ios.git", upToNextMajor(from: "3.0.0"))
+        .package(url: "https://github.com/airbnb/lottie-ios.git", .upToNextMajor(from: "3.0.0"))
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
     ],
