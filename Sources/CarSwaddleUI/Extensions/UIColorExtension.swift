@@ -6,6 +6,7 @@
 //  Copyright © 2019 CarSwaddle. All rights reserved.
 //
 
+import UIKit
 
 public typealias RGB = (red: CGFloat, green: CGFloat, blue: CGFloat)
 public typealias RGBA = (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)
@@ -25,18 +26,18 @@ public extension UIColor {
     convenience init(hexString: String) {
         let scanner = Scanner(string: UIColor.normalizeHexString(hexString: hexString))
         
-        var color:UInt32 = 0
-        scanner.scanHexInt32(&color)
+        var color:UInt64 = 0
+        scanner.scanHexInt64(&color)
         
-        let redMask: UInt32    = 0xff000000
-        let greenMask: UInt32  = 0x00ff0000
-        let blueMask: UInt32   = 0x0000ff00
-        let alphaMask: UInt32  = 0x000000ff
+        let redMask: UInt64    = 0xff000000
+        let greenMask: UInt64  = 0x00ff0000
+        let blueMask: UInt64   = 0x0000ff00
+        let alphaMask: UInt64  = 0x000000ff
         
-        let redInt = UInt32(color & redMask) >> 24
-        let greenInt = UInt32(color & greenMask) >> 16
-        let blueInt = UInt32(color & blueMask) >> 8
-        let alphaInt = UInt32(color & alphaMask)
+        let redInt = UInt64(color & redMask) >> 24
+        let greenInt = UInt64(color & greenMask) >> 16
+        let blueInt = UInt64(color & blueMask) >> 8
+        let alphaInt = UInt64(color & alphaMask)
         
         let red   = CGFloat(redInt) / 255.0
         let green = CGFloat(greenInt) / 255.0

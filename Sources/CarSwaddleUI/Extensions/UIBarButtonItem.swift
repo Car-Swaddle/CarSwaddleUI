@@ -6,7 +6,7 @@
 //  Copyright © 2018 CarSwaddle. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public extension UIBarButtonItem {
     

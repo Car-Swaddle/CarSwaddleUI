@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 
 
 /// Used with `DelegatingPresentAnimationController` to allow a viewcontroller to customize it's own transition.

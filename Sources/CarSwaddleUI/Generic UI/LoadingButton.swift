@@ -22,7 +22,7 @@ open class LoadingButton: UIButton {
         }
     }
     
-    open var indicatorViewStyle: UIActivityIndicatorView.Style = .gray {
+    open var indicatorViewStyle: UIActivityIndicatorView.Style = .medium {
         didSet {
             spinner.style = indicatorViewStyle
         }

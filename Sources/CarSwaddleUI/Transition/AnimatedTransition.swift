@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 
 
 /// Base class for animated transitions
@@ -47,7 +47,7 @@ open class AnimatedTransition: NSObject, UIViewControllerAnimatedTransitioning {
         switch presentation {
         case .dismissing:
             switch fromViewController.modalPresentationStyle {
-            case .currentContext, .overCurrentContext:
+            case .currentContext, .overCurrentContext, .automatic:
                 toViewController.view.frame = fromViewController.view.frame
             case .fullScreen, .custom, .overFullScreen, .none:
                 toViewController.view.frame = transitionContext.containerView.frame
@@ -60,7 +60,7 @@ open class AnimatedTransition: NSObject, UIViewControllerAnimatedTransitioning {
             containerView.addSubview(toViewController.view)
             
             switch toViewController.modalPresentationStyle {
-            case .currentContext, .overCurrentContext:
+            case .currentContext, .overCurrentContext, .automatic:
                 toViewController.view.frame = fromViewController.view.frame
             case .fullScreen, .custom, .overFullScreen, .none:
                 toViewController.view.frame = transitionContext.containerView.frame

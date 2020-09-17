@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 
 /// Used with `ZoomOutPresentAnimatedTransition` to provide the correct view to zoom.
 public protocol ZoomContentViewContaining {

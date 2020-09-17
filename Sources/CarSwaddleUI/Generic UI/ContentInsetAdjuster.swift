@@ -67,7 +67,7 @@ public class ContentInsetAdjuster {
         if actionButton != nil {
             let insets = defaultContentInsets
             tableView?.contentInset = insets
-            tableView?.scrollIndicatorInsets.bottom = insets.bottom
+            tableView?.verticalScrollIndicatorInsets.bottom = insets.bottom
         }
     }
     
@@ -100,7 +100,7 @@ public class ContentInsetAdjuster {
         
         UIView.animate(withDuration: 0.25) {
             self.tableView?.contentInset.bottom = bottomContentInset
-            self.tableView?.scrollIndicatorInsets.bottom = bottomContentInset
+            self.tableView?.verticalScrollIndicatorInsets.bottom = bottomContentInset
             self.actionButtonBottomConstraint?.constant = -bottomGapConstant
             self.actionButton?.superview?.layoutIfNeeded()
         }
@@ -116,10 +116,10 @@ public class ContentInsetAdjuster {
             let animationCurve = notification.userInfo?[UIResponder.keyboardAnimationCurveUserInfoKey] as? UInt,
             let duration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? TimeInterval else { return }
         var keyboardHeight = keyboardFrame.cgRectValue.height
-        keyboardHeight = keyboardHeight - (UIApplication.shared.keyWindow?.safeAreaInsets.bottom ?? 0)
+        keyboardHeight = keyboardHeight - (UIApplication.shared.firstKeyWindow?.safeAreaInsets.bottom ?? 0)
         if includeTabBarInKeyboardCalculation {
             let bottomOffset: CGFloat = (delegate?.bottomOffset(adjuster: self) ?? ContentInsetAdjuster.defaultBottomOffset)
-            keyboardHeight = keyboardHeight - bottomOffset + (UIApplication.shared.keyWindow?.safeAreaInsets.bottom ?? 0)
+            keyboardHeight = keyboardHeight - bottomOffset + (UIApplication.shared.firstKeyWindow?.safeAreaInsets.bottom ?? 0)
         }
         
         var contentInsetBottom = keyboardHeight
@@ -140,7 +140,7 @@ public class ContentInsetAdjuster {
         let options = UIView.AnimationOptions(rawValue: animationCurve)
         UIView.animate(withDuration: duration, delay: 0.0, options: options, animations: {
             self.tableView?.contentInset.bottom = contentInsetBottom
-            self.tableView?.scrollIndicatorInsets.bottom = contentInsetBottom
+            self.tableView?.verticalScrollIndicatorInsets.bottom = contentInsetBottom
             if self.showActionButtonAboveKeyboard {
                 self.actionButtonBottomConstraint?.constant = -(keyboardHeight + bottomGapConstant)
             }
@@ -148,6 +148,15 @@ public class ContentInsetAdjuster {
         }) { isFinished in
             
         }
+    }
+    
+}
+
+
+fileprivate extension UIApplication {
+    
+    var firstKeyWindow: UIWindow? {
+        return windows.filter { $0.isKeyWindow }.first
     }
     
 }

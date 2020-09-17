@@ -58,7 +58,7 @@ open class ActionButton: LoadingButton {
         titleLabel?.textAlignment = .center
         contentEdgeInsets = UIEdgeInsets(top: insetLength, left: insetLength, bottom: insetLength, right: insetLength)
         
-        indicatorViewStyle = .white
+        indicatorViewStyle = .medium
     }
     
     private var backgroundColorForCurrentState: UIColor {
