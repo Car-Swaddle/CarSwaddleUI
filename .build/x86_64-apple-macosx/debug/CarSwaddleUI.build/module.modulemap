@@ -1,0 +1,4 @@
+module CarSwaddleUI {
+    header "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/CarSwaddleUI.build/CarSwaddleUI-Swift.h"
+    requires objc
+}

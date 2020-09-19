@@ -1,0 +1,1 @@
+{"object": {"artifacts": [], "dependencies": [{"basedOn": null, "packageRef": {"identity": "lottie-ios", "kind": "remote", "name": "Lottie", "path": "https://github.com/airbnb/lottie-ios.git"}, "state": {"checkoutState": {"branch": null, "revision": "4e5877425dae5c10792fc9d22d53dc6bf6824dc1", "version": "3.1.8"}, "name": "checkout"}, "subpath": "lottie-ios"}]}, "version": 4}

@@ -1,0 +1,767 @@
+{
+  "": {
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/master.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/LayerContainers/AnimationContainer.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/AnimationContainer.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/AnimationContainer.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/AnimationContainer~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/AnimationContainer.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/LayerContainers/CompLayers/CompositionLayer.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/CompLayers/CompositionLayer.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/CompLayers/CompositionLayer.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/CompLayers/CompositionLayer~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/CompLayers/CompositionLayer.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/LayerContainers/CompLayers/ImageCompositionLayer.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/CompLayers/ImageCompositionLayer.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/CompLayers/ImageCompositionLayer.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/CompLayers/ImageCompositionLayer~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/CompLayers/ImageCompositionLayer.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/LayerContainers/CompLayers/MaskContainerLayer.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/CompLayers/MaskContainerLayer.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/CompLayers/MaskContainerLayer.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/CompLayers/MaskContainerLayer~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/CompLayers/MaskContainerLayer.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/LayerContainers/CompLayers/NullCompositionLayer.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/CompLayers/NullCompositionLayer.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/CompLayers/NullCompositionLayer.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/CompLayers/NullCompositionLayer~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/CompLayers/NullCompositionLayer.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/LayerContainers/CompLayers/PreCompositionLayer.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/CompLayers/PreCompositionLayer.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/CompLayers/PreCompositionLayer.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/CompLayers/PreCompositionLayer~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/CompLayers/PreCompositionLayer.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/LayerContainers/CompLayers/ShapeCompositionLayer.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/CompLayers/ShapeCompositionLayer.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/CompLayers/ShapeCompositionLayer.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/CompLayers/ShapeCompositionLayer~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/CompLayers/ShapeCompositionLayer.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/LayerContainers/CompLayers/SolidCompositionLayer.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/CompLayers/SolidCompositionLayer.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/CompLayers/SolidCompositionLayer.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/CompLayers/SolidCompositionLayer~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/CompLayers/SolidCompositionLayer.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/LayerContainers/CompLayers/TextCompositionLayer.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/CompLayers/TextCompositionLayer.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/CompLayers/TextCompositionLayer.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/CompLayers/TextCompositionLayer~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/CompLayers/TextCompositionLayer.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/LayerContainers/Utility/CompositionLayersInitializer.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/Utility/CompositionLayersInitializer.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/Utility/CompositionLayersInitializer.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/Utility/CompositionLayersInitializer~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/Utility/CompositionLayersInitializer.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/LayerContainers/Utility/InvertedMatteLayer.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/Utility/InvertedMatteLayer.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/Utility/InvertedMatteLayer.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/Utility/InvertedMatteLayer~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/Utility/InvertedMatteLayer.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/LayerContainers/Utility/LayerImageProvider.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/Utility/LayerImageProvider.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/Utility/LayerImageProvider.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/Utility/LayerImageProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/Utility/LayerImageProvider.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/LayerContainers/Utility/LayerTextProvider.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/Utility/LayerTextProvider.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/Utility/LayerTextProvider.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/Utility/LayerTextProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/Utility/LayerTextProvider.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/LayerContainers/Utility/LayerTransformNode.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/Utility/LayerTransformNode.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/Utility/LayerTransformNode.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/Utility/LayerTransformNode~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/LayerContainers/Utility/LayerTransformNode.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/Animation.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Animation.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Animation.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Animation~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Animation.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/Assets/Asset.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Assets/Asset.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Assets/Asset.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Assets/Asset~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Assets/Asset.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/Assets/AssetLibrary.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Assets/AssetLibrary.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Assets/AssetLibrary.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Assets/AssetLibrary~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Assets/AssetLibrary.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/Assets/ImageAsset.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Assets/ImageAsset.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Assets/ImageAsset.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Assets/ImageAsset~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Assets/ImageAsset.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/Assets/PrecompAsset.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Assets/PrecompAsset.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Assets/PrecompAsset.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Assets/PrecompAsset~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Assets/PrecompAsset.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/Extensions/KeyedDecodingContainerExtensions.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Extensions/KeyedDecodingContainerExtensions.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Extensions/KeyedDecodingContainerExtensions.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Extensions/KeyedDecodingContainerExtensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Extensions/KeyedDecodingContainerExtensions.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/Keyframes/Keyframe.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Keyframes/Keyframe.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Keyframes/Keyframe.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Keyframes/Keyframe~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Keyframes/Keyframe.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/Keyframes/KeyframeGroup.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Keyframes/KeyframeGroup.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Keyframes/KeyframeGroup.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Keyframes/KeyframeGroup~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Keyframes/KeyframeGroup.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/Layers/ImageLayerModel.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Layers/ImageLayerModel.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Layers/ImageLayerModel.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Layers/ImageLayerModel~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Layers/ImageLayerModel.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/Layers/LayerModel.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Layers/LayerModel.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Layers/LayerModel.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Layers/LayerModel~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Layers/LayerModel.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/Layers/PreCompLayerModel.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Layers/PreCompLayerModel.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Layers/PreCompLayerModel.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Layers/PreCompLayerModel~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Layers/PreCompLayerModel.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/Layers/ShapeLayerModel.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Layers/ShapeLayerModel.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Layers/ShapeLayerModel.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Layers/ShapeLayerModel~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Layers/ShapeLayerModel.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/Layers/SolidLayerModel.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Layers/SolidLayerModel.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Layers/SolidLayerModel.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Layers/SolidLayerModel~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Layers/SolidLayerModel.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/Layers/TextLayerModel.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Layers/TextLayerModel.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Layers/TextLayerModel.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Layers/TextLayerModel~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Layers/TextLayerModel.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/Objects/DashPattern.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Objects/DashPattern.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Objects/DashPattern.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Objects/DashPattern~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Objects/DashPattern.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/Objects/Marker.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Objects/Marker.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Objects/Marker.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Objects/Marker~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Objects/Marker.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/Objects/Mask.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Objects/Mask.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Objects/Mask.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Objects/Mask~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Objects/Mask.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/Objects/Transform.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Objects/Transform.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Objects/Transform.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Objects/Transform~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Objects/Transform.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/ShapeItems/Ellipse.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Ellipse.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Ellipse.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Ellipse~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Ellipse.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/ShapeItems/FillI.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/FillI.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/FillI.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/FillI~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/FillI.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/ShapeItems/GradientFill.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/GradientFill.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/GradientFill.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/GradientFill~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/GradientFill.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/ShapeItems/GradientStroke.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/GradientStroke.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/GradientStroke.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/GradientStroke~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/GradientStroke.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/ShapeItems/Group.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Group.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Group.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Group~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Group.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/ShapeItems/Merge.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Merge.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Merge.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Merge~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Merge.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/ShapeItems/Rectangle.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Rectangle.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Rectangle.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Rectangle~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Rectangle.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/ShapeItems/Repeater.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Repeater.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Repeater.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Repeater~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Repeater.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/ShapeItems/Shape.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Shape.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Shape.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Shape~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Shape.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/ShapeItems/ShapeItem.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/ShapeItem.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/ShapeItem.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/ShapeItem~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/ShapeItem.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/ShapeItems/ShapeTransform.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/ShapeTransform.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/ShapeTransform.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/ShapeTransform~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/ShapeTransform.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/ShapeItems/Star.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Star.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Star.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Star~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Star.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/ShapeItems/Stroke.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Stroke.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Stroke.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Stroke~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Stroke.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/ShapeItems/Trim.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Trim.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Trim.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Trim~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/ShapeItems/Trim.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/Text/Font.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Text/Font.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Text/Font.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Text/Font~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Text/Font.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/Text/Glyph.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Text/Glyph.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Text/Glyph.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Text/Glyph~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Text/Glyph.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/Text/TextAnimator.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Text/TextAnimator.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Text/TextAnimator.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Text/TextAnimator~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Text/TextAnimator.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Model/Text/TextDocument.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Text/TextDocument.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Text/TextDocument.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Text/TextDocument~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Model/Text/TextDocument.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/NodeRenderSystem/Extensions/ItemsExtension.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Extensions/ItemsExtension.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Extensions/ItemsExtension.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Extensions/ItemsExtension~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Extensions/ItemsExtension.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/NodeRenderSystem/NodeProperties/NodeProperty.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/NodeProperty.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/NodeProperty.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/NodeProperty~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/NodeProperty.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/NodeRenderSystem/NodeProperties/Protocols/AnyNodeProperty.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/Protocols/AnyNodeProperty.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/Protocols/AnyNodeProperty.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/Protocols/AnyNodeProperty~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/Protocols/AnyNodeProperty.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/NodeRenderSystem/NodeProperties/Protocols/AnyValueContainer.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/Protocols/AnyValueContainer.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/Protocols/AnyValueContainer.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/Protocols/AnyValueContainer~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/Protocols/AnyValueContainer.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/NodeRenderSystem/NodeProperties/Protocols/KeypathSearchable.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/Protocols/KeypathSearchable.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/Protocols/KeypathSearchable.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/Protocols/KeypathSearchable~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/Protocols/KeypathSearchable.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/NodeRenderSystem/NodeProperties/Protocols/NodePropertyMap.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/Protocols/NodePropertyMap.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/Protocols/NodePropertyMap.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/Protocols/NodePropertyMap~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/Protocols/NodePropertyMap.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/NodeRenderSystem/NodeProperties/ValueContainer.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/ValueContainer.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/ValueContainer.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/ValueContainer~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/ValueContainer.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/NodeRenderSystem/NodeProperties/ValueProviders/GroupInterpolator.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/ValueProviders/GroupInterpolator.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/ValueProviders/GroupInterpolator.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/ValueProviders/GroupInterpolator~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/ValueProviders/GroupInterpolator.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/NodeRenderSystem/NodeProperties/ValueProviders/KeyframeInterpolator.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/ValueProviders/KeyframeInterpolator.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/ValueProviders/KeyframeInterpolator.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/ValueProviders/KeyframeInterpolator~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/ValueProviders/KeyframeInterpolator.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/NodeRenderSystem/NodeProperties/ValueProviders/SingleValueProvider.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/ValueProviders/SingleValueProvider.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/ValueProviders/SingleValueProvider.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/ValueProviders/SingleValueProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/NodeProperties/ValueProviders/SingleValueProvider.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/NodeRenderSystem/Nodes/ModifierNodes/TrimPathNode.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/ModifierNodes/TrimPathNode.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/ModifierNodes/TrimPathNode.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/ModifierNodes/TrimPathNode~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/ModifierNodes/TrimPathNode.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/NodeRenderSystem/Nodes/OutputNodes/GroupOutputNode.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/OutputNodes/GroupOutputNode.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/OutputNodes/GroupOutputNode.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/OutputNodes/GroupOutputNode~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/OutputNodes/GroupOutputNode.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/NodeRenderSystem/Nodes/OutputNodes/PassThroughOutputNode.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/OutputNodes/PassThroughOutputNode.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/OutputNodes/PassThroughOutputNode.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/OutputNodes/PassThroughOutputNode~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/OutputNodes/PassThroughOutputNode.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/NodeRenderSystem/Nodes/OutputNodes/PathOutputNode.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/OutputNodes/PathOutputNode.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/OutputNodes/PathOutputNode.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/OutputNodes/PathOutputNode~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/OutputNodes/PathOutputNode.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/NodeRenderSystem/Nodes/OutputNodes/Renderables/FillRenderer.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/OutputNodes/Renderables/FillRenderer.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/OutputNodes/Renderables/FillRenderer.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/OutputNodes/Renderables/FillRenderer~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/OutputNodes/Renderables/FillRenderer.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/NodeRenderSystem/Nodes/OutputNodes/Renderables/GradientFillRenderer.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/OutputNodes/Renderables/GradientFillRenderer.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/OutputNodes/Renderables/GradientFillRenderer.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/OutputNodes/Renderables/GradientFillRenderer~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/OutputNodes/Renderables/GradientFillRenderer.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/NodeRenderSystem/Nodes/OutputNodes/Renderables/GradientStrokeRenderer.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/OutputNodes/Renderables/GradientStrokeRenderer.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/OutputNodes/Renderables/GradientStrokeRenderer.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/OutputNodes/Renderables/GradientStrokeRenderer~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/OutputNodes/Renderables/GradientStrokeRenderer.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/NodeRenderSystem/Nodes/OutputNodes/Renderables/StrokeRenderer.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/OutputNodes/Renderables/StrokeRenderer.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/OutputNodes/Renderables/StrokeRenderer.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/OutputNodes/Renderables/StrokeRenderer~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/OutputNodes/Renderables/StrokeRenderer.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/NodeRenderSystem/Nodes/PathNodes/EllipseNode.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/PathNodes/EllipseNode.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/PathNodes/EllipseNode.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/PathNodes/EllipseNode~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/PathNodes/EllipseNode.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/NodeRenderSystem/Nodes/PathNodes/PolygonNode.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/PathNodes/PolygonNode.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/PathNodes/PolygonNode.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/PathNodes/PolygonNode~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/PathNodes/PolygonNode.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/NodeRenderSystem/Nodes/PathNodes/RectNode.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/PathNodes/RectNode.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/PathNodes/RectNode.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/PathNodes/RectNode~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/PathNodes/RectNode.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/NodeRenderSystem/Nodes/PathNodes/ShapeNode.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/PathNodes/ShapeNode.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/PathNodes/ShapeNode.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/PathNodes/ShapeNode~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/PathNodes/ShapeNode.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/NodeRenderSystem/Nodes/PathNodes/StarNode.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/PathNodes/StarNode.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/PathNodes/StarNode.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/PathNodes/StarNode~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/PathNodes/StarNode.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/NodeRenderSystem/Nodes/RenderContainers/GroupNode.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/RenderContainers/GroupNode.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/RenderContainers/GroupNode.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/RenderContainers/GroupNode~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/RenderContainers/GroupNode.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/NodeRenderSystem/Nodes/RenderNodes/FillNode.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/RenderNodes/FillNode.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/RenderNodes/FillNode.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/RenderNodes/FillNode~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/RenderNodes/FillNode.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/NodeRenderSystem/Nodes/RenderNodes/GradientFillNode.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/RenderNodes/GradientFillNode.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/RenderNodes/GradientFillNode.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/RenderNodes/GradientFillNode~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/RenderNodes/GradientFillNode.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/NodeRenderSystem/Nodes/RenderNodes/GradientStrokeNode.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/RenderNodes/GradientStrokeNode.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/RenderNodes/GradientStrokeNode.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/RenderNodes/GradientStrokeNode~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/RenderNodes/GradientStrokeNode.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/NodeRenderSystem/Nodes/RenderNodes/StrokeNode.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/RenderNodes/StrokeNode.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/RenderNodes/StrokeNode.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/RenderNodes/StrokeNode~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/RenderNodes/StrokeNode.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/NodeRenderSystem/Nodes/Text/TextAnimatorNode.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/Text/TextAnimatorNode.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/Text/TextAnimatorNode.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/Text/TextAnimatorNode~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Nodes/Text/TextAnimatorNode.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/NodeRenderSystem/Protocols/AnimatorNode.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Protocols/AnimatorNode.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Protocols/AnimatorNode.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Protocols/AnimatorNode~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Protocols/AnimatorNode.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/NodeRenderSystem/Protocols/PathNode.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Protocols/PathNode.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Protocols/PathNode.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Protocols/PathNode~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Protocols/PathNode.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/NodeRenderSystem/Protocols/RenderNode.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Protocols/RenderNode.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Protocols/RenderNode.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Protocols/RenderNode~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/Protocols/RenderNode.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/NodeRenderSystem/RenderLayers/ShapeContainerLayer.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/RenderLayers/ShapeContainerLayer.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/RenderLayers/ShapeContainerLayer.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/RenderLayers/ShapeContainerLayer~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/RenderLayers/ShapeContainerLayer.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/NodeRenderSystem/RenderLayers/ShapeRenderLayer.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/RenderLayers/ShapeRenderLayer.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/RenderLayers/ShapeRenderLayer.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/RenderLayers/ShapeRenderLayer~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/NodeRenderSystem/RenderLayers/ShapeRenderLayer.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Utility/Debugging/AnimatorNodeDebugging.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Debugging/AnimatorNodeDebugging.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Debugging/AnimatorNodeDebugging.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Debugging/AnimatorNodeDebugging~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Debugging/AnimatorNodeDebugging.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Utility/Debugging/LayerDebugging.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Debugging/LayerDebugging.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Debugging/LayerDebugging.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Debugging/LayerDebugging~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Debugging/LayerDebugging.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Utility/Extensions/AnimationKeypathExtension.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Extensions/AnimationKeypathExtension.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Extensions/AnimationKeypathExtension.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Extensions/AnimationKeypathExtension~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Extensions/AnimationKeypathExtension.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Utility/Extensions/CGFloatExtensions.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Extensions/CGFloatExtensions.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Extensions/CGFloatExtensions.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Extensions/CGFloatExtensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Extensions/CGFloatExtensions.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Utility/Extensions/MathKit.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Extensions/MathKit.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Extensions/MathKit.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Extensions/MathKit~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Extensions/MathKit.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Utility/Extensions/StringExtensions.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Extensions/StringExtensions.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Extensions/StringExtensions.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Extensions/StringExtensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Extensions/StringExtensions.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Utility/Helpers/AnimationContext.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Helpers/AnimationContext.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Helpers/AnimationContext.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Helpers/AnimationContext~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Helpers/AnimationContext.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Utility/Interpolatable/Interpolatable.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Interpolatable/Interpolatable.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Interpolatable/Interpolatable.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Interpolatable/Interpolatable~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Interpolatable/Interpolatable.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Utility/Interpolatable/InterpolatableExtensions.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Interpolatable/InterpolatableExtensions.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Interpolatable/InterpolatableExtensions.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Interpolatable/InterpolatableExtensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Interpolatable/InterpolatableExtensions.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Utility/Interpolatable/KeyframeExtensions.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Interpolatable/KeyframeExtensions.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Interpolatable/KeyframeExtensions.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Interpolatable/KeyframeExtensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Interpolatable/KeyframeExtensions.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Utility/Primitives/BezierPath.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Primitives/BezierPath.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Primitives/BezierPath.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Primitives/BezierPath~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Primitives/BezierPath.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Utility/Primitives/ColorExtension.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Primitives/ColorExtension.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Primitives/ColorExtension.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Primitives/ColorExtension~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Primitives/ColorExtension.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Utility/Primitives/CompoundBezierPath.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Primitives/CompoundBezierPath.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Primitives/CompoundBezierPath.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Primitives/CompoundBezierPath~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Primitives/CompoundBezierPath.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Utility/Primitives/CurveVertex.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Primitives/CurveVertex.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Primitives/CurveVertex.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Primitives/CurveVertex~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Primitives/CurveVertex.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Utility/Primitives/PathElement.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Primitives/PathElement.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Primitives/PathElement.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Primitives/PathElement~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Primitives/PathElement.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Private/Utility/Primitives/VectorsExtensions.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Primitives/VectorsExtensions.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Primitives/VectorsExtensions.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Primitives/VectorsExtensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Private/Utility/Primitives/VectorsExtensions.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Public/Animation/AnimationPublic.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/Animation/AnimationPublic.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/Animation/AnimationPublic.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/Animation/AnimationPublic~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/Animation/AnimationPublic.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Public/Animation/AnimationView.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/Animation/AnimationView.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/Animation/AnimationView.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/Animation/AnimationView~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/Animation/AnimationView.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Public/Animation/AnimationViewInitializers.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/Animation/AnimationViewInitializers.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/Animation/AnimationViewInitializers.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/Animation/AnimationViewInitializers~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/Animation/AnimationViewInitializers.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Public/AnimationCache/AnimationCacheProvider.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/AnimationCache/AnimationCacheProvider.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/AnimationCache/AnimationCacheProvider.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/AnimationCache/AnimationCacheProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/AnimationCache/AnimationCacheProvider.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Public/AnimationCache/LRUAnimationCache.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/AnimationCache/LRUAnimationCache.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/AnimationCache/LRUAnimationCache.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/AnimationCache/LRUAnimationCache~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/AnimationCache/LRUAnimationCache.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Public/DynamicProperties/AnimationKeypath.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/DynamicProperties/AnimationKeypath.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/DynamicProperties/AnimationKeypath.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/DynamicProperties/AnimationKeypath~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/DynamicProperties/AnimationKeypath.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Public/DynamicProperties/AnyValueProvider.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/DynamicProperties/AnyValueProvider.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/DynamicProperties/AnyValueProvider.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/DynamicProperties/AnyValueProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/DynamicProperties/AnyValueProvider.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Public/DynamicProperties/ValueProviders/ColorValueProvider.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/DynamicProperties/ValueProviders/ColorValueProvider.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/DynamicProperties/ValueProviders/ColorValueProvider.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/DynamicProperties/ValueProviders/ColorValueProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/DynamicProperties/ValueProviders/ColorValueProvider.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Public/DynamicProperties/ValueProviders/FloatValueProvider.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/DynamicProperties/ValueProviders/FloatValueProvider.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/DynamicProperties/ValueProviders/FloatValueProvider.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/DynamicProperties/ValueProviders/FloatValueProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/DynamicProperties/ValueProviders/FloatValueProvider.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Public/DynamicProperties/ValueProviders/GradientValueProvider.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/DynamicProperties/ValueProviders/GradientValueProvider.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/DynamicProperties/ValueProviders/GradientValueProvider.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/DynamicProperties/ValueProviders/GradientValueProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/DynamicProperties/ValueProviders/GradientValueProvider.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Public/DynamicProperties/ValueProviders/PointValueProvider.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/DynamicProperties/ValueProviders/PointValueProvider.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/DynamicProperties/ValueProviders/PointValueProvider.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/DynamicProperties/ValueProviders/PointValueProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/DynamicProperties/ValueProviders/PointValueProvider.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Public/DynamicProperties/ValueProviders/SizeValueProvider.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/DynamicProperties/ValueProviders/SizeValueProvider.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/DynamicProperties/ValueProviders/SizeValueProvider.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/DynamicProperties/ValueProviders/SizeValueProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/DynamicProperties/ValueProviders/SizeValueProvider.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Public/ImageProvider/AnimationImageProvider.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/ImageProvider/AnimationImageProvider.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/ImageProvider/AnimationImageProvider.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/ImageProvider/AnimationImageProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/ImageProvider/AnimationImageProvider.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Public/Primitives/AnimationTime.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/Primitives/AnimationTime.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/Primitives/AnimationTime.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/Primitives/AnimationTime~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/Primitives/AnimationTime.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Public/Primitives/Color.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/Primitives/Color.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/Primitives/Color.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/Primitives/Color~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/Primitives/Color.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Public/Primitives/Vectors.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/Primitives/Vectors.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/Primitives/Vectors.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/Primitives/Vectors~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/Primitives/Vectors.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Public/TextProvider/AnimationTextProvider.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/TextProvider/AnimationTextProvider.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/TextProvider/AnimationTextProvider.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/TextProvider/AnimationTextProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/TextProvider/AnimationTextProvider.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Public/iOS/AnimatedButton.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/AnimatedButton.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/AnimatedButton.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/AnimatedButton~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/AnimatedButton.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Public/iOS/AnimatedControl.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/AnimatedControl.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/AnimatedControl.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/AnimatedControl~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/AnimatedControl.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Public/iOS/AnimatedSwitch.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/AnimatedSwitch.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/AnimatedSwitch.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/AnimatedSwitch~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/AnimatedSwitch.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Public/iOS/AnimationSubview.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/AnimationSubview.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/AnimationSubview.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/AnimationSubview~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/AnimationSubview.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Public/iOS/BundleImageProvider.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/BundleImageProvider.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/BundleImageProvider.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/BundleImageProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/BundleImageProvider.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Public/iOS/Compatibility/CompatibleAnimationKeypath.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/Compatibility/CompatibleAnimationKeypath.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/Compatibility/CompatibleAnimationKeypath.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/Compatibility/CompatibleAnimationKeypath~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/Compatibility/CompatibleAnimationKeypath.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Public/iOS/Compatibility/CompatibleAnimationView.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/Compatibility/CompatibleAnimationView.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/Compatibility/CompatibleAnimationView.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/Compatibility/CompatibleAnimationView~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/Compatibility/CompatibleAnimationView.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Public/iOS/FilepathImageProvider.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/FilepathImageProvider.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/FilepathImageProvider.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/FilepathImageProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/FilepathImageProvider.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Public/iOS/LottieView.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/LottieView.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/LottieView.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/LottieView~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/LottieView.swiftdeps"
+  },
+  "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/checkouts/lottie-ios/lottie-swift/src/Public/iOS/UIColorExtension.swift": {
+    "dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/UIColorExtension.d",
+    "object": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/UIColorExtension.swift.o",
+    "swiftmodule": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/UIColorExtension~partial.swiftmodule",
+    "swift-dependencies": "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Public/iOS/UIColorExtension.swiftdeps"
+  }
+}

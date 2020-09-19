@@ -1,0 +1,20 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "\/Users\/kylekendall\/Projects\/githubProjects\/CarSwaddleUI\/.build\/x86_64-apple-macosx\/debug\/CarSwaddleUIPackageTests.xctest\/Contents\/MacOS\/CarSwaddleUIPackageTests",
+      "packageName" : "CarSwaddleUI",
+      "productName" : "CarSwaddleUIPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "swiftTargetMap" : {
+    "C.CarSwaddleUI-debug.module" : "CarSwaddleUI",
+    "C.CarSwaddleUITests-debug.module" : "CarSwaddleUITests",
+    "C.Lottie-debug.module" : "Lottie"
+  },
+  "testDiscoveryCommands" : {
+
+  }
+}
