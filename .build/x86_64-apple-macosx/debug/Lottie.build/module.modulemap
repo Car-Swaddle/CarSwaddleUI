@@ -1,4 +1,0 @@
-module Lottie {
-    header "/Users/kylekendall/Projects/githubProjects/CarSwaddleUI/.build/x86_64-apple-macosx/debug/Lottie.build/Lottie-Swift.h"
-    requires objc
-}
