@@ -10,6 +10,10 @@ private let alertCornerRadius: CGFloat = 16
 /// Create an instance with a `CustomAlert`
 final public class CustomAlertController: UIViewController, StoryboardInstantiating {
     
+    public static var bundle: Bundle {
+        return Bundle.module
+    }
+    
     // MARK: - Public
     
     // only one content view is allowed for now. Expand this to multiple when `next` and/or `back` is a requirement

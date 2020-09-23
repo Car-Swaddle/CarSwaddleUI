@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gjo-RK-Mgr">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gjo-RK-Mgr">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Delegate-->
+        <!--Verify Phone Number-->
         <scene sceneID="bX7-kq-iWm">
             <objects>
                 <viewController id="gjo-RK-Mgr" customClass="OneTimeCodeViewController" customModule="CarSwaddleUI" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q36-y6-hFU" customClass="OneTimeCodeEntryView" customModule="CarSwaddleUI" customModuleProvider="target">
-                                <rect key="frame" x="69" y="181" width="237" height="45"/>
+                                <rect key="frame" x="69" y="161" width="237" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="XOO-La-mNe"/>
                                     <constraint firstAttribute="width" constant="237" placeholder="YES" id="Ywd-yV-Hcc"/>
@@ -36,32 +34,33 @@
                                 </connections>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please verify your phone number" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2a-LR-BU5">
-                                <rect key="frame" x="68.5" y="80" width="238.5" height="19.5"/>
+                                <rect key="frame" x="68.5" y="60" width="238.5" height="19.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ia0-YO-OeF">
-                                <rect key="frame" x="103" y="274" width="169" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ia0-YO-OeF">
+                                <rect key="frame" x="103" y="254" width="169" height="30"/>
                                 <state key="normal" title="Resend verification code"/>
                                 <connections>
                                     <action selector="didSelectResendVerificationCode" destination="gjo-RK-Mgr" eventType="touchUpInside" id="Kel-tL-rje"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We've sent a verification code to 123-456-7890. Please enter the code in the space below." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHw-IQ-mBD">
-                                <rect key="frame" x="29" y="115.5" width="317.5" height="33.5"/>
+                                <rect key="frame" x="28.5" y="95.5" width="318" height="33.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNL-mZ-3QG">
-                                <rect key="frame" x="110.5" y="317.5" width="154" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNL-mZ-3QG">
+                                <rect key="frame" x="110.5" y="297.5" width="154" height="30"/>
                                 <state key="normal" title="Update phone number"/>
                                 <connections>
                                     <action selector="tapUpdatePhoneNumber" destination="gjo-RK-Mgr" eventType="touchUpInside" id="YCC-a5-cgv"/>
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="rah-t2-sSm"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="q36-y6-hFU" firstAttribute="centerX" secondItem="rah-t2-sSm" secondAttribute="centerX" id="37R-sK-mAD"/>
@@ -79,7 +78,6 @@
                             <constraint firstItem="Ia0-YO-OeF" firstAttribute="top" secondItem="q36-y6-hFU" secondAttribute="bottom" constant="48" id="m6o-sr-dOb"/>
                             <constraint firstItem="q36-y6-hFU" firstAttribute="top" secondItem="bHw-IQ-mBD" secondAttribute="bottom" constant="32" id="vcq-zs-Zt8"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="rah-t2-sSm"/>
                     </view>
                     <navigationItem key="navigationItem" title="Verify Phone Number" id="QV8-LH-bPo"/>
                     <connections>
@@ -100,7 +98,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JPl-zw-k1U" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5Vk-y0-LdN">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

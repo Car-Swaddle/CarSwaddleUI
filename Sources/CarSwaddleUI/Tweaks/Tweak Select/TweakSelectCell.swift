@@ -17,4 +17,8 @@ final class TweakSelectCell: UITableViewCell, NibRegisterable {
         
     }
     
+    public static var bundle: Bundle {
+        return Bundle.module
+    }
+    
 }

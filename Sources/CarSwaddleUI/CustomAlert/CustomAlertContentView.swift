@@ -102,6 +102,10 @@ public final class CustomAlertContentView: UIView, NibInstantiating {
         return normalButtons
     }
     
+    public static var bundle: Bundle {
+        return Bundle.module
+    }
+    
     /// Call this to add a lottie animation. If called twice it will only take the last lottie animation.
     ///
     /// - Parameters:

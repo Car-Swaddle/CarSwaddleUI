@@ -13,6 +13,10 @@ final class TweakStringValueCell: UITableViewCell, NibRegisterable {
     @IBOutlet private weak var labelLabel: UILabel!
     @IBOutlet private weak var valueLabel: UILabel!
     
+    static var bundle: Bundle {
+        return Bundle.module
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         

@@ -25,6 +25,10 @@ final public class TweakViewController: UIViewController, StoryboardInstantiatin
     
     @IBOutlet private weak var tableView: UITableView!
     
+    public static var bundle: Bundle {
+        return Bundle.module
+    }
+    
     private var tweaks: [Tweak] = []
     private var resetAppOnDismiss: Bool = false
     

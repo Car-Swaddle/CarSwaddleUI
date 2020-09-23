@@ -130,8 +130,6 @@
 		"CarSwaddleUI::CarSwaddleUITests::Product" /* CarSwaddleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = CarSwaddleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_12 /* CarSwaddleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSwaddleUITests.swift; sourceTree = "<group>"; };
 		OBJ_13 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
-		OBJ_18 /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
-		OBJ_19 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		OBJ_20 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,8 +178,8 @@
 				99AE291425133E6800272957 /* CustomAlertContentView.swift */,
 				99AE291525133E6800272957 /* CustomAlertControllerExtension.swift */,
 				99AE291625133E6800272957 /* CustomAlertContentView.xib */,
-				99AE291725133E6800272957 /* CustomAlertController.storyboard */,
 				99AE291825133E6800272957 /* CustomAlertController.swift */,
+				99AE291725133E6800272957 /* CustomAlertController.storyboard */,
 			);
 			path = CustomAlert;
 			sourceTree = "<group>";
@@ -218,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				99AE292425133E6800272957 /* FetchedResultsTableButtonViewController.swift */,
+				99AE292D25133E6800272957 /* TextCell.swift */,
 				99AE292525133E6800272957 /* TextCell.xib */,
 				99AE292625133E6800272957 /* ContentInsetAdjuster.swift */,
 				99AE292725133E6800272957 /* TableButtonPagingViewController.swift */,
@@ -226,7 +225,6 @@
 				99AE292A25133E6800272957 /* UITableViewExtension.swift */,
 				99AE292B25133E6800272957 /* PagingTableViewController.swift */,
 				99AE292C25133E6800272957 /* TableViewSchemaButtonViewController.swift */,
-				99AE292D25133E6800272957 /* TextCell.swift */,
 				99AE292E25133E6800272957 /* TableViewController.swift */,
 				99AE292F25133E6800272957 /* LoadingButton.swift */,
 				99AE293025133E6800272957 /* TableButtonViewController.swift */,
@@ -342,8 +340,6 @@
 				OBJ_7 /* Sources */,
 				OBJ_10 /* Tests */,
 				OBJ_14 /* Products */,
-				OBJ_18 /* Cartfile.resolved */,
-				OBJ_19 /* Cartfile */,
 				OBJ_20 /* README.md */,
 			);
 			sourceTree = "<group>";
@@ -619,6 +615,7 @@
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				USE_HEADERMAP = NO;
 			};
 			name = Debug;
@@ -671,6 +668,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				USE_HEADERMAP = NO;
 			};
 			name = Release;

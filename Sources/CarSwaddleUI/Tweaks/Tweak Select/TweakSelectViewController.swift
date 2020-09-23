@@ -31,6 +31,10 @@ final class TweakSelectViewController: UIViewController, StoryboardInstantiating
         return viewController
     }
     
+    public static var bundle: Bundle {
+        return Bundle.module
+    }
+    
     private var selectedIndex: Int? {
         didSet {
             updateUIForSelectedIndex()

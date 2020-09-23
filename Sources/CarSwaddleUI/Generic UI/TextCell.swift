@@ -8,4 +8,8 @@
 
 import UIKit
 
-public final class TextCell: UITableViewCell, NibRegisterable {  }
+public final class TextCell: UITableViewCell, NibRegisterable {
+    public static var bundle: Bundle {
+        return Bundle.module
+    }
+}

@@ -40,6 +40,10 @@ open class OneTimeCodeViewController: UIViewController, StoryboardInstantiating 
     
     @IBOutlet public weak var oneTimeCodeEntryView: OneTimeCodeEntryView!
     
+    public static var bundle: Bundle {
+        return Bundle.module
+    }
+    
     open override func viewDidLoad() {
         super.viewDidLoad()
         

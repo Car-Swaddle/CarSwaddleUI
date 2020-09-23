@@ -18,14 +18,21 @@ extension NibNamed {
 
 /// Allows access to a nib instance of the conforming class
 public protocol Nibbed: NibNamed {
+    
+    static var bundle: Bundle { get }
+    
     /// Creates a UINib of the class if one exists.
     /// Will use default `nibName` if one is not provided.
     static var nib: UINib { get }
 }
 
 extension Nibbed {
+    
+    public static var bundle: Bundle {
+        return Bundle(for: Self.self)
+    }
+    
     public static var nib: UINib {
-        let bundle = Bundle(for: Self.self)
         return UINib(nibName: nibName, bundle: bundle)
     }
 }
@@ -46,7 +53,7 @@ public protocol NibInstantiating: Nibbed {
 }
 
 public extension NibInstantiating where Self: UIView {
-    
+        
     /**
      Creates a UIView (or subclass) using `nibName` to generate it.
      
@@ -61,7 +68,7 @@ public extension NibInstantiating where Self: UIView {
     
     static func viewFromGenericNib<T: UIView>(owner: Any? = nil) -> T {
         var view: T!
-        let objects = Bundle(for: self).loadNibNamed(nibName, owner: owner, options: nil)
+        let objects = bundle.loadNibNamed(nibName, owner: owner, options: nil)
         for object in objects ?? [] {
             guard let foundView = object as? T else { continue }
             view = foundView
