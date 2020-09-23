@@ -10,7 +10,7 @@
         <!--Tweaks-->
         <scene sceneID="vv5-Vp-1jh">
             <objects>
-                <viewController title="Tweaks" id="czk-5L-Xqu" customClass="TweakViewController" customModule="CarSwaddleMechanic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Tweaks" id="czk-5L-Xqu" customClass="TweakViewController" customModule="CarSwaddleUI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="T48-aX-eJu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
