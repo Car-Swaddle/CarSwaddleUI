@@ -91,6 +91,7 @@ open class OneTimeCodeEntryView: UIView {
         addSubview(stackView)
         stackView.pinFrameToSuperViewBounds()
         updateStackViewWithTextFields()
+        backgroundColor = .clear
     }
     
     private lazy var stackView: UIStackView = {
@@ -248,8 +249,7 @@ open class OneTimeCodeEntryView: UIView {
 extension OneTimeCodeEntryView: UITextFieldDelegate {
     
     public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let isPasted = string == UIPasteboard.general.string
-        if isPasted {
+        if string.count > 1 {
             setText(string)
             delegate?.codeDidChange(code: code, view: self)
             return false
